@@ -1,0 +1,12 @@
+retain_objc_accessible: true
+retain_public: true
+schemes:
+  - FulliOS
+targets:
+  - FulliOS
+#- FulliOSTests
+#- FulliOSUITests
+workspace: FulliOS.xcworkspace
+
+index_exclude:
+  - "FulliOS/Sources/Generated/**"

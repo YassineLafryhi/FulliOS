@@ -1,0 +1,28 @@
+ignoreList:
+  - FulliOS
+  - Fulli
+  - lhs
+  - rhs
+  - uid
+  - lproj
+  - rgb
+  - Interactor
+  - img
+  - interactor
+  - Kotlin
+  - Ocr
+  - ar
+  - sm
+  - ci
+
+excludePatterns:
+  - \b[0-9a-fA-F]{6}\b
+  - \bhttps?:\/\/[^\s]+\b
+  - ^[a-z]+(\.[a-z]+)+$
+
+excludeFiles:
+  - Constants.swift
+
+excludeDirectories:
+  - Pods
+  - FulliOS/Sources/Generated

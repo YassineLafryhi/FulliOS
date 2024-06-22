@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  FulliOS
+//
+//  Created by Yassine Lafryhi on 7/6/2024.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#import <opencv2/imgcodecs/ios.h>
+#endif
+
+#endif

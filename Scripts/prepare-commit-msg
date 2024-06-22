@@ -1,0 +1,18 @@
+#!/bin/sh
+
+commit_types="(Build|Chore|Ci|Docs|Feat|Fix|Perf|Refactor|Revert|Style|Test|Wip)"
+convetional_commit_regex="^${commit_types}(\([a-z \-]+\))?!?: [A-Z].+$"
+
+commit_message=$(cat "$1")
+
+if [[ "$commit_message" =~ $convetional_commit_regex ]]; then
+   echo "Commit message meets Conventional Commit standards !"
+   exit 0
+fi
+
+echo "The commit message does not meet the Conventional Commit standard !"
+echo "An example of a valid message is: "
+echo "Feat: Add the 'remember me' button"
+echo "Here are the list of message type : ${commit_types}"
+
+exit 1

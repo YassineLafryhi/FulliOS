@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need access to save photos to your library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to the camera to take photos</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>charlatan.otf</string>
+		<string>balsamiq.ttf</string>
+		<string>din.ttf</string>
+	</array>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_dartobservatory._tcp</string>
+	</array>
+</dict>
+</plist>

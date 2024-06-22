@@ -1,0 +1,4 @@
+#!/bin/sh
+
+perl ./Scripts/sort-xcode-project.pl ./FulliOS.xcodeproj/project.pbxproj
+git add ./FulliOS.xcodeproj/project.pbxproj

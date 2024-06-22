@@ -1,0 +1,70 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "add" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        }
+      }
+    },
+    "Chrome" : {
+
+    },
+    "Enter text to translate:" : {
+
+    },
+    "Error" : {
+
+    },
+    "Noir" : {
+
+    },
+    "OK" : {
+
+    },
+    "PDF file not found." : {
+
+    },
+    "Save to Photos" : {
+
+    },
+    "Select Chapter" : {
+
+    },
+    "Select Reciter" : {
+
+    },
+    "Select target language" : {
+
+    },
+    "Sepia" : {
+
+    },
+    "Translate" : {
+
+    },
+    "Translated text:" : {
+
+    }
+  },
+  "version" : "1.0"
+}

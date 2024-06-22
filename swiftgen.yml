@@ -1,0 +1,20 @@
+xcassets:
+  inputs:
+    - FulliOS/Resources/Assets/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: FulliOS/Sources/Generated/Assets.swift
+
+strings:
+  inputs:
+    - FulliOS/Resources/Localizable.xcstrings
+  outputs:
+    - templateName: structured-swift5
+      output: FulliOS/Sources/Generated/Strings.swift
+
+fonts:
+  inputs:
+    - FulliOS/Resources/Fonts
+  outputs:
+    - templateName: swift5
+      output: FulliOS/Sources/Generated/Fonts.swift
