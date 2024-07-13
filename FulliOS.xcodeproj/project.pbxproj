@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AD97A28CB9DEAEB3CB8D302 /* Pods_FulliOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E090DFDF4547B1776F5CE /* Pods_FulliOS.framework */; };
+		C21523992C3084DA0086D103 /* PasswordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21523972C3084DA0086D103 /* PasswordsManager.swift */; };
 		C21FAB1E2C1234B5001CFAA5 /* FulliOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21FAB1D2C1234B5001CFAA5 /* FulliOSApp.swift */; };
 		C222092A2C124A8B00780A7B /* FlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22209292C124A8B00780A7B /* FlutterView.swift */; };
 		C222092C2C124DF000780A7B /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C222092B2C124DEF00780A7B /* App.xcframework */; };
@@ -55,6 +56,10 @@
 		C2B820CE2C0A80490049F937 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B820C92C0A80490049F937 /* Fonts.swift */; };
 		C2B820CF2C0A80490049F937 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B820CA2C0A80490049F937 /* R.generated.swift */; };
 		C2B820D02C0A80490049F937 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B820CB2C0A80490049F937 /* Strings.swift */; };
+		C2BC71E72C42E47900ACE11C /* RealityKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BC71E62C42E47900ACE11C /* RealityKitView.swift */; };
+		C2BC71ED2C42E60D00ACE11C /* RobotWalk.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2BC71EA2C42E5FF00ACE11C /* RobotWalk.usdz */; };
+		C2BC71EE2C42E60D00ACE11C /* LunarRover.reality in Resources */ = {isa = PBXBuildFile; fileRef = C2BC71EB2C42E60100ACE11C /* LunarRover.reality */; };
+		C2BC71EF2C42E60D00ACE11C /* CosmonautSuit.reality in Resources */ = {isa = PBXBuildFile; fileRef = C2BC71EC2C42E60C00ACE11C /* CosmonautSuit.reality */; };
 		C2C66F882C0F72F100C8C4C5 /* OcrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C66F872C0F72F100C8C4C5 /* OcrView.swift */; };
 		C2C66F8B2C0F733200C8C4C5 /* OCRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C66F8A2C0F733200C8C4C5 /* OCRManager.swift */; };
 		C2C66F8D2C0F747400C8C4C5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C66F8C2C0F747400C8C4C5 /* ImagePicker.swift */; };
@@ -111,6 +116,7 @@
 		778E090DFDF4547B1776F5CE /* Pods_FulliOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FulliOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A110D079B12F587546470366 /* Pods-FulliOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FulliOSTests.release.xcconfig"; path = "Target Support Files/Pods-FulliOSTests/Pods-FulliOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD8297AD28BD1DA3F54B86CF /* Pods-FulliOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FulliOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FulliOSTests/Pods-FulliOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C21523972C3084DA0086D103 /* PasswordsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordsManager.swift; sourceTree = "<group>"; };
 		C21FAB1D2C1234B5001CFAA5 /* FulliOSApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FulliOSApp.swift; sourceTree = "<group>"; };
 		C22209162C1249FD00780A7B /* main.dart */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.dart; sourceTree = "<group>"; };
 		C22209182C1249FD00780A7B /* widget_test.dart */ = {isa = PBXFileReference; lastKnownFileType = text; path = widget_test.dart; sourceTree = "<group>"; };
@@ -189,6 +195,10 @@
 		C2B820C92C0A80490049F937 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		C2B820CA2C0A80490049F937 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		C2B820CB2C0A80490049F937 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C2BC71E62C42E47900ACE11C /* RealityKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitView.swift; sourceTree = "<group>"; };
+		C2BC71EA2C42E5FF00ACE11C /* RobotWalk.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RobotWalk.usdz; sourceTree = "<group>"; };
+		C2BC71EB2C42E60100ACE11C /* LunarRover.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = LunarRover.reality; sourceTree = "<group>"; };
+		C2BC71EC2C42E60C00ACE11C /* CosmonautSuit.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = CosmonautSuit.reality; sourceTree = "<group>"; };
 		C2C66F872C0F72F100C8C4C5 /* OcrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrView.swift; sourceTree = "<group>"; };
 		C2C66F8A2C0F733200C8C4C5 /* OCRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRManager.swift; sourceTree = "<group>"; };
 		C2C66F8C2C0F747400C8C4C5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -247,6 +257,14 @@
 				A110D079B12F587546470366 /* Pods-FulliOSTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C21523982C3084DA0086D103 /* PasswordsManager */ = {
+			isa = PBXGroup;
+			children = (
+				C21523972C3084DA0086D103 /* PasswordsManager.swift */,
+			);
+			path = PasswordsManager;
 			sourceTree = "<group>";
 		};
 		C22209172C1249FD00780A7B /* lib */ = {
@@ -383,7 +401,10 @@
 				C2B8205C2C0A497E0049F937 /* Assets */,
 				C2B8205D2C0A49970049F937 /* Fonts */,
 				C2C66F932C0FA2D800C8C4C5 /* Images */,
+				C2BC71EC2C42E60C00ACE11C /* CosmonautSuit.reality */,
 				C2B8205E2C0A49BB0049F937 /* Localizable.xcstrings */,
+				C2BC71EB2C42E60100ACE11C /* LunarRover.reality */,
+				C2BC71EA2C42E5FF00ACE11C /* RobotWalk.usdz */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -674,8 +695,10 @@
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
 				C2C66F862C0F72DF00C8C4C5 /* OCR */,
 				C2E97A7A2C133E860004BE45 /* OpenCV */,
+				C21523982C3084DA0086D103 /* PasswordsManager */,
 				C23034E52C138E9800267143 /* PDFKit */,
 				C2A1D0572C12371000170662 /* QuranPlayer */,
+				C2BC71E52C42E46600ACE11C /* RealityView */,
 				C2B820A72C0A57360049F937 /* SplashScreen */,
 				C2993D062C0D21D8005B97D4 /* SwiftData */,
 				C2AFB5F72C14BF620076F636 /* TextTranslator */,
@@ -748,6 +771,14 @@
 				C2B820CB2C0A80490049F937 /* Strings.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		C2BC71E52C42E46600ACE11C /* RealityView */ = {
+			isa = PBXGroup;
+			children = (
+				C2BC71E62C42E47900ACE11C /* RealityKitView.swift */,
+			);
+			path = RealityView;
 			sourceTree = "<group>";
 		};
 		C2C66F862C0F72DF00C8C4C5 /* OCR */ = {
@@ -978,9 +1009,12 @@
 				C2615FED2C0A36F900EBD073 /* Assets.xcassets in Resources */,
 				C2B820612C0A49E60049F937 /* balsamiq.ttf in Resources */,
 				C2B820B32C0A5B5D0049F937 /* charlatan.otf in Resources */,
+				C2BC71EF2C42E60D00ACE11C /* CosmonautSuit.reality in Resources */,
 				C2B820B22C0A5B5D0049F937 /* din.ttf in Resources */,
 				C2B8205F2C0A49BB0049F937 /* Localizable.xcstrings in Resources */,
+				C2BC71EE2C42E60D00ACE11C /* LunarRover.reality in Resources */,
 				C2C66F952C0FA30A00C8C4C5 /* person.jpg in Resources */,
+				C2BC71ED2C42E60D00ACE11C /* RobotWalk.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1346,12 +1380,14 @@
 				C2C66F882C0F72F100C8C4C5 /* OcrView.swift in Sources */,
 				C2E97A852C133FC80004BE45 /* OpenCVProcessor.mm in Sources */,
 				C2E97A7C2C133E9D0004BE45 /* OpenCvView.swift in Sources */,
+				C21523992C3084DA0086D103 /* PasswordsManager.swift in Sources */,
 				C23034E92C138F8300267143 /* PDFCreator.swift in Sources */,
 				C23034EB2C1390E100267143 /* PDFKitView.swift in Sources */,
 				C23034E72C138EAC00267143 /* PDFViewer.swift in Sources */,
 				C2AFB6022C14D5FA0076F636 /* PhotoCaptureProcessor.swift in Sources */,
 				C2A1D0582C12371000170662 /* QuranPlayerView.swift in Sources */,
 				C2B820CF2C0A80490049F937 /* R.generated.swift in Sources */,
+				C2BC71E72C42E47900ACE11C /* RealityKitView.swift in Sources */,
 				C2993D072C0D21D8005B97D4 /* SharedModelContainer.swift in Sources */,
 				C2B820A92C0A57550049F937 /* SplashScreenView.swift in Sources */,
 				C2B820D02C0A80490049F937 /* Strings.swift in Sources */,

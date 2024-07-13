@@ -22,6 +22,7 @@ target 'FulliOS' do
   pod 'GoogleMLKit/LanguageID'
   pod 'GoogleMLKit/Translate'
   pod 'Fakery'
+  pod 'RealmSwift'
 
   target 'FulliOSTests' do
     inherit! :search_paths

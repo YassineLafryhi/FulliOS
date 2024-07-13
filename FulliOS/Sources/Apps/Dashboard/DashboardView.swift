@@ -57,7 +57,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.camera.name,
             title: "Camera (AVFoundation, CoreImage)",
-            destinationView: AnyView(CameraView()))
+            destinationView: AnyView(CameraView())),
+
+        DashboardMenuItem(
+            iconName: R.image.passwords.name,
+            title: "Passwords (CryptoKit, RealmSwift)",
+            destinationView: AnyView(PasswordsManager())),
+
+        DashboardMenuItem(
+            iconName: R.image.cosmonaut.name,
+            title: "Cosmonaut Suit (RealityKit)",
+            destinationView: AnyView(CosmonautSuitView()))
     ]
 
     var body: some View {

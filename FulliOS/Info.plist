@@ -16,5 +16,7 @@
 	<array>
 		<string>_dartobservatory._tcp</string>
 	</array>
+	<key>NSFaceIDUsageDescription</key>
+	<string>We use Face ID to enhance security</string>
 </dict>
 </plist>

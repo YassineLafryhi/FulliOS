@@ -62,6 +62,11 @@ PODS:
   - Periphery (2.20.0)
   - PromisesObjC (2.4.0)
   - R.swift (7.3.2)
+  - Realm (10.50.1):
+    - Realm/Headers (= 10.50.1)
+  - Realm/Headers (10.50.1)
+  - RealmSwift (10.50.1):
+    - Realm (= 10.50.1)
   - Sourcery (2.2.4):
     - Sourcery/CLI-Only (= 2.2.4)
   - Sourcery/CLI-Only (2.2.4)
@@ -82,6 +87,7 @@ DEPENDENCIES:
   - OpenCV
   - Periphery
   - R.swift
+  - RealmSwift
   - Sourcery
   - SwiftFormat/CLI
   - SwiftGen
@@ -110,6 +116,8 @@ SPEC REPOS:
     - Periphery
     - PromisesObjC
     - R.swift
+    - Realm
+    - RealmSwift
     - Sourcery
     - SSZipArchive
     - SwiftFormat
@@ -138,6 +146,8 @@ SPEC CHECKSUMS:
   Periphery: bbfb154f812658b3e19a353317bdb20244b662df
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
+  Realm: 36bc9fe2681d7cf234aa487e7990821c772206a2
+  RealmSwift: 84a370d3d4f191d327a9f8ade1f064a274f79847
   Sourcery: 47b30d2494896127ff264ecb19efb3643521fcb9
   SSZipArchive: c69881e8ac5521f0e622291387add5f60f30f3c4
   SwiftFormat: 5967522a8e82d562b2508363d3ddec424fee1e9e
@@ -146,6 +156,6 @@ SPEC CHECKSUMS:
   SwiftSoup: 4164c6bd8af69acd119c23fb36906975a60d71bb
   SwiftySpell: c61e7b5af1c8c08eeb79ac7ad8019d5ee171e80e
 
-PODFILE CHECKSUM: 599bea19ebe4dc7735b629ef7cb6e8d8cc30bde8
+PODFILE CHECKSUM: d128dbbfdb79c2b4c4be8d634c41ebd1b5a34e4f
 
 COCOAPODS: 1.15.2
