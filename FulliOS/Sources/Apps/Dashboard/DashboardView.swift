@@ -67,7 +67,22 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.cosmonaut.name,
             title: "Cosmonaut Suit (RealityKit)",
-            destinationView: AnyView(CosmonautSuitView()))
+            destinationView: AnyView(CosmonautSuitView())),
+
+        DashboardMenuItem(
+            iconName: R.image.drawing.name,
+            title: "Drawing (SwiftUI - GeometryReader)",
+            destinationView: AnyView(DrawingView())),
+
+        DashboardMenuItem(
+            iconName: R.image.geometry.name,
+            title: "Geometry (SceneKit, CoreMotion)",
+            destinationView: AnyView(SceneKitView())),
+
+        DashboardMenuItem(
+            iconName: R.image.temperature.name,
+            title: "Temperature Chart (Charts, RxSwift)",
+            destinationView: AnyView(TemperatureChartView()))
     ]
 
     var body: some View {

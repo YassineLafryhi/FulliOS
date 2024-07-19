@@ -11,6 +11,7 @@ import SwiftUI
 internal enum Constants {
     enum Shared {
         static let defaultDateAndTimeFormat = "dd-MM-yyyy HH:mm:ss"
+        static let defaultDateAndTimeFormatForNames = "ddMMyyyyHHmmss"
     }
 
     enum AppColors {
@@ -36,5 +37,10 @@ internal enum Constants {
     enum QuranPlayerApp {
         static let tvQuranApi = "https://download.tvquran.com/download/TvQuran.com__"
         static let tvQuranReciters = ["Al-Ghamdi", "Fares.Abbad", "Al-Ajmy"]
+    }
+
+    enum TemperatureChartApp {
+        // TODO: Update this after launching Vapor Server
+        static let wsUrl = "ws://192.168.1.239:8080/temperature"
     }
 }

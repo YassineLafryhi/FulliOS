@@ -67,10 +67,17 @@ PODS:
   - Realm/Headers (10.50.1)
   - RealmSwift (10.50.1):
     - Realm (= 10.50.1)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
   - Sourcery (2.2.4):
     - Sourcery/CLI-Only (= 2.2.4)
   - Sourcery/CLI-Only (2.2.4)
   - SSZipArchive (2.5.5)
+  - Starscream (4.0.8)
   - SwiftFormat/CLI (0.53.10)
   - SwiftGen (6.6.3)
   - SwiftLint (0.55.1)
@@ -88,7 +95,10 @@ DEPENDENCIES:
   - Periphery
   - R.swift
   - RealmSwift
+  - RxCocoa
+  - RxSwift
   - Sourcery
+  - Starscream
   - SwiftFormat/CLI
   - SwiftGen
   - SwiftLint
@@ -118,8 +128,12 @@ SPEC REPOS:
     - R.swift
     - Realm
     - RealmSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - Sourcery
     - SSZipArchive
+    - Starscream
     - SwiftFormat
     - SwiftGen
     - SwiftLint
@@ -148,14 +162,18 @@ SPEC CHECKSUMS:
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   Realm: 36bc9fe2681d7cf234aa487e7990821c772206a2
   RealmSwift: 84a370d3d4f191d327a9f8ade1f064a274f79847
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
   Sourcery: 47b30d2494896127ff264ecb19efb3643521fcb9
   SSZipArchive: c69881e8ac5521f0e622291387add5f60f30f3c4
+  Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
   SwiftFormat: 5967522a8e82d562b2508363d3ddec424fee1e9e
   SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
   SwiftLint: 3fe909719babe5537c552ee8181c0031392be933
   SwiftSoup: 4164c6bd8af69acd119c23fb36906975a60d71bb
   SwiftySpell: c61e7b5af1c8c08eeb79ac7ad8019d5ee171e80e
 
-PODFILE CHECKSUM: d128dbbfdb79c2b4c4be8d634c41ebd1b5a34e4f
+PODFILE CHECKSUM: a6acd419231f64d7cda8fda1c6e2abaf8904e7c4
 
 COCOAPODS: 1.15.2

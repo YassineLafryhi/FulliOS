@@ -21,21 +21,22 @@ internal class CameraViewModel: NSObject, ObservableObject {
 
     func setup() {
         session.beginConfiguration()
-        let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
-        guard let input = try? AVCaptureDeviceInput(device: device!) else { return }
-        if session.canAddInput(input) {
-            session.addInput(input)
-        }
-        if session.canAddOutput(output) {
-            session.addOutput(output)
-        }
-        session.commitConfiguration()
+        if let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {
+            guard let input = try? AVCaptureDeviceInput(device: device) else { return }
+            if session.canAddInput(input) {
+                session.addInput(input)
+            }
+            if session.canAddOutput(output) {
+                session.addOutput(output)
+            }
+            session.commitConfiguration()
 
-        DispatchQueue.global(qos: .background).async {
-            self.session.startRunning()
-        }
+            DispatchQueue.global(qos: .background).async {
+                self.session.startRunning()
+            }
 
-        currentDevice = device
+            currentDevice = device
+        }
     }
 
     func capturePhoto(completion: @escaping (UIImage?) -> Void) {

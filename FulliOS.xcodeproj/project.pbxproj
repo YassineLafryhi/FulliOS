@@ -18,10 +18,15 @@
 		C23034EB2C1390E100267143 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23034EA2C1390E100267143 /* PDFKitView.swift */; };
 		C2329C2F2C13950F00BC632C /* FButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2329C2E2C13950F00BC632C /* FButton.swift */; };
 		C2329C342C13A57300BC632C /* FPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2329C332C13A57300BC632C /* FPicker.swift */; };
+		C2390A042C404E2900F98116 /* DrawingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2390A002C404E2900F98116 /* DrawingArea.swift */; };
+		C2390A052C404E2900F98116 /* DrawingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2390A012C404E2900F98116 /* DrawingData.swift */; };
+		C2390A062C404E2900F98116 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2390A022C404E2900F98116 /* DrawingView.swift */; };
 		C2615FED2C0A36F900EBD073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2615FEC2C0A36F900EBD073 /* Assets.xcassets */; };
 		C2615FFA2C0A36F900EBD073 /* FulliOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2615FF92C0A36F900EBD073 /* FulliOSTests.swift */; };
 		C26160042C0A36F900EBD073 /* FulliOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26160032C0A36F900EBD073 /* FulliOSUITests.swift */; };
 		C26160062C0A36F900EBD073 /* FulliOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26160052C0A36F900EBD073 /* FulliOSUITestsLaunchTests.swift */; };
+		C261E4A12C4AD0FD00116D8E /* UIColor+Extension..swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4A02C4AD0FD00116D8E /* UIColor+Extension..swift */; };
+		C261E4A42C4AD15500116D8E /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4A32C4AD15500116D8E /* TemperatureViewModel.swift */; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -67,6 +72,9 @@
 		C2C66F922C0FA2B200C8C4C5 /* FaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C66F912C0FA2B200C8C4C5 /* FaceManager.swift */; };
 		C2C66F952C0FA30A00C8C4C5 /* person.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C66F942C0FA30A00C8C4C5 /* person.jpg */; };
 		C2C66F972C0FA3F900C8C4C5 /* FaceOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C66F962C0FA3F900C8C4C5 /* FaceOverlayView.swift */; };
+		C2DC3B3C2C4053B500222179 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC3B3B2C4053B500222179 /* WebSocketServer.swift */; };
+		C2DC3B3F2C40549F00222179 /* TemperatureChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC3B3E2C40549F00222179 /* TemperatureChartView.swift */; };
+		C2DC3B432C406AF300222179 /* SceneKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC3B422C406AF300222179 /* SceneKitView.swift */; };
 		C2E97A782C133B5C0004BE45 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C222092B2C124DEF00780A7B /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2E97A792C133B5C0004BE45 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C222092D2C124DFC00780A7B /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2E97A7C2C133E9D0004BE45 /* OpenCvView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E97A7B2C133E9D0004BE45 /* OpenCvView.swift */; };
@@ -130,6 +138,9 @@
 		C23034EA2C1390E100267143 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		C2329C2E2C13950F00BC632C /* FButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FButton.swift; sourceTree = "<group>"; };
 		C2329C332C13A57300BC632C /* FPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPicker.swift; sourceTree = "<group>"; };
+		C2390A002C404E2900F98116 /* DrawingArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingArea.swift; sourceTree = "<group>"; };
+		C2390A012C404E2900F98116 /* DrawingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingData.swift; sourceTree = "<group>"; };
+		C2390A022C404E2900F98116 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		C2615FE32C0A36F800EBD073 /* FulliOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FulliOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2615FEC2C0A36F900EBD073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2615FF52C0A36F900EBD073 /* FulliOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FulliOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +152,9 @@
 		C261601B2C0A3FB600EBD073 /* .swiftyspell.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftyspell.yml; sourceTree = "<group>"; };
 		C261601C2C0A3FC700EBD073 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C261601D2C0A3FD700EBD073 /* .periphery.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .periphery.yml; sourceTree = "<group>"; };
+		C261E49F2C4ACB3E00116D8E /* VaporServer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VaporServer; sourceTree = "<group>"; };
+		C261E4A02C4AD0FD00116D8E /* UIColor+Extension..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension..swift"; sourceTree = "<group>"; };
+		C261E4A32C4AD15500116D8E /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -206,6 +220,9 @@
 		C2C66F912C0FA2B200C8C4C5 /* FaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceManager.swift; sourceTree = "<group>"; };
 		C2C66F942C0FA30A00C8C4C5 /* person.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person.jpg; sourceTree = "<group>"; };
 		C2C66F962C0FA3F900C8C4C5 /* FaceOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceOverlayView.swift; sourceTree = "<group>"; };
+		C2DC3B3B2C4053B500222179 /* WebSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServer.swift; sourceTree = "<group>"; };
+		C2DC3B3E2C40549F00222179 /* TemperatureChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureChartView.swift; sourceTree = "<group>"; };
+		C2DC3B422C406AF300222179 /* SceneKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitView.swift; sourceTree = "<group>"; };
 		C2E97A7B2C133E9D0004BE45 /* OpenCvView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCvView.swift; sourceTree = "<group>"; };
 		C2E97A7E2C133EFE0004BE45 /* FulliOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FulliOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		C2E97A802C133F4A0004BE45 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -335,9 +352,20 @@
 			path = FPicker;
 			sourceTree = "<group>";
 		};
+		C2390A032C404E2900F98116 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				C2390A002C404E2900F98116 /* DrawingArea.swift */,
+				C2390A012C404E2900F98116 /* DrawingData.swift */,
+				C2390A022C404E2900F98116 /* DrawingView.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
 		C2615FDA2C0A36F800EBD073 = {
 			isa = PBXGroup;
 			children = (
+				C261E49F2C4ACB3E00116D8E /* VaporServer */,
 				C22209222C1249FD00780A7B /* FlutterModule */,
 				C2993CF92C0D1444005B97D4 /* KotlinMultiplatformModule */,
 				C2615FE52C0A36F800EBD073 /* FulliOS */,
@@ -420,6 +448,14 @@
 				C21FAB1D2C1234B5001CFAA5 /* FulliOSApp.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		C261E4A22C4AD12800116D8E /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC3B422C406AF300222179 /* SceneKitView.swift */,
+			);
+			path = SceneKit;
 			sourceTree = "<group>";
 		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
@@ -690,6 +726,7 @@
 			children = (
 				C2AFB5FA2C14CC580076F636 /* Camera */,
 				C2B820AA2C0A581B0049F937 /* Dashboard */,
+				C2390A032C404E2900F98116 /* Drawing */,
 				C2C66F8E2C0FA26900C8C4C5 /* FaceDetector */,
 				C22209282C124A7A00780A7B /* Flutter */,
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
@@ -699,8 +736,10 @@
 				C23034E52C138E9800267143 /* PDFKit */,
 				C2A1D0572C12371000170662 /* QuranPlayer */,
 				C2BC71E52C42E46600ACE11C /* RealityView */,
+				C261E4A22C4AD12800116D8E /* SceneKit */,
 				C2B820A72C0A57360049F937 /* SplashScreen */,
 				C2993D062C0D21D8005B97D4 /* SwiftData */,
+				C2DC3B3D2C40548600222179 /* TemperatureChart */,
 				C2AFB5F72C14BF620076F636 /* TextTranslator */,
 			);
 			path = Apps;
@@ -711,6 +750,7 @@
 			children = (
 				C2B820B92C0A5FB70049F937 /* Array+Extentions.swift */,
 				C2B8207F2C0A54E60049F937 /* Color+Extension.swift */,
+				C261E4A02C4AD0FD00116D8E /* UIColor+Extension..swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -755,6 +795,7 @@
 			children = (
 				C2A1D0592C12374B00170662 /* Media */,
 				C2AFB5F42C14BE0D0076F636 /* NaturalLanguage */,
+				C2DC3B3A2C40539100222179 /* Network */,
 				C2C66F892C0F732100C8C4C5 /* Vision */,
 				C2B820B52C0A5DD70049F937 /* AlertManager.swift */,
 				C2B820AE2C0A5A1B0049F937 /* Logger.swift */,
@@ -828,6 +869,23 @@
 				C2B109612C163C04002622C3 /* SwiftData */,
 			);
 			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		C2DC3B3A2C40539100222179 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC3B3B2C4053B500222179 /* WebSocketServer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C2DC3B3D2C40548600222179 /* TemperatureChart */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC3B3E2C40549F00222179 /* TemperatureChartView.swift */,
+				C261E4A32C4AD15500116D8E /* TemperatureViewModel.swift */,
+			);
+			path = TemperatureChart;
 			sourceTree = "<group>";
 		};
 		C2E97A7A2C133E860004BE45 /* OpenCV */ = {
@@ -1361,6 +1419,9 @@
 				C2B1094B2C1635B7002622C3 /* ContactRow.swift in Sources */,
 				C2B820B82C0A5F5F0049F937 /* DashboardMenuItem.swift in Sources */,
 				C2B8207D2C0A543D0049F937 /* DashboardView.swift in Sources */,
+				C2390A042C404E2900F98116 /* DrawingArea.swift in Sources */,
+				C2390A052C404E2900F98116 /* DrawingData.swift in Sources */,
+				C2390A062C404E2900F98116 /* DrawingView.swift in Sources */,
 				C2C66F902C0FA27F00C8C4C5 /* FaceDetector.swift in Sources */,
 				C2C66F922C0FA2B200C8C4C5 /* FaceManager.swift in Sources */,
 				C2C66F972C0FA3F900C8C4C5 /* FaceOverlayView.swift in Sources */,
@@ -1388,11 +1449,16 @@
 				C2A1D0582C12371000170662 /* QuranPlayerView.swift in Sources */,
 				C2B820CF2C0A80490049F937 /* R.generated.swift in Sources */,
 				C2BC71E72C42E47900ACE11C /* RealityKitView.swift in Sources */,
+				C2DC3B432C406AF300222179 /* SceneKitView.swift in Sources */,
 				C2993D072C0D21D8005B97D4 /* SharedModelContainer.swift in Sources */,
 				C2B820A92C0A57550049F937 /* SplashScreenView.swift in Sources */,
 				C2B820D02C0A80490049F937 /* Strings.swift in Sources */,
 				C2993D082C0D21D8005B97D4 /* SwiftDataContactsView.swift in Sources */,
+				C2DC3B3F2C40549F00222179 /* TemperatureChartView.swift in Sources */,
+				C261E4A42C4AD15500116D8E /* TemperatureViewModel.swift in Sources */,
 				C2AFB5F92C14BF6E0076F636 /* TextTranslator.swift in Sources */,
+				C261E4A12C4AD0FD00116D8E /* UIColor+Extension..swift in Sources */,
+				C2DC3B3C2C4053B500222179 /* WebSocketServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,9 @@ target 'FulliOS' do
   pod 'GoogleMLKit/Translate'
   pod 'Fakery'
   pod 'RealmSwift'
+  pod 'Starscream'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'FulliOSTests' do
     inherit! :search_paths
