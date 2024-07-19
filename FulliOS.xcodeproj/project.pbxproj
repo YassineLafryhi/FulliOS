@@ -27,6 +27,9 @@
 		C26160062C0A36F900EBD073 /* FulliOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26160052C0A36F900EBD073 /* FulliOSUITestsLaunchTests.swift */; };
 		C261E4A12C4AD0FD00116D8E /* UIColor+Extension..swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4A02C4AD0FD00116D8E /* UIColor+Extension..swift */; };
 		C261E4A42C4AD15500116D8E /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4A32C4AD15500116D8E /* TemperatureViewModel.swift */; };
+		C261E4A92C4AD73800116D8E /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4A82C4AD73800116D8E /* QRCodeScannerView.swift */; };
+		C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4AB2C4ADD9000116D8E /* MapsView.swift */; };
+		C261E4AF2C4ADF6000116D8E /* SoundRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -155,6 +158,9 @@
 		C261E49F2C4ACB3E00116D8E /* VaporServer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VaporServer; sourceTree = "<group>"; };
 		C261E4A02C4AD0FD00116D8E /* UIColor+Extension..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension..swift"; sourceTree = "<group>"; };
 		C261E4A32C4AD15500116D8E /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
+		C261E4A82C4AD73800116D8E /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
+		C261E4AB2C4ADD9000116D8E /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
+		C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundRecorderView.swift; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -458,6 +464,30 @@
 			path = SceneKit;
 			sourceTree = "<group>";
 		};
+		C261E4A72C4AD72800116D8E /* QRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				C261E4A82C4AD73800116D8E /* QRCodeScannerView.swift */,
+			);
+			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
+		C261E4AA2C4ADD8300116D8E /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				C261E4AB2C4ADD9000116D8E /* MapsView.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		C261E4AD2C4ADF5000116D8E /* SoundRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */,
+			);
+			path = SoundRecorder;
+			sourceTree = "<group>";
+		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,13 +760,16 @@
 				C2C66F8E2C0FA26900C8C4C5 /* FaceDetector */,
 				C22209282C124A7A00780A7B /* Flutter */,
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
+				C261E4AA2C4ADD8300116D8E /* MapKit */,
 				C2C66F862C0F72DF00C8C4C5 /* OCR */,
 				C2E97A7A2C133E860004BE45 /* OpenCV */,
 				C21523982C3084DA0086D103 /* PasswordsManager */,
 				C23034E52C138E9800267143 /* PDFKit */,
+				C261E4A72C4AD72800116D8E /* QRCodeScanner */,
 				C2A1D0572C12371000170662 /* QuranPlayer */,
 				C2BC71E52C42E46600ACE11C /* RealityView */,
 				C261E4A22C4AD12800116D8E /* SceneKit */,
+				C261E4AD2C4ADF5000116D8E /* SoundRecorder */,
 				C2B820A72C0A57360049F937 /* SplashScreen */,
 				C2993D062C0D21D8005B97D4 /* SwiftData */,
 				C2DC3B3D2C40548600222179 /* TemperatureChart */,
@@ -1436,6 +1469,7 @@
 				C2C66F8D2C0F747400C8C4C5 /* ImagePicker.swift in Sources */,
 				C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */,
 				C2B820AF2C0A5A1B0049F937 /* Logger.swift in Sources */,
+				C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */,
 				C2A1D05B2C12376000170662 /* MP3Streamer.swift in Sources */,
 				C2C66F8B2C0F733200C8C4C5 /* OCRManager.swift in Sources */,
 				C2C66F882C0F72F100C8C4C5 /* OcrView.swift in Sources */,
@@ -1446,11 +1480,13 @@
 				C23034EB2C1390E100267143 /* PDFKitView.swift in Sources */,
 				C23034E72C138EAC00267143 /* PDFViewer.swift in Sources */,
 				C2AFB6022C14D5FA0076F636 /* PhotoCaptureProcessor.swift in Sources */,
+				C261E4A92C4AD73800116D8E /* QRCodeScannerView.swift in Sources */,
 				C2A1D0582C12371000170662 /* QuranPlayerView.swift in Sources */,
 				C2B820CF2C0A80490049F937 /* R.generated.swift in Sources */,
 				C2BC71E72C42E47900ACE11C /* RealityKitView.swift in Sources */,
 				C2DC3B432C406AF300222179 /* SceneKitView.swift in Sources */,
 				C2993D072C0D21D8005B97D4 /* SharedModelContainer.swift in Sources */,
+				C261E4AF2C4ADF6000116D8E /* SoundRecorderView.swift in Sources */,
 				C2B820A92C0A57550049F937 /* SplashScreenView.swift in Sources */,
 				C2B820D02C0A80490049F937 /* Strings.swift in Sources */,
 				C2993D082C0D21D8005B97D4 /* SwiftDataContactsView.swift in Sources */,

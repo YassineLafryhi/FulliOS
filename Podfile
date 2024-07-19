@@ -26,6 +26,7 @@ target 'FulliOS' do
   pod 'Starscream'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Toaster'
 
   target 'FulliOSTests' do
     inherit! :search_paths

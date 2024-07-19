@@ -82,7 +82,22 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.temperature.name,
             title: "Temperature Chart (Charts, RxSwift)",
-            destinationView: AnyView(TemperatureChartView()))
+            destinationView: AnyView(TemperatureChartView())),
+
+        DashboardMenuItem(
+            iconName: R.image.qrcode.name,
+            title: "Barcode & QR Code Scanning (AVFoundation)",
+            destinationView: AnyView(QRCodeScannerView())),
+
+        DashboardMenuItem(
+            iconName: R.image.maps.name,
+            title: "Maps (MapKit, CoreLocation)",
+            destinationView: AnyView(MapsView())),
+
+        DashboardMenuItem(
+            iconName: R.image.microphone.name,
+            title: "Sound Recorder (AVFoundation)",
+            destinationView: AnyView(SoundRecorderView()))
     ]
 
     var body: some View {
