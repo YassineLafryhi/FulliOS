@@ -2,3 +2,28 @@
 
 perl ./Scripts/sort-xcode-project.pl ./FulliOS.xcodeproj/project.pbxproj
 git add ./FulliOS.xcodeproj/project.pbxproj
+
+
+PLIST_FILE="./FulliOS/Resources/Plists/APIKeys.plist"
+
+awk '
+/<key>/ {
+    getline; key=$0;
+    gsub(/<[^>]*>/, "", key);
+    gsub(/^[\t ]+|[\t ]+$/, "", key);
+}
+/<string>/ {
+    value=$0;
+    gsub(/<[^>]*>/, "", value);
+    gsub(/^[\t ]+|[\t ]+$/, "", value);
+    if (value !~ /^PUT_/) {
+        print "Error: Value for key", key, "must start with PUT_. Found:", value;
+        exit 1;
+    }
+}' "$PLIST_FILE"
+
+if [ $? -ne 0 ]; then
+    echo "Commit blocked: API key validation failed."
+    exit 1
+fi
+

@@ -30,7 +30,8 @@ internal struct FButton: View {
         direction: FButtonDirection = .LTR,
         textAlignment: TextAlignment = .center,
         action: @escaping () -> Void,
-        isPressed: Bool = false) {
+        isPressed: Bool = false)
+    {
         self.title = title
         self.type = type
         self.direction = direction

@@ -117,7 +117,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.specification.name,
             title: "Device Info (DeviceKit, CoreMotion)",
-            destinationView: AnyView(DeviceInfoView()))
+            destinationView: AnyView(DeviceInfoView())),
+
+        DashboardMenuItem(
+            iconName: R.image.audio.name,
+            title: "Audio Analyzer (SoundAnalysis, AVFoundation)",
+            destinationView: AnyView(SoundAnalysisView())),
+
+        DashboardMenuItem(
+            iconName: R.image.object.name,
+            title: "YOLOv3 Object Recognition (CoreML, Vision)",
+            destinationView: AnyView(ObjectRecognitionView()))
     ]
 
     var body: some View {

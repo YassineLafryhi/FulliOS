@@ -53,6 +53,12 @@
 		C2A461322C4C8DB2007DAC00 /* DeinitLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A461312C4C8D9E007DAC00 /* DeinitLogger.swift */; };
 		C2A461362C4CA245007DAC00 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2A461352C4CA245007DAC00 /* APIKeys.plist */; };
 		C2A461382C4CA2EF007DAC00 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A461372C4CA2EF007DAC00 /* APIKeys.swift */; };
+		C2A4613B2C4CA85D007DAC00 /* AudioAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A4613A2C4CA85C007DAC00 /* AudioAnalyzer.swift */; };
+		C2A4613D2C4CA881007DAC00 /* SoundAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A4613C2C4CA87E007DAC00 /* SoundAnalysisView.swift */; };
+		C2A461412C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A461402C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift */; };
+		C2A461422C4CACF0007DAC00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A4613F2C4CACF0007DAC00 /* ViewController.swift */; };
+		C2A461492C4CAFAD007DAC00 /* ObjectRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A461482C4CAFA9007DAC00 /* ObjectRecognitionView.swift */; };
+		C2A461502C4CBA13007DAC00 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A4614F2C4CBA13007DAC00 /* YOLOv3.mlmodel */; };
 		C2AFB5F62C14BE230076F636 /* GoogleTranslationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AFB5F52C14BE230076F636 /* GoogleTranslationManager.swift */; };
 		C2AFB5F92C14BF6E0076F636 /* TextTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AFB5F82C14BF6E0076F636 /* TextTranslator.swift */; };
 		C2AFB5FC2C14CC990076F636 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AFB5FB2C14CC990076F636 /* CameraView.swift */; };
@@ -202,6 +208,12 @@
 		C2A461312C4C8D9E007DAC00 /* DeinitLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitLogger.swift; sourceTree = "<group>"; };
 		C2A461352C4CA245007DAC00 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		C2A461372C4CA2EF007DAC00 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		C2A4613A2C4CA85C007DAC00 /* AudioAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAnalyzer.swift; sourceTree = "<group>"; };
+		C2A4613C2C4CA87E007DAC00 /* SoundAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAnalysisView.swift; sourceTree = "<group>"; };
+		C2A4613F2C4CACF0007DAC00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2A461402C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
+		C2A461482C4CAFA9007DAC00 /* ObjectRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectRecognitionView.swift; sourceTree = "<group>"; };
+		C2A4614F2C4CBA13007DAC00 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
 		C2AFB5F52C14BE230076F636 /* GoogleTranslationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTranslationManager.swift; sourceTree = "<group>"; };
 		C2AFB5F82C14BF6E0076F636 /* TextTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTranslator.swift; sourceTree = "<group>"; };
 		C2AFB5FB2C14CC990076F636 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -465,6 +477,7 @@
 				C2B8205C2C0A497E0049F937 /* Assets */,
 				C2B8205D2C0A49970049F937 /* Fonts */,
 				C2C66F932C0FA2D800C8C4C5 /* Images */,
+				C2A461432C4CAD13007DAC00 /* Models */,
 				C2A461332C4CA21E007DAC00 /* Plists */,
 				C2BC71EC2C42E60C00ACE11C /* CosmonautSuit.reality */,
 				C2B8205E2C0A49BB0049F937 /* Localizable.xcstrings */,
@@ -693,6 +706,33 @@
 			path = Plists;
 			sourceTree = "<group>";
 		};
+		C2A461392C4CA84D007DAC00 /* SoundAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				C2A4613A2C4CA85C007DAC00 /* AudioAnalyzer.swift */,
+				C2A4613C2C4CA87E007DAC00 /* SoundAnalysisView.swift */,
+			);
+			path = SoundAnalysis;
+			sourceTree = "<group>";
+		};
+		C2A4613E2C4CACE2007DAC00 /* ObjectRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				C2A461482C4CAFA9007DAC00 /* ObjectRecognitionView.swift */,
+				C2A4613F2C4CACF0007DAC00 /* ViewController.swift */,
+				C2A461402C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift */,
+			);
+			path = ObjectRecognition;
+			sourceTree = "<group>";
+		};
+		C2A461432C4CAD13007DAC00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2A4614F2C4CBA13007DAC00 /* YOLOv3.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C2AFB5F42C14BE0D0076F636 /* NaturalLanguage */ = {
 			isa = PBXGroup;
 			children = (
@@ -843,6 +883,7 @@
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
 				C261E4AA2C4ADD8300116D8E /* MapKit */,
 				C2A4611F2C4C6983007DAC00 /* News */,
+				C2A4613E2C4CACE2007DAC00 /* ObjectRecognition */,
 				C2C66F862C0F72DF00C8C4C5 /* OCR */,
 				C2E97A7A2C133E860004BE45 /* OpenCV */,
 				C21523982C3084DA0086D103 /* PasswordsManager */,
@@ -851,6 +892,7 @@
 				C2A1D0572C12371000170662 /* QuranPlayer */,
 				C2BC71E52C42E46600ACE11C /* RealityView */,
 				C261E4A22C4AD12800116D8E /* SceneKit */,
+				C2A461392C4CA84D007DAC00 /* SoundAnalysis */,
 				C261E4AD2C4ADF5000116D8E /* SoundRecorder */,
 				C2B820A72C0A57360049F937 /* SplashScreen */,
 				C2993D062C0D21D8005B97D4 /* SwiftData */,
@@ -1529,6 +1571,7 @@
 				C2A461382C4CA2EF007DAC00 /* APIKeys.swift in Sources */,
 				C2B820BA2C0A5FB70049F937 /* Array+Extentions.swift in Sources */,
 				C2B820CD2C0A80490049F937 /* Assets.swift in Sources */,
+				C2A4613B2C4CA85D007DAC00 /* AudioAnalyzer.swift in Sources */,
 				C2AFB6042C14D6210076F636 /* CameraFilterView.swift in Sources */,
 				C2AFB5FE2C14D5AD0076F636 /* CameraPreview.swift in Sources */,
 				C2AFB5FC2C14CC990076F636 /* CameraView.swift in Sources */,
@@ -1570,6 +1613,7 @@
 				C2A461212C4C6983007DAC00 /* NewsRouter.swift in Sources */,
 				C2A461242C4C6983007DAC00 /* NewsView.swift in Sources */,
 				C2A461232C4C6983007DAC00 /* NewsViewController.swift in Sources */,
+				C2A461492C4CAFAD007DAC00 /* ObjectRecognitionView.swift in Sources */,
 				C2C66F8B2C0F733200C8C4C5 /* OCRManager.swift in Sources */,
 				C2C66F882C0F72F100C8C4C5 /* OcrView.swift in Sources */,
 				C2E97A852C133FC80004BE45 /* OpenCVProcessor.mm in Sources */,
@@ -1586,6 +1630,7 @@
 				C2BC71E72C42E47900ACE11C /* RealityKitView.swift in Sources */,
 				C2DC3B432C406AF300222179 /* SceneKitView.swift in Sources */,
 				C2993D072C0D21D8005B97D4 /* SharedModelContainer.swift in Sources */,
+				C2A4613D2C4CA881007DAC00 /* SoundAnalysisView.swift in Sources */,
 				C261E4AF2C4ADF6000116D8E /* SoundRecorderView.swift in Sources */,
 				C2B820A92C0A57550049F937 /* SplashScreenView.swift in Sources */,
 				C2B820D02C0A80490049F937 /* Strings.swift in Sources */,
@@ -1594,7 +1639,10 @@
 				C261E4A42C4AD15500116D8E /* TemperatureViewModel.swift in Sources */,
 				C2AFB5F92C14BF6E0076F636 /* TextTranslator.swift in Sources */,
 				C261E4A12C4AD0FD00116D8E /* UIColor+Extensions.swift in Sources */,
+				C2A461422C4CACF0007DAC00 /* ViewController.swift in Sources */,
+				C2A461412C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift in Sources */,
 				C2DC3B3C2C4053B500222179 /* WebSocketServer.swift in Sources */,
+				C2A461502C4CBA13007DAC00 /* YOLOv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
