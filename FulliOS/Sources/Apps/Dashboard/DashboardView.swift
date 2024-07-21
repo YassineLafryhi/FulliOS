@@ -97,7 +97,27 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.microphone.name,
             title: "Sound Recorder (AVFoundation)",
-            destinationView: AnyView(SoundRecorderView()))
+            destinationView: AnyView(SoundRecorderView())),
+
+        DashboardMenuItem(
+            iconName: R.image.http.name,
+            title: "HTTP Request Builder (Alamofire, MVVM)",
+            destinationView: AnyView(HttpRequestBuilderView())),
+
+        DashboardMenuItem(
+            iconName: R.image.news.name,
+            title: "News (UIKit, Alamofire, VIPER)",
+            destinationView: AnyView(NewsView())),
+
+        DashboardMenuItem(
+            iconName: R.image.handwriting.name,
+            title: "Handwriting Recognition (PencilKit, Vision)",
+            destinationView: AnyView(HandwritingRecognitionView())),
+
+        DashboardMenuItem(
+            iconName: R.image.specification.name,
+            title: "Device Info (DeviceKit, CoreMotion)",
+            destinationView: AnyView(DeviceInfoView()))
     ]
 
     var body: some View {

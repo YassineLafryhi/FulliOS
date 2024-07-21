@@ -12,6 +12,7 @@ internal enum Constants {
     enum Shared {
         static let defaultDateAndTimeFormat = "dd-MM-yyyy HH:mm:ss"
         static let defaultDateAndTimeFormatForNames = "ddMMyyyyHHmmss"
+        static let defaultDateFormat = "dd-MM-yyyy"
     }
 
     enum AppColors {
@@ -42,5 +43,10 @@ internal enum Constants {
     enum TemperatureChartApp {
         // TODO: Update this after launching Vapor Server
         static let wsUrl = "ws://192.168.1.239:8080/temperature"
+    }
+
+    enum NewsApp {
+        static let newsApi = "https://newsapi.org/v2/everything"
+        static let reversedDateFormat = "yyyy-MM-dd"
     }
 }

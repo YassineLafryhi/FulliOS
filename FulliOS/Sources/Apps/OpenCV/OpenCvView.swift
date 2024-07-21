@@ -9,6 +9,8 @@ import SwiftUI
 import UIKit
 
 internal struct OpenCvView: View {
+    private var deinitLogger = DeinitLogger(identifier: "OpenCvView")
+
     @State private var displayedImage: UIImage? = R.image.personJpg()
     @State private var originalImage: UIImage? = R.image.personJpg()
 

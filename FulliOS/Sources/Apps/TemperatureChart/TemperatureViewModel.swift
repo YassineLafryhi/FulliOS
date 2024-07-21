@@ -19,8 +19,8 @@ internal class TemperatureViewModel: ObservableObject {
     private var disposeBag = DisposeBag()
     private var webSocketTask: URLSessionWebSocketTask?
 
-    func startObservingTemperatures() {
-        guard let url = URL(string: Constants.TemperatureChartApp.wsUrl) else { return }
+    func startObservingTemperatures(url: String) {
+        guard let url = URL(string: url) else { return }
         let request = URLRequest(url: url)
         webSocketTask = URLSession.shared.webSocketTask(with: request)
 

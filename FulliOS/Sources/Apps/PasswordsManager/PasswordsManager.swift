@@ -82,7 +82,8 @@ internal class RealmManager: ObservableObject {
 }
 
 internal class AccountObject: Object {
-    @Persisted(primaryKey: true) var id: Int
+    @Persisted(primaryKey: true)
+    var id: Int
     @Persisted var name: String
     @Persisted var password: Data
 }

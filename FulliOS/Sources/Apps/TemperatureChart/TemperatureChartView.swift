@@ -10,9 +10,19 @@ import SwiftUI
 
 internal struct TemperatureChartView: View {
     @StateObject private var viewModel = TemperatureViewModel()
+    @State private var wsUrl = Constants.TemperatureChartApp.wsUrl
 
     var body: some View {
         VStack {
+            TextField("WebSocket URL", text: $wsUrl)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            Button("Start Connection") {
+                viewModel.startObservingTemperatures(url: wsUrl)
+            }
+            .padding()
+
             Chart(viewModel.temperatures) { data in
                 LineMark(
                     x: .value("Time", data.time),
@@ -20,9 +30,6 @@ internal struct TemperatureChartView: View {
             }
             .frame(height: 300)
             .padding()
-        }
-        .onAppear {
-            viewModel.startObservingTemperatures()
         }
     }
 }

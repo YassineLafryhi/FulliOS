@@ -27,6 +27,8 @@ target 'FulliOS' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Toaster'
+  pod 'DeviceKit'
+  pod 'ExytePopupView'
 
   target 'FulliOSTests' do
     inherit! :search_paths

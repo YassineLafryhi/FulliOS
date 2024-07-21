@@ -7,8 +7,11 @@
 
 import SwiftData
 import SwiftUI
+import Toaster
 
 internal struct SwiftDataContactsView: View {
+    private var deinitLogger = DeinitLogger(identifier: "SwiftDataContactsView")
+
     @Environment(\.modelContext)
     private var modelContext
     @Query
