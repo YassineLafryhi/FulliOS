@@ -33,8 +33,7 @@ internal struct ImagePicker: UIViewControllerRepresentable {
 
         func imagePickerController(
             _: UIImagePickerController,
-            didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any])
-        {
+            didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
             if let uiImage = info[.originalImage] as? UIImage {
                 parent.image = uiImage
             }

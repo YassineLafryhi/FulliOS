@@ -40,8 +40,7 @@ internal class Logger {
         level: LogLevel = .debug,
         fileName: String = #file,
         line: Int = #line,
-        functionName: String = #function)
-    {
+        functionName: String = #function) {
         let timestamp = dateFormatter.string(from: Date())
         let logMessage =
             "\(timestamp) \(level.rawValue) [\(sourceFileName(filePath: fileName)):\(line) \(functionName)] \(message)\n"

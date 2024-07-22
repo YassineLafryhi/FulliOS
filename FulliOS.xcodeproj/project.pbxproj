@@ -30,6 +30,17 @@
 		C261E4A92C4AD73800116D8E /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4A82C4AD73800116D8E /* QRCodeScannerView.swift */; };
 		C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4AB2C4ADD9000116D8E /* MapsView.swift */; };
 		C261E4AF2C4ADF6000116D8E /* SoundRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */; };
+		C28F16E92C4EF87500DF9C99 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E32C4EF87500DF9C99 /* NFCReader.swift */; };
+		C28F16EA2C4EF87500DF9C99 /* NFCReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */; };
+		C28F16EB2C4EF87500DF9C99 /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */; };
+		C28F16EC2C4EF87500DF9C99 /* UnityGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E72C4EF87500DF9C99 /* UnityGameView.swift */; };
+		C28F1E8D2C4EF89D00DF9C99 /* BuildScript.cs in Resources */ = {isa = PBXBuildFile; fileRef = C28F16ED2C4EF89D00DF9C99 /* BuildScript.cs */; };
+		C28F1E902C4EF89D00DF9C99 /* main.unity in Resources */ = {isa = PBXBuildFile; fileRef = C28F16F12C4EF89D00DF9C99 /* main.unity */; };
+		C28F24BD2C4EF89E00DF9C99 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C28F1E6D2C4EF89D00DF9C99 /* manifest.json */; };
+		C28F24BE2C4EF89E00DF9C99 /* packages-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = C28F1E6E2C4EF89D00DF9C99 /* packages-lock.json */; };
+		C28F24D72C4EF89E00DF9C99 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C28F1E8B2C4EF89D00DF9C99 /* .gitignore */; };
+		C28F24E42C4EFFD800DF9C99 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */; };
+		C28F24E52C4EFFE700DF9C99 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C28F24E02C4EFFB500DF9C99 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -134,6 +145,7 @@
 				C2E97A782C133B5C0004BE45 /* App.xcframework in Embed Frameworks */,
 				C2E97A792C133B5C0004BE45 /* Flutter.xcframework in Embed Frameworks */,
 				C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */,
+				C28F24E52C4EFFE700DF9C99 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +194,17 @@
 		C261E4A82C4AD73800116D8E /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
 		C261E4AB2C4ADD9000116D8E /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 		C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundRecorderView.swift; sourceTree = "<group>"; };
+		C28F16E32C4EF87500DF9C99 /* NFCReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
+		C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReaderView.swift; sourceTree = "<group>"; };
+		C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
+		C28F16E72C4EF87500DF9C99 /* UnityGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityGameView.swift; sourceTree = "<group>"; };
+		C28F16ED2C4EF89D00DF9C99 /* BuildScript.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuildScript.cs; sourceTree = "<group>"; };
+		C28F16F12C4EF89D00DF9C99 /* main.unity */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.unity; sourceTree = "<group>"; };
+		C28F1E6D2C4EF89D00DF9C99 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		C28F1E6E2C4EF89D00DF9C99 /* packages-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "packages-lock.json"; sourceTree = "<group>"; };
+		C28F1E8B2C4EF89D00DF9C99 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C28F24E02C4EFFB500DF9C99 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityFramework.framework; path = Frameworks/UnityFramework.framework; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -289,6 +312,7 @@
 				C222092E2C124DFC00780A7B /* Flutter.xcframework in Frameworks */,
 				5AD97A28CB9DEAEB3CB8D302 /* Pods_FulliOS.framework in Frameworks */,
 				C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */,
+				C28F24E42C4EFFD800DF9C99 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +437,7 @@
 		C2615FDA2C0A36F800EBD073 = {
 			isa = PBXGroup;
 			children = (
+				C28F1E8C2C4EF89D00DF9C99 /* UnityGame */,
 				C261E49F2C4ACB3E00116D8E /* VaporServer */,
 				C22209222C1249FD00780A7B /* FlutterModule */,
 				C2993CF92C0D1444005B97D4 /* KotlinMultiplatformModule */,
@@ -530,6 +555,60 @@
 				C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */,
 			);
 			path = SoundRecorder;
+			sourceTree = "<group>";
+		};
+		C28F16E52C4EF87500DF9C99 /* NFCReader */ = {
+			isa = PBXGroup;
+			children = (
+				C28F16E32C4EF87500DF9C99 /* NFCReader.swift */,
+				C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */,
+			);
+			path = NFCReader;
+			sourceTree = "<group>";
+		};
+		C28F16E82C4EF87500DF9C99 /* UnityGame */ = {
+			isa = PBXGroup;
+			children = (
+				C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */,
+				C28F16E72C4EF87500DF9C99 /* UnityGameView.swift */,
+			);
+			path = UnityGame;
+			sourceTree = "<group>";
+		};
+		C28F16EF2C4EF89D00DF9C99 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				C28F16ED2C4EF89D00DF9C99 /* BuildScript.cs */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		C28F16F32C4EF89D00DF9C99 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C28F16EF2C4EF89D00DF9C99 /* Editor */,
+				C28F16F12C4EF89D00DF9C99 /* main.unity */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C28F1E6F2C4EF89D00DF9C99 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C28F1E6D2C4EF89D00DF9C99 /* manifest.json */,
+				C28F1E6E2C4EF89D00DF9C99 /* packages-lock.json */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		C28F1E8C2C4EF89D00DF9C99 /* UnityGame */ = {
+			isa = PBXGroup;
+			children = (
+				C28F16F32C4EF89D00DF9C99 /* Assets */,
+				C28F1E6F2C4EF89D00DF9C99 /* Packages */,
+				C28F1E8B2C4EF89D00DF9C99 /* .gitignore */,
+			);
+			path = UnityGame;
 			sourceTree = "<group>";
 		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
@@ -883,6 +962,7 @@
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
 				C261E4AA2C4ADD8300116D8E /* MapKit */,
 				C2A4611F2C4C6983007DAC00 /* News */,
+				C28F16E52C4EF87500DF9C99 /* NFCReader */,
 				C2A4613E2C4CACE2007DAC00 /* ObjectRecognition */,
 				C2C66F862C0F72DF00C8C4C5 /* OCR */,
 				C2E97A7A2C133E860004BE45 /* OpenCV */,
@@ -898,6 +978,7 @@
 				C2993D062C0D21D8005B97D4 /* SwiftData */,
 				C2DC3B3D2C40548600222179 /* TemperatureChart */,
 				C2AFB5F72C14BF620076F636 /* TextTranslator */,
+				C28F16E82C4EF87500DF9C99 /* UnityGame */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -1098,6 +1179,8 @@
 				F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */,
 				212FE58FC3184FCB5D7DA91B /* Pods_FulliOSTests.framework */,
 				C2993CFF2C0D1991005B97D4 /* shared.framework */,
+				C28F24E02C4EFFB500DF9C99 /* UnityFramework.framework */,
+				C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1224,14 +1307,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C28F24D72C4EF89E00DF9C99 /* .gitignore in Resources */,
 				C2A461362C4CA245007DAC00 /* APIKeys.plist in Resources */,
 				C2615FED2C0A36F900EBD073 /* Assets.xcassets in Resources */,
 				C2B820612C0A49E60049F937 /* balsamiq.ttf in Resources */,
+				C28F1E8D2C4EF89D00DF9C99 /* BuildScript.cs in Resources */,
 				C2B820B32C0A5B5D0049F937 /* charlatan.otf in Resources */,
 				C2BC71EF2C42E60D00ACE11C /* CosmonautSuit.reality in Resources */,
 				C2B820B22C0A5B5D0049F937 /* din.ttf in Resources */,
 				C2B8205F2C0A49BB0049F937 /* Localizable.xcstrings in Resources */,
 				C2BC71EE2C42E60D00ACE11C /* LunarRover.reality in Resources */,
+				C28F1E902C4EF89D00DF9C99 /* main.unity in Resources */,
+				C28F24BD2C4EF89E00DF9C99 /* manifest.json in Resources */,
+				C28F24BE2C4EF89E00DF9C99 /* packages-lock.json in Resources */,
 				C2C66F952C0FA30A00C8C4C5 /* person.jpg in Resources */,
 				C2BC71ED2C42E60D00ACE11C /* RobotWalk.usdz in Resources */,
 			);
@@ -1613,6 +1701,8 @@
 				C2A461212C4C6983007DAC00 /* NewsRouter.swift in Sources */,
 				C2A461242C4C6983007DAC00 /* NewsView.swift in Sources */,
 				C2A461232C4C6983007DAC00 /* NewsViewController.swift in Sources */,
+				C28F16E92C4EF87500DF9C99 /* NFCReader.swift in Sources */,
+				C28F16EA2C4EF87500DF9C99 /* NFCReaderView.swift in Sources */,
 				C2A461492C4CAFAD007DAC00 /* ObjectRecognitionView.swift in Sources */,
 				C2C66F8B2C0F733200C8C4C5 /* OCRManager.swift in Sources */,
 				C2C66F882C0F72F100C8C4C5 /* OcrView.swift in Sources */,
@@ -1639,6 +1729,8 @@
 				C261E4A42C4AD15500116D8E /* TemperatureViewModel.swift in Sources */,
 				C2AFB5F92C14BF6E0076F636 /* TextTranslator.swift in Sources */,
 				C261E4A12C4AD0FD00116D8E /* UIColor+Extensions.swift in Sources */,
+				C28F16EB2C4EF87500DF9C99 /* UnityBridge.swift in Sources */,
+				C28F16EC2C4EF87500DF9C99 /* UnityGameView.swift in Sources */,
 				C2A461422C4CACF0007DAC00 /* ViewController.swift in Sources */,
 				C2A461412C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift in Sources */,
 				C2DC3B3C2C4053B500222179 /* WebSocketServer.swift in Sources */,
@@ -1812,6 +1904,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FulliOS/Sources/Common/PrefixHeader/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1850,6 +1943,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FulliOS/Sources/Common/PrefixHeader/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;

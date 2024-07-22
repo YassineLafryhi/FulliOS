@@ -11,7 +11,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Download YOLOv3.mlmodel model"
-               scriptText = "#!/bin/bash&#10;&#10;MODEL_URL=&quot;https://ml-assets.apple.com/coreml/models/Image/ObjectDetection/YOLOv3/YOLOv3.mlmodel&quot;&#10;PROJECT_DIR=$(dirname &quot;$WORKSPACE_PATH&quot;)&#10;DESTINATION_PATH=&quot;${PROJECT_DIR}/FulliOS/Resources/Models/YOLOv3.mlmodel&quot;&#10;&#10;if [ ! -f &quot;$DESTINATION_PATH&quot; ]; then&#10;    echo &quot;warning: YOLOv3.mlmodel does not exist. Downloading...&quot;&#10;    &#10;    if curl -L &quot;$MODEL_URL&quot; -o &quot;$DESTINATION_PATH&quot;; then&#10;        echo &quot;info: Download of YOLOv3.mlmodel completed successfully.&quot;&#10;    else&#10;        echo &quot;error: YOLOv3.mlmodel download failed.&quot;&#10;        exit 1&#10;    fi&#10;else&#10;    echo &quot;info: YOLOv3.mlmodel already exists. Skipping download.&quot;&#10;fi&#10;">
+               scriptText = "#!/bin/bash&#10;&#10;MODEL_URL=&quot;https://ml-assets.apple.com/coreml/models/Image/ObjectDetection/YOLOv3/YOLOv3.mlmodel&quot;&#10;PROJECT_DIR=$(dirname &quot;$WORKSPACE_PATH&quot;)&#10;DESTINATION_PATH=&quot;${PROJECT_DIR}/FulliOS/Resources/Models/YOLOv3.mlmodel&quot;&#10;mkdir -p &quot;${PROJECT_DIR}/FulliOS/Resources/Models&quot;&#10;&#10;if [ ! -f &quot;$DESTINATION_PATH&quot; ]; then&#10;    echo &quot;warning: YOLOv3.mlmodel does not exist. Downloading...&quot;&#10;    &#10;    if curl -L &quot;$MODEL_URL&quot; -o &quot;$DESTINATION_PATH&quot;; then&#10;        echo &quot;info: Download of YOLOv3.mlmodel completed successfully.&quot;&#10;    else&#10;        echo &quot;error: YOLOv3.mlmodel download failed.&quot;&#10;        exit 1&#10;    fi&#10;else&#10;    echo &quot;info: YOLOv3.mlmodel already exists. Skipping download.&quot;&#10;fi&#10;">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
@@ -67,6 +67,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      disablePerformanceAntipatternChecker = "YES"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"

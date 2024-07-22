@@ -127,7 +127,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.object.name,
             title: "YOLOv3 Object Recognition (CoreML, Vision)",
-            destinationView: AnyView(ObjectRecognitionView()))
+            destinationView: AnyView(ObjectRecognitionView())),
+
+        DashboardMenuItem(
+            iconName: R.image.nfc.name,
+            title: "NFC Reader (CoreNFC)",
+            destinationView: AnyView(NFCReaderView())),
+
+        DashboardMenuItem(
+            iconName: R.image.unity.name,
+            title: "Unity Game (Unity3D)",
+            destinationView: AnyView(UnityGameView()))
     ]
 
     var body: some View {
