@@ -137,7 +137,22 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.unity.name,
             title: "Unity Game (Unity3D)",
-            destinationView: AnyView(UnityGameView()))
+            destinationView: AnyView(UnityGameView())),
+
+        DashboardMenuItem(
+            iconName: R.image.speech.name,
+            title: "Speech Recognition (Speech)",
+            destinationView: AnyView(SpeechRecognitionView())),
+
+        DashboardMenuItem(
+            iconName: R.image.notifications.name,
+            title: "Local Notifications (UserNotifications)",
+            destinationView: AnyView(LocalNotificationsView())),
+
+        DashboardMenuItem(
+            iconName: R.image.files.name,
+            title: "File Manager (SwiftUI)",
+            destinationView: AnyView(FileManagerView()))
     ]
 
     var body: some View {

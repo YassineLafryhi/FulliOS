@@ -8,53 +8,64 @@
 import Foundation
 import UnityFramework
 
-internal class UnityBridge: NSObject, UnityFrameworkListener {
+internal class UnityBridge: UIResponder, UIApplicationDelegate {
     static let shared = UnityBridge()
 
-    private let dataBundleId = "com.unity3d.framework"
-    public var unityFramework: UnityFramework?
+    var unityFramework: UnityFramework?
+    var hostMainWindow: UIWindow?
 
-    private override init() {}
+    func initializeUnity() {
+        hostMainWindow = UIApplication.shared.windows.first
+    }
 
-    func show(in viewController: UIViewController) {
-        if unityFramework == nil {
-            loadUnityFramework()
+    func loadUnityFramework() -> UnityFramework? {
+        var bundlePath: String? = Bundle.main.bundlePath
+        bundlePath?.append("/Frameworks/UnityFramework.framework")
+
+        guard let path = bundlePath, let bundle = Bundle(path: path) else {
+            return nil
         }
 
-        if let unityFramework = unityFramework {
-            showUnityWindow(in: viewController)
+        if !bundle.isLoaded {
+            bundle.load()
+        }
+
+        guard let principalClass = bundle.principalClass as? UnityFramework.Type else {
+            return nil
+        }
+
+        let unityFramework = principalClass.getInstance()
+
+        if unityFramework?.appController() == nil {
+            var executeHeader = _mh_execute_header
+            unityFramework?.setExecuteHeader(&executeHeader)
+        }
+
+        return unityFramework
+    }
+
+    func showUnity() {
+        if let unityFramework = loadUnityFramework() {
+            self.unityFramework = unityFramework
+            unityFramework.setDataBundleId("com.unity3d.framework")
+            unityFramework.register(self)
             unityFramework.runEmbedded(withArgc: CommandLine.argc, argv: CommandLine.unsafeArgv, appLaunchOpts: nil)
+
+            if let rootVC = hostMainWindow?.rootViewController {
+                if let unityVC = unityFramework.appController()?.rootViewController {
+                    rootVC.present(unityVC, animated: true, completion: nil)
+                }
+            }
         }
     }
+}
 
-    private func loadUnityFramework() {
-        guard let bundlePath = Bundle.main.path(forResource: "UnityFramework", ofType: "framework") else {
-            print("UnityFramework.framework not found")
-            return
-        }
-
-        let bundle = Bundle(path: bundlePath)
-        if bundle?.isLoaded == false {
-            bundle?.load()
-        }
-
-        guard let unityFramework = bundle?.principalClass?.getInstance() as? UnityFramework else {
-            print("Failed to get UnityFramework instance")
-            return
-        }
-
-        self.unityFramework = unityFramework
-        unityFramework.setDataBundleId(dataBundleId)
-        unityFramework.register(self)
+extension UnityBridge: UnityFrameworkListener {
+    func unityDidUnload(_: Notification) {
+        // TODO: Handle Unity did unload
     }
 
-    private func showUnityWindow(in viewController: UIViewController) {
-        guard let unityFramework = unityFramework else { return }
-
-        let unityView = unityFramework.appController()?.rootView
-        unityView?.frame = viewController.view.bounds
-        unityView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-
-        viewController.view.addSubview(unityView!)
+    func unityDidQuit(_: Notification) {
+        // TODO: Handle Unity did quit
     }
 }

@@ -34,13 +34,11 @@
 		C28F16EA2C4EF87500DF9C99 /* NFCReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */; };
 		C28F16EB2C4EF87500DF9C99 /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */; };
 		C28F16EC2C4EF87500DF9C99 /* UnityGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E72C4EF87500DF9C99 /* UnityGameView.swift */; };
-		C28F1E8D2C4EF89D00DF9C99 /* BuildScript.cs in Resources */ = {isa = PBXBuildFile; fileRef = C28F16ED2C4EF89D00DF9C99 /* BuildScript.cs */; };
-		C28F1E902C4EF89D00DF9C99 /* main.unity in Resources */ = {isa = PBXBuildFile; fileRef = C28F16F12C4EF89D00DF9C99 /* main.unity */; };
-		C28F24BD2C4EF89E00DF9C99 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C28F1E6D2C4EF89D00DF9C99 /* manifest.json */; };
-		C28F24BE2C4EF89E00DF9C99 /* packages-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = C28F1E6E2C4EF89D00DF9C99 /* packages-lock.json */; };
-		C28F24D72C4EF89E00DF9C99 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C28F1E8B2C4EF89D00DF9C99 /* .gitignore */; };
 		C28F24E42C4EFFD800DF9C99 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */; };
-		C28F24E52C4EFFE700DF9C99 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C28F24E02C4EFFB500DF9C99 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C28F24E72C4F06B600DF9C99 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C28F24F72C501EC900DF9C99 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F24F62C501EC900DF9C99 /* SpeechRecognitionView.swift */; };
+		C28F24FA2C5020FD00DF9C99 /* LocalNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F24F92C5020FD00DF9C99 /* LocalNotificationsView.swift */; };
+		C28F24FD2C5022C800DF9C99 /* FileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F24FC2C5022C800DF9C99 /* FileManagerView.swift */; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -145,7 +143,7 @@
 				C2E97A782C133B5C0004BE45 /* App.xcframework in Embed Frameworks */,
 				C2E97A792C133B5C0004BE45 /* Flutter.xcframework in Embed Frameworks */,
 				C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */,
-				C28F24E52C4EFFE700DF9C99 /* UnityFramework.framework in Embed Frameworks */,
+				C28F24E72C4F06B600DF9C99 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,13 +196,16 @@
 		C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReaderView.swift; sourceTree = "<group>"; };
 		C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
 		C28F16E72C4EF87500DF9C99 /* UnityGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityGameView.swift; sourceTree = "<group>"; };
-		C28F16ED2C4EF89D00DF9C99 /* BuildScript.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuildScript.cs; sourceTree = "<group>"; };
-		C28F16F12C4EF89D00DF9C99 /* main.unity */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.unity; sourceTree = "<group>"; };
 		C28F1E6D2C4EF89D00DF9C99 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		C28F1E6E2C4EF89D00DF9C99 /* packages-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "packages-lock.json"; sourceTree = "<group>"; };
 		C28F1E8B2C4EF89D00DF9C99 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		C28F24E02C4EFFB500DF9C99 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityFramework.framework; path = Frameworks/UnityFramework.framework; sourceTree = "<group>"; };
+		C28F24E82C501AF000DF9C99 /* BuildScript.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = BuildScript.cs; sourceTree = "<group>"; };
+		C28F24EB2C501AF000DF9C99 /* main.unity */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.unity; sourceTree = "<group>"; };
+		C28F24EE2C501AF000DF9C99 /* Main.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = Main.cs; sourceTree = "<group>"; };
+		C28F24F62C501EC900DF9C99 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
+		C28F24F92C5020FD00DF9C99 /* LocalNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsView.swift; sourceTree = "<group>"; };
+		C28F24FC2C5022C800DF9C99 /* FileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerView.swift; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -575,23 +576,6 @@
 			path = UnityGame;
 			sourceTree = "<group>";
 		};
-		C28F16EF2C4EF89D00DF9C99 /* Editor */ = {
-			isa = PBXGroup;
-			children = (
-				C28F16ED2C4EF89D00DF9C99 /* BuildScript.cs */,
-			);
-			path = Editor;
-			sourceTree = "<group>";
-		};
-		C28F16F32C4EF89D00DF9C99 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				C28F16EF2C4EF89D00DF9C99 /* Editor */,
-				C28F16F12C4EF89D00DF9C99 /* main.unity */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		C28F1E6F2C4EF89D00DF9C99 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,11 +588,69 @@
 		C28F1E8C2C4EF89D00DF9C99 /* UnityGame */ = {
 			isa = PBXGroup;
 			children = (
-				C28F16F32C4EF89D00DF9C99 /* Assets */,
+				C28F24F42C501AF000DF9C99 /* Assets */,
 				C28F1E6F2C4EF89D00DF9C99 /* Packages */,
 				C28F1E8B2C4EF89D00DF9C99 /* .gitignore */,
 			);
 			path = UnityGame;
+			sourceTree = "<group>";
+		};
+		C28F24EA2C501AF000DF9C99 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				C28F24E82C501AF000DF9C99 /* BuildScript.cs */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		C28F24ED2C501AF000DF9C99 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C28F24EB2C501AF000DF9C99 /* main.unity */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C28F24F02C501AF000DF9C99 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C28F24EE2C501AF000DF9C99 /* Main.cs */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		C28F24F42C501AF000DF9C99 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C28F24EA2C501AF000DF9C99 /* Editor */,
+				C28F24ED2C501AF000DF9C99 /* Scenes */,
+				C28F24F02C501AF000DF9C99 /* Scripts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C28F24F52C501EB900DF9C99 /* SpeechRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				C28F24F62C501EC900DF9C99 /* SpeechRecognitionView.swift */,
+			);
+			path = SpeechRecognition;
+			sourceTree = "<group>";
+		};
+		C28F24F82C5020E900DF9C99 /* LocalNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				C28F24F92C5020FD00DF9C99 /* LocalNotificationsView.swift */,
+			);
+			path = LocalNotifications;
+			sourceTree = "<group>";
+		};
+		C28F24FB2C5022BC00DF9C99 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C28F24FC2C5022C800DF9C99 /* FileManagerView.swift */,
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
@@ -956,10 +998,12 @@
 				C2A4612E2C4C7247007DAC00 /* DeviceInfo */,
 				C2390A032C404E2900F98116 /* Drawing */,
 				C2C66F8E2C0FA26900C8C4C5 /* FaceDetector */,
+				C28F24FB2C5022BC00DF9C99 /* FileManager */,
 				C22209282C124A7A00780A7B /* Flutter */,
 				C2A4612B2C4C7078007DAC00 /* HandwritingRecognition */,
 				C2A461172C4C6983007DAC00 /* HttpRequestBuilder */,
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
+				C28F24F82C5020E900DF9C99 /* LocalNotifications */,
 				C261E4AA2C4ADD8300116D8E /* MapKit */,
 				C2A4611F2C4C6983007DAC00 /* News */,
 				C28F16E52C4EF87500DF9C99 /* NFCReader */,
@@ -974,6 +1018,7 @@
 				C261E4A22C4AD12800116D8E /* SceneKit */,
 				C2A461392C4CA84D007DAC00 /* SoundAnalysis */,
 				C261E4AD2C4ADF5000116D8E /* SoundRecorder */,
+				C28F24F52C501EB900DF9C99 /* SpeechRecognition */,
 				C2B820A72C0A57360049F937 /* SplashScreen */,
 				C2993D062C0D21D8005B97D4 /* SwiftData */,
 				C2DC3B3D2C40548600222179 /* TemperatureChart */,
@@ -1179,7 +1224,6 @@
 				F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */,
 				212FE58FC3184FCB5D7DA91B /* Pods_FulliOSTests.framework */,
 				C2993CFF2C0D1991005B97D4 /* shared.framework */,
-				C28F24E02C4EFFB500DF9C99 /* UnityFramework.framework */,
 				C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */,
 			);
 			name = Frameworks;
@@ -1307,19 +1351,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28F24D72C4EF89E00DF9C99 /* .gitignore in Resources */,
 				C2A461362C4CA245007DAC00 /* APIKeys.plist in Resources */,
 				C2615FED2C0A36F900EBD073 /* Assets.xcassets in Resources */,
 				C2B820612C0A49E60049F937 /* balsamiq.ttf in Resources */,
-				C28F1E8D2C4EF89D00DF9C99 /* BuildScript.cs in Resources */,
 				C2B820B32C0A5B5D0049F937 /* charlatan.otf in Resources */,
 				C2BC71EF2C42E60D00ACE11C /* CosmonautSuit.reality in Resources */,
 				C2B820B22C0A5B5D0049F937 /* din.ttf in Resources */,
 				C2B8205F2C0A49BB0049F937 /* Localizable.xcstrings in Resources */,
 				C2BC71EE2C42E60D00ACE11C /* LunarRover.reality in Resources */,
-				C28F1E902C4EF89D00DF9C99 /* main.unity in Resources */,
-				C28F24BD2C4EF89E00DF9C99 /* manifest.json in Resources */,
-				C28F24BE2C4EF89E00DF9C99 /* packages-lock.json in Resources */,
 				C2C66F952C0FA30A00C8C4C5 /* person.jpg in Resources */,
 				C2BC71ED2C42E60D00ACE11C /* RobotWalk.usdz in Resources */,
 			);
@@ -1682,6 +1721,7 @@
 				C2C66F972C0FA3F900C8C4C5 /* FaceOverlayView.swift in Sources */,
 				C2B109492C163413002622C3 /* FakeryHelper.swift in Sources */,
 				C2329C2F2C13950F00BC632C /* FButton.swift in Sources */,
+				C28F24FD2C5022C800DF9C99 /* FileManagerView.swift in Sources */,
 				C222092A2C124A8B00780A7B /* FlutterView.swift in Sources */,
 				C2B820832C0A55860049F937 /* FMenu.swift in Sources */,
 				C2B820CE2C0A80490049F937 /* Fonts.swift in Sources */,
@@ -1693,6 +1733,7 @@
 				C2A461272C4C6983007DAC00 /* HttpRequestViewModel.swift in Sources */,
 				C2C66F8D2C0F747400C8C4C5 /* ImagePicker.swift in Sources */,
 				C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */,
+				C28F24FA2C5020FD00DF9C99 /* LocalNotificationsView.swift in Sources */,
 				C2B820AF2C0A5A1B0049F937 /* Logger.swift in Sources */,
 				C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */,
 				C2A1D05B2C12376000170662 /* MP3Streamer.swift in Sources */,
@@ -1722,6 +1763,7 @@
 				C2993D072C0D21D8005B97D4 /* SharedModelContainer.swift in Sources */,
 				C2A4613D2C4CA881007DAC00 /* SoundAnalysisView.swift in Sources */,
 				C261E4AF2C4ADF6000116D8E /* SoundRecorderView.swift in Sources */,
+				C28F24F72C501EC900DF9C99 /* SpeechRecognitionView.swift in Sources */,
 				C2B820A92C0A57550049F937 /* SplashScreenView.swift in Sources */,
 				C2B820D02C0A80490049F937 /* Strings.swift in Sources */,
 				C2993D082C0D21D8005B97D4 /* SwiftDataContactsView.swift in Sources */,

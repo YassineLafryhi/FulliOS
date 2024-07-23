@@ -24,5 +24,7 @@
 	<string>We need your location to show it on the map</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>We need access to your microphone to record audio</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+    <string>This app uses speech recognition to convert your speech to text.</string>
 </dict>
 </plist>
