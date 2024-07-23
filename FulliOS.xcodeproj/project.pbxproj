@@ -47,6 +47,10 @@
 		C28F25152C50291400DF9C99 /* QuoteWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C28F25022C50291300DF9C99 /* QuoteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C28F251C2C50298C00DF9C99 /* WidgetKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F251B2C50298C00DF9C99 /* WidgetKitView.swift */; };
 		C28F251F2C502AED00DF9C99 /* HapticFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F251E2C502AEC00DF9C99 /* HapticFeedbackView.swift */; };
+		C28F25222C502F0E00DF9C99 /* DevQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F25212C502F0E00DF9C99 /* DevQuizView.swift */; };
+		C28F25242C502F2E00DF9C99 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F25232C502F2E00DF9C99 /* QuizView.swift */; };
+		C28F25272C50316100DF9C99 /* ManageEmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F25262C50316100DF9C99 /* ManageEmployeesView.swift */; };
+		C28F25292C50338900DF9C99 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F25282C50338900DF9C99 /* CoreDataStack.swift */; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -241,6 +245,10 @@
 		C28F25122C50291400DF9C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28F251B2C50298C00DF9C99 /* WidgetKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetKitView.swift; sourceTree = "<group>"; };
 		C28F251E2C502AEC00DF9C99 /* HapticFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackView.swift; sourceTree = "<group>"; };
+		C28F25212C502F0E00DF9C99 /* DevQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevQuizView.swift; sourceTree = "<group>"; };
+		C28F25232C502F2E00DF9C99 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		C28F25262C50316100DF9C99 /* ManageEmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageEmployeesView.swift; sourceTree = "<group>"; };
+		C28F25282C50338900DF9C99 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -726,6 +734,24 @@
 			path = HapticFeedback;
 			sourceTree = "<group>";
 		};
+		C28F25202C502EF200DF9C99 /* DevQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				C28F25212C502F0E00DF9C99 /* DevQuizView.swift */,
+				C28F25232C502F2E00DF9C99 /* QuizView.swift */,
+			);
+			path = DevQuiz;
+			sourceTree = "<group>";
+		};
+		C28F25252C50314E00DF9C99 /* ManageEmployees */ = {
+			isa = PBXGroup;
+			children = (
+				C28F25282C50338900DF9C99 /* CoreDataStack.swift */,
+				C28F25262C50316100DF9C99 /* ManageEmployeesView.swift */,
+			);
+			path = ManageEmployees;
+			sourceTree = "<group>";
+		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
 			isa = PBXGroup;
 			children = (
@@ -1069,6 +1095,7 @@
 				C2AFB5FA2C14CC580076F636 /* Camera */,
 				C2B820AA2C0A581B0049F937 /* Dashboard */,
 				C2A4612E2C4C7247007DAC00 /* DeviceInfo */,
+				C28F25202C502EF200DF9C99 /* DevQuiz */,
 				C2390A032C404E2900F98116 /* Drawing */,
 				C2C66F8E2C0FA26900C8C4C5 /* FaceDetector */,
 				C28F24FB2C5022BC00DF9C99 /* FileManager */,
@@ -1078,6 +1105,7 @@
 				C2A461172C4C6983007DAC00 /* HttpRequestBuilder */,
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
 				C28F24F82C5020E900DF9C99 /* LocalNotifications */,
+				C28F25252C50314E00DF9C99 /* ManageEmployees */,
 				C261E4AA2C4ADD8300116D8E /* MapKit */,
 				C2A4611F2C4C6983007DAC00 /* News */,
 				C28F16E52C4EF87500DF9C99 /* NFCReader */,
@@ -1815,11 +1843,13 @@
 				C2B820772C0A53590049F937 /* Constants.swift in Sources */,
 				C2993D092C0D21D8005B97D4 /* ContactItem.swift in Sources */,
 				C2B1094B2C1635B7002622C3 /* ContactRow.swift in Sources */,
+				C28F25292C50338900DF9C99 /* CoreDataStack.swift in Sources */,
 				C2B820B82C0A5F5F0049F937 /* DashboardMenuItem.swift in Sources */,
 				C2B8207D2C0A543D0049F937 /* DashboardView.swift in Sources */,
 				C2A4612A2C4C6B56007DAC00 /* Date+Extensions.swift in Sources */,
 				C2A461322C4C8DB2007DAC00 /* DeinitLogger.swift in Sources */,
 				C2A461302C4C7251007DAC00 /* DeviceInfoView.swift in Sources */,
+				C28F25222C502F0E00DF9C99 /* DevQuizView.swift in Sources */,
 				C2390A042C404E2900F98116 /* DrawingArea.swift in Sources */,
 				C2390A052C404E2900F98116 /* DrawingData.swift in Sources */,
 				C2390A062C404E2900F98116 /* DrawingView.swift in Sources */,
@@ -1844,6 +1874,7 @@
 				C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */,
 				C28F24FA2C5020FD00DF9C99 /* LocalNotificationsView.swift in Sources */,
 				C2B820AF2C0A5A1B0049F937 /* Logger.swift in Sources */,
+				C28F25272C50316100DF9C99 /* ManageEmployeesView.swift in Sources */,
 				C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */,
 				C2A1D05B2C12376000170662 /* MP3Streamer.swift in Sources */,
 				C2A461282C4C6983007DAC00 /* NewsInteractor.swift in Sources */,
@@ -1865,6 +1896,7 @@
 				C2AFB6022C14D5FA0076F636 /* PhotoCaptureProcessor.swift in Sources */,
 				C2A461252C4C6983007DAC00 /* Protocols.swift in Sources */,
 				C261E4A92C4AD73800116D8E /* QRCodeScannerView.swift in Sources */,
+				C28F25242C502F2E00DF9C99 /* QuizView.swift in Sources */,
 				C2A1D0582C12371000170662 /* QuranPlayerView.swift in Sources */,
 				C2B820CF2C0A80490049F937 /* R.generated.swift in Sources */,
 				C2BC71E72C42E47900ACE11C /* RealityKitView.swift in Sources */,

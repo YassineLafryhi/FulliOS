@@ -70,6 +70,7 @@ PODS:
   - Realm/Headers (10.52.2)
   - RealmSwift (10.52.2):
     - Realm (= 10.52.2)
+  - ResearchKit (2.2.16)
   - RxCocoa (6.7.1):
     - RxRelay (= 6.7.1)
     - RxSwift (= 6.7.1)
@@ -102,6 +103,7 @@ DEPENDENCIES:
   - Periphery
   - R.swift
   - RealmSwift
+  - ResearchKit
   - RxCocoa
   - RxSwift
   - Sourcery
@@ -138,6 +140,7 @@ SPEC REPOS:
     - R.swift
     - Realm
     - RealmSwift
+    - ResearchKit
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -176,6 +179,7 @@ SPEC CHECKSUMS:
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   Realm: e44eb7d20fe469fe1179894fd356727b8fbe61c2
   RealmSwift: 7aacbd3101158f7d54c930bcfcfaafadbd376ffc
+  ResearchKit: 4ce3751136fc82a02ac83f873b09b01b6974a761
   RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
   RxRelay: 4151ba01152436b08271e08410135e099880eae5
   RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
@@ -190,6 +194,6 @@ SPEC CHECKSUMS:
   SwiftySpell: c61e7b5af1c8c08eeb79ac7ad8019d5ee171e80e
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 430546db40ef89e36dd9e27d175b5f45a3af39c4
+PODFILE CHECKSUM: 69838ce82dab22f1ff70de2ec4dcbe836a3d8578
 
 COCOAPODS: 1.15.2

@@ -8,6 +8,8 @@
 import SwiftUI
 
 internal struct AppsDashboard: View {
+    let persistenceController = CoreDataStack.shared
+
     let menuItems: [DashboardMenuItem] = [
         DashboardMenuItem(
             iconName: R.image.swiftdata.name,
@@ -162,7 +164,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.haptic.name,
             title: "Haptic Feedback (CoreHaptics)",
-            destinationView: AnyView(HapticFeedbackView()))
+            destinationView: AnyView(HapticFeedbackView())),
+
+        DashboardMenuItem(
+            iconName: R.image.quiz.name,
+            title: "iOS Dev Quiz (ResearchKit)",
+            destinationView: AnyView(DevQuizView())),
+
+        DashboardMenuItem(
+            iconName: R.image.employee.name,
+            title: "Manage Employees (CoreData)",
+            destinationView: AnyView(ManageEmployeesView()))
     ]
 
     var body: some View {
