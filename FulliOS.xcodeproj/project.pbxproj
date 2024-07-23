@@ -39,6 +39,14 @@
 		C28F24F72C501EC900DF9C99 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F24F62C501EC900DF9C99 /* SpeechRecognitionView.swift */; };
 		C28F24FA2C5020FD00DF9C99 /* LocalNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F24F92C5020FD00DF9C99 /* LocalNotificationsView.swift */; };
 		C28F24FD2C5022C800DF9C99 /* FileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F24FC2C5022C800DF9C99 /* FileManagerView.swift */; };
+		C28F25042C50291300DF9C99 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F25032C50291300DF9C99 /* WidgetKit.framework */; };
+		C28F25062C50291300DF9C99 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F25052C50291300DF9C99 /* SwiftUI.framework */; };
+		C28F250D2C50291300DF9C99 /* QuoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F250C2C50291300DF9C99 /* QuoteWidget.swift */; };
+		C28F250F2C50291300DF9C99 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F250E2C50291300DF9C99 /* AppIntent.swift */; };
+		C28F25112C50291400DF9C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28F25102C50291400DF9C99 /* Assets.xcassets */; };
+		C28F25152C50291400DF9C99 /* QuoteWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C28F25022C50291300DF9C99 /* QuoteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C28F251C2C50298C00DF9C99 /* WidgetKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F251B2C50298C00DF9C99 /* WidgetKitView.swift */; };
+		C28F251F2C502AED00DF9C99 /* HapticFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F251E2C502AEC00DF9C99 /* HapticFeedbackView.swift */; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -131,9 +139,27 @@
 			remoteGlobalIDString = C2615FE22C0A36F800EBD073;
 			remoteInfo = FulliOS;
 		};
+		C28F25132C50291400DF9C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2615FDB2C0A36F800EBD073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C28F25012C50291300DF9C99;
+			remoteInfo = QuoteWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C28F25162C50291400DF9C99 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C28F25152C50291400DF9C99 /* QuoteWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2993D022C0D1992005B97D4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +232,15 @@
 		C28F24F62C501EC900DF9C99 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
 		C28F24F92C5020FD00DF9C99 /* LocalNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsView.swift; sourceTree = "<group>"; };
 		C28F24FC2C5022C800DF9C99 /* FileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerView.swift; sourceTree = "<group>"; };
+		C28F25022C50291300DF9C99 /* QuoteWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuoteWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28F25032C50291300DF9C99 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C28F25052C50291300DF9C99 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C28F250C2C50291300DF9C99 /* QuoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWidget.swift; sourceTree = "<group>"; };
+		C28F250E2C50291300DF9C99 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		C28F25102C50291400DF9C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C28F25122C50291400DF9C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28F251B2C50298C00DF9C99 /* WidgetKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetKitView.swift; sourceTree = "<group>"; };
+		C28F251E2C502AEC00DF9C99 /* HapticFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackView.swift; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -333,6 +368,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C28F24FF2C50291300DF9C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28F25062C50291300DF9C99 /* SwiftUI.framework in Frameworks */,
+				C28F25042C50291300DF9C99 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -445,6 +489,7 @@
 				C2615FE52C0A36F800EBD073 /* FulliOS */,
 				C2615FF82C0A36F900EBD073 /* FulliOSTests */,
 				C26160022C0A36F900EBD073 /* FulliOSUITests */,
+				C28F25072C50291300DF9C99 /* QuoteWidget */,
 				C2615FE42C0A36F800EBD073 /* Products */,
 				AA4838597FFA00EBC425EF29 /* Pods */,
 				F60F58D075A0B19C31734CFA /* Frameworks */,
@@ -466,6 +511,7 @@
 				C2615FE32C0A36F800EBD073 /* FulliOS.app */,
 				C2615FF52C0A36F900EBD073 /* FulliOSTests.xctest */,
 				C2615FFF2C0A36F900EBD073 /* FulliOSUITests.xctest */,
+				C28F25022C50291300DF9C99 /* QuoteWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -651,6 +697,33 @@
 				C28F24FC2C5022C800DF9C99 /* FileManagerView.swift */,
 			);
 			path = FileManager;
+			sourceTree = "<group>";
+		};
+		C28F25072C50291300DF9C99 /* QuoteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C28F250E2C50291300DF9C99 /* AppIntent.swift */,
+				C28F25102C50291400DF9C99 /* Assets.xcassets */,
+				C28F25122C50291400DF9C99 /* Info.plist */,
+				C28F250C2C50291300DF9C99 /* QuoteWidget.swift */,
+			);
+			path = QuoteWidget;
+			sourceTree = "<group>";
+		};
+		C28F251A2C50298000DF9C99 /* WidgetKit */ = {
+			isa = PBXGroup;
+			children = (
+				C28F251B2C50298C00DF9C99 /* WidgetKitView.swift */,
+			);
+			path = WidgetKit;
+			sourceTree = "<group>";
+		};
+		C28F251D2C502AE000DF9C99 /* HapticFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				C28F251E2C502AEC00DF9C99 /* HapticFeedbackView.swift */,
+			);
+			path = HapticFeedback;
 			sourceTree = "<group>";
 		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
@@ -1001,6 +1074,7 @@
 				C28F24FB2C5022BC00DF9C99 /* FileManager */,
 				C22209282C124A7A00780A7B /* Flutter */,
 				C2A4612B2C4C7078007DAC00 /* HandwritingRecognition */,
+				C28F251D2C502AE000DF9C99 /* HapticFeedback */,
 				C2A461172C4C6983007DAC00 /* HttpRequestBuilder */,
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
 				C28F24F82C5020E900DF9C99 /* LocalNotifications */,
@@ -1024,6 +1098,7 @@
 				C2DC3B3D2C40548600222179 /* TemperatureChart */,
 				C2AFB5F72C14BF620076F636 /* TextTranslator */,
 				C28F16E82C4EF87500DF9C99 /* UnityGame */,
+				C28F251A2C50298000DF9C99 /* WidgetKit */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -1224,7 +1299,9 @@
 				F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */,
 				212FE58FC3184FCB5D7DA91B /* Pods_FulliOSTests.framework */,
 				C2993CFF2C0D1991005B97D4 /* shared.framework */,
+				C28F25052C50291300DF9C99 /* SwiftUI.framework */,
 				C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */,
+				C28F25032C50291300DF9C99 /* WidgetKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1252,10 +1329,12 @@
 				94CC79B68AF9A07BF08B27A1 /* [CP] Embed Pods Frameworks */,
 				C2993D022C0D1992005B97D4 /* Embed Frameworks */,
 				A340FE968F120C82E612221E /* [CP] Copy Pods Resources */,
+				C28F25162C50291400DF9C99 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C28F25142C50291400DF9C99 /* PBXTargetDependency */,
 			);
 			name = FulliOS;
 			productName = FulliOS;
@@ -1302,6 +1381,23 @@
 			productReference = C2615FFF2C0A36F900EBD073 /* FulliOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C28F25012C50291300DF9C99 /* QuoteWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28F25192C50291400DF9C99 /* Build configuration list for PBXNativeTarget "QuoteWidgetExtension" */;
+			buildPhases = (
+				C28F24FE2C50291300DF9C99 /* Sources */,
+				C28F24FF2C50291300DF9C99 /* Frameworks */,
+				C28F25002C50291300DF9C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuoteWidgetExtension;
+			productName = QuoteWidgetExtension;
+			productReference = C28F25022C50291300DF9C99 /* QuoteWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1323,6 +1419,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = C2615FE22C0A36F800EBD073;
 					};
+					C28F25012C50291300DF9C99 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = C2615FDE2C0A36F800EBD073 /* Build configuration list for PBXProject "FulliOS" */;
@@ -1342,6 +1441,7 @@
 				C2615FE22C0A36F800EBD073 /* FulliOS */,
 				C2615FF42C0A36F900EBD073 /* FulliOSTests */,
 				C2615FFE2C0A36F900EBD073 /* FulliOSUITests */,
+				C28F25012C50291300DF9C99 /* QuoteWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1375,6 +1475,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28F25002C50291300DF9C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28F25112C50291400DF9C99 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1729,6 +1837,7 @@
 				C21FAB1E2C1234B5001CFAA5 /* FulliOSApp.swift in Sources */,
 				C2AFB5F62C14BE230076F636 /* GoogleTranslationManager.swift in Sources */,
 				C2A4612D2C4C7086007DAC00 /* HandwritingRecognitionView.swift in Sources */,
+				C28F251F2C502AED00DF9C99 /* HapticFeedbackView.swift in Sources */,
 				C2A461262C4C6983007DAC00 /* HttpRequestBuilderView.swift in Sources */,
 				C2A461272C4C6983007DAC00 /* HttpRequestViewModel.swift in Sources */,
 				C2C66F8D2C0F747400C8C4C5 /* ImagePicker.swift in Sources */,
@@ -1776,6 +1885,7 @@
 				C2A461422C4CACF0007DAC00 /* ViewController.swift in Sources */,
 				C2A461412C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift in Sources */,
 				C2DC3B3C2C4053B500222179 /* WebSocketServer.swift in Sources */,
+				C28F251C2C50298C00DF9C99 /* WidgetKitView.swift in Sources */,
 				C2A461502C4CBA13007DAC00 /* YOLOv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1797,6 +1907,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C28F24FE2C50291300DF9C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28F250F2C50291300DF9C99 /* AppIntent.swift in Sources */,
+				C28F250D2C50291300DF9C99 /* QuoteWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1809,6 +1928,11 @@
 			isa = PBXTargetDependency;
 			target = C2615FE22C0A36F800EBD073 /* FulliOS */;
 			targetProxy = C26160002C0A36F900EBD073 /* PBXContainerItemProxy */;
+		};
+		C28F25142C50291400DF9C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C28F25012C50291300DF9C99 /* QuoteWidgetExtension */;
+			targetProxy = C28F25132C50291400DF9C99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1936,6 +2060,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 215D717F7BFBEFD64562B4FF /* Pods-FulliOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1975,6 +2100,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0FF3D4F873FC510351C1FDED /* Pods-FulliOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -2090,6 +2216,64 @@
 			};
 			name = Release;
 		};
+		C28F25172C50291400DF9C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55DHYS5FJZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.yassinelafryhi.FulliOS.QuoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C28F25182C50291400DF9C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55DHYS5FJZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.yassinelafryhi.FulliOS.QuoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2125,6 +2309,15 @@
 			buildConfigurations = (
 				C26160102C0A36F900EBD073 /* Debug */,
 				C26160112C0A36F900EBD073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28F25192C50291400DF9C99 /* Build configuration list for PBXNativeTarget "QuoteWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28F25172C50291400DF9C99 /* Debug */,
+				C28F25182C50291400DF9C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

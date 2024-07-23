@@ -152,7 +152,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.files.name,
             title: "File Manager (SwiftUI)",
-            destinationView: AnyView(FileManagerView()))
+            destinationView: AnyView(FileManagerView())),
+
+        DashboardMenuItem(
+            iconName: R.image.widgets.name,
+            title: "Add Widget (WidgetKit)",
+            destinationView: AnyView(WidgetKitView())),
+
+        DashboardMenuItem(
+            iconName: R.image.haptic.name,
+            title: "Haptic Feedback (CoreHaptics)",
+            destinationView: AnyView(HapticFeedbackView()))
     ]
 
     var body: some View {
