@@ -88,6 +88,13 @@ PODS:
   - SwiftSoup (2.7.2)
   - SwiftUIIntrospect (1.3.0)
   - SwiftySpell (0.9.2)
+  - TensorFlowLiteC (2.14.0):
+    - TensorFlowLiteC/Core (= 2.14.0)
+  - TensorFlowLiteC/Core (2.14.0)
+  - TensorFlowLiteSwift (2.14.0):
+    - TensorFlowLiteSwift/Core (= 2.14.0)
+  - TensorFlowLiteSwift/Core (2.14.0):
+    - TensorFlowLiteC (= 2.14.0)
   - Toaster (2.3.0)
 
 DEPENDENCIES:
@@ -113,6 +120,7 @@ DEPENDENCIES:
   - SwiftLint
   - SwiftSoup
   - SwiftySpell
+  - TensorFlowLiteSwift
   - Toaster
 
 SPEC REPOS:
@@ -153,6 +161,8 @@ SPEC REPOS:
     - SwiftSoup
     - SwiftUIIntrospect
     - SwiftySpell
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
     - Toaster
 
 SPEC CHECKSUMS:
@@ -192,8 +202,10 @@ SPEC CHECKSUMS:
   SwiftSoup: 4164c6bd8af69acd119c23fb36906975a60d71bb
   SwiftUIIntrospect: fee9aa07293ee280373a591e1824e8ddc869ba5d
   SwiftySpell: c61e7b5af1c8c08eeb79ac7ad8019d5ee171e80e
+  TensorFlowLiteC: a836de9b6e6018665ccc349538bdd2c3b80dd7a5
+  TensorFlowLiteSwift: f706b143b69d7bf433aba7b08049bdd11c321a10
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 69838ce82dab22f1ff70de2ec4dcbe836a3d8578
+PODFILE CHECKSUM: 6568b1ee5883ea2f38b3054818932a70a8e9531b
 
 COCOAPODS: 1.15.2

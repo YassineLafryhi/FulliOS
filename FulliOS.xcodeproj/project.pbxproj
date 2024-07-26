@@ -124,6 +124,11 @@
 		C2E97A792C133B5C0004BE45 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C222092D2C124DFC00780A7B /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2E97A7C2C133E9D0004BE45 /* OpenCvView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E97A7B2C133E9D0004BE45 /* OpenCvView.swift */; };
 		C2E97A852C133FC80004BE45 /* OpenCVProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2E97A842C133FC80004BE45 /* OpenCVProcessor.mm */; };
+		C2F3DB912C5431D8007E8D51 /* WebBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3DB902C5431D2007E8D51 /* WebBrowserView.swift */; };
+		C2F3DB932C54321D007E8D51 /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3DB922C54321B007E8D51 /* BookmarkManager.swift */; };
+		C2F3DB962C54371D007E8D51 /* ImageClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3DB952C54371A007E8D51 /* ImageClassificationView.swift */; };
+		C2F3DB982C543B78007E8D51 /* mobilenet_v1_1.0_224.tflite in Resources */ = {isa = PBXBuildFile; fileRef = C2F3DB972C543B78007E8D51 /* mobilenet_v1_1.0_224.tflite */; };
+		C2F3DB9B2C543D94007E8D51 /* AudioVideoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3DB9A2C543D90007E8D51 /* AudioVideoEditorView.swift */; };
 		EB83FC6DBB76E4573D1BACF6 /* Pods_FulliOS_FulliOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */; };
 		EC13E37343012244FCF7A534 /* Pods_FulliOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212FE58FC3184FCB5D7DA91B /* Pods_FulliOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -343,6 +348,11 @@
 		C2E97A802C133F4A0004BE45 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C2E97A832C133F8C0004BE45 /* OpenCVProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVProcessor.h; sourceTree = "<group>"; };
 		C2E97A842C133FC80004BE45 /* OpenCVProcessor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVProcessor.mm; sourceTree = "<group>"; };
+		C2F3DB902C5431D2007E8D51 /* WebBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserView.swift; sourceTree = "<group>"; };
+		C2F3DB922C54321B007E8D51 /* BookmarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
+		C2F3DB952C54371A007E8D51 /* ImageClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationView.swift; sourceTree = "<group>"; };
+		C2F3DB972C543B78007E8D51 /* mobilenet_v1_1.0_224.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobilenet_v1_1.0_224.tflite; sourceTree = "<group>"; };
+		C2F3DB9A2C543D90007E8D51 /* AudioVideoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVideoEditorView.swift; sourceTree = "<group>"; };
 		CA19519703F2E0162FAC7D53 /* Pods-FulliOS-FulliOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FulliOS-FulliOSUITests.release.xcconfig"; path = "Target Support Files/Pods-FulliOS-FulliOSUITests/Pods-FulliOS-FulliOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FulliOS_FulliOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -948,6 +958,7 @@
 		C2A461432C4CAD13007DAC00 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C2F3DB972C543B78007E8D51 /* mobilenet_v1_1.0_224.tflite */,
 				C2A4614F2C4CBA13007DAC00 /* YOLOv3.mlmodel */,
 			);
 			path = Models;
@@ -1092,6 +1103,7 @@
 		C2B8207B2C0A54260049F937 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				C2F3DB992C543D8B007E8D51 /* AudioVideoEditor */,
 				C2AFB5FA2C14CC580076F636 /* Camera */,
 				C2B820AA2C0A581B0049F937 /* Dashboard */,
 				C2A4612E2C4C7247007DAC00 /* DeviceInfo */,
@@ -1103,6 +1115,7 @@
 				C2A4612B2C4C7078007DAC00 /* HandwritingRecognition */,
 				C28F251D2C502AE000DF9C99 /* HapticFeedback */,
 				C2A461172C4C6983007DAC00 /* HttpRequestBuilder */,
+				C2F3DB942C54368A007E8D51 /* ImageClassification */,
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
 				C28F24F82C5020E900DF9C99 /* LocalNotifications */,
 				C28F25252C50314E00DF9C99 /* ManageEmployees */,
@@ -1126,6 +1139,7 @@
 				C2DC3B3D2C40548600222179 /* TemperatureChart */,
 				C2AFB5F72C14BF620076F636 /* TextTranslator */,
 				C28F16E82C4EF87500DF9C99 /* UnityGame */,
+				C2F3DB8F2C5431C3007E8D51 /* WebBrowser */,
 				C28F251A2C50298000DF9C99 /* WidgetKit */,
 			);
 			path = Apps;
@@ -1318,6 +1332,31 @@
 			path = OpenCVWrapper;
 			sourceTree = "<group>";
 		};
+		C2F3DB8F2C5431C3007E8D51 /* WebBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				C2F3DB922C54321B007E8D51 /* BookmarkManager.swift */,
+				C2F3DB902C5431D2007E8D51 /* WebBrowserView.swift */,
+			);
+			path = WebBrowser;
+			sourceTree = "<group>";
+		};
+		C2F3DB942C54368A007E8D51 /* ImageClassification */ = {
+			isa = PBXGroup;
+			children = (
+				C2F3DB952C54371A007E8D51 /* ImageClassificationView.swift */,
+			);
+			path = ImageClassification;
+			sourceTree = "<group>";
+		};
+		C2F3DB992C543D8B007E8D51 /* AudioVideoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C2F3DB9A2C543D90007E8D51 /* AudioVideoEditorView.swift */,
+			);
+			path = AudioVideoEditor;
+			sourceTree = "<group>";
+		};
 		F60F58D075A0B19C31734CFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1345,6 +1384,7 @@
 				C2B820722C0A50610049F937 /* Setup Git Hooks */,
 				C2B820622C0A4A750049F937 /* SwiftGen */,
 				C26160132C0A3D9200EBD073 /* R.swift */,
+				C2F3DB8E2C5429EF007E8D51 /* Build Unity Framework */,
 				C2993CFD2C0D1515005B97D4 /* Build KMM Shared Framework */,
 				C22207E82C1248F000780A7B /* Build Flutter Frameworks */,
 				C26160122C0A3D4A00EBD073 /* Format Code With SwiftFormat */,
@@ -1487,6 +1527,7 @@
 				C2B820B22C0A5B5D0049F937 /* din.ttf in Resources */,
 				C2B8205F2C0A49BB0049F937 /* Localizable.xcstrings in Resources */,
 				C2BC71EE2C42E60D00ACE11C /* LunarRover.reality in Resources */,
+				C2F3DB982C543B78007E8D51 /* mobilenet_v1_1.0_224.tflite in Resources */,
 				C2C66F952C0FA30A00C8C4C5 /* person.jpg in Resources */,
 				C2BC71ED2C42E60D00ACE11C /* RobotWalk.usdz in Resources */,
 			);
@@ -1784,6 +1825,24 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/sh\n\nSCRIPTS_DIR=\"${SRCROOT}/Scripts\"\nGIT_HOOKS_DIR=\"${SRCROOT}/.git/hooks\"\n\ncp \"${SCRIPTS_DIR}/pre-commit\" \"${GIT_HOOKS_DIR}/pre-commit\"\ncp \"${SCRIPTS_DIR}/prepare-commit-msg\" \"${GIT_HOOKS_DIR}/prepare-commit-msg\"\n\nchmod +x \"${GIT_HOOKS_DIR}/pre-commit\"\nchmod +x \"${GIT_HOOKS_DIR}/prepare-commit-msg\"\n\n";
 		};
+		C2F3DB8E2C5429EF007E8D51 /* Build Unity Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Unity Framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UNITY_PATH=\"/Applications/Unity/Hub/Editor/2022.3.37f1/Unity.app/Contents/MacOS/Unity\"\nUNITY_FRAMEWORK=\"$SRCROOT/Frameworks/UnityFramework.framework\"\nUNITY_PROJECT_PATH=\"$SRCROOT/UnityGame\"\n\nbuild_unity_framework() {\nif [[ \"$PLATFORM_NAME\" == *\"simulator\"* ]]; then\n    echo \"Building for iOS Simulator\"\n    SIMULATOR_FLAG=\"-simulator\"\nelse\n    echo \"Building for iOS Device\"\n    SIMULATOR_FLAG=\"\"\nfi\n\necho \"warning: $PLATFORM_NAME\"\n\n\"$UNITY_PATH\" -batchmode -nographics -silent-crashes -logFile \"$PROJECT_PATH/unity.log\" \\\n    -projectPath \"$UNITY_PROJECT_PATH\" \\\n    -executeMethod BuildScript.PerformiOSBuild \\\n    -buildTarget iOS \\\n    $SIMULATOR_FLAG \\\n    -quit\n\nif [ $? -eq 0 ]; then\n    echo \"warning: Unity iOS build completed successfully.\"\nelse\n    echo \"error: Unity iOS build failed. Check the log file for details.\"\n    exit 1\nfi\n}\n\nif [ ! -d \"$UNITY_FRAMEWORK\" ]; then\n    build_unity_framework\nelse\n    changes=$(git -C \"$SRCROOT\" status --porcelain \"$UNITY_PROJECT_PATH\")\n    if [ ! -z \"$changes\" ]; then\n        build_unity_framework\n    fi\nfi\n";
+		};
 		C98D79FF00920266FC553259 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1835,6 +1894,8 @@
 				C2B820BA2C0A5FB70049F937 /* Array+Extentions.swift in Sources */,
 				C2B820CD2C0A80490049F937 /* Assets.swift in Sources */,
 				C2A4613B2C4CA85D007DAC00 /* AudioAnalyzer.swift in Sources */,
+				C2F3DB9B2C543D94007E8D51 /* AudioVideoEditorView.swift in Sources */,
+				C2F3DB932C54321D007E8D51 /* BookmarkManager.swift in Sources */,
 				C2AFB6042C14D6210076F636 /* CameraFilterView.swift in Sources */,
 				C2AFB5FE2C14D5AD0076F636 /* CameraPreview.swift in Sources */,
 				C2AFB5FC2C14CC990076F636 /* CameraView.swift in Sources */,
@@ -1870,6 +1931,7 @@
 				C28F251F2C502AED00DF9C99 /* HapticFeedbackView.swift in Sources */,
 				C2A461262C4C6983007DAC00 /* HttpRequestBuilderView.swift in Sources */,
 				C2A461272C4C6983007DAC00 /* HttpRequestViewModel.swift in Sources */,
+				C2F3DB962C54371D007E8D51 /* ImageClassificationView.swift in Sources */,
 				C2C66F8D2C0F747400C8C4C5 /* ImagePicker.swift in Sources */,
 				C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */,
 				C28F24FA2C5020FD00DF9C99 /* LocalNotificationsView.swift in Sources */,
@@ -1916,6 +1978,7 @@
 				C28F16EC2C4EF87500DF9C99 /* UnityGameView.swift in Sources */,
 				C2A461422C4CACF0007DAC00 /* ViewController.swift in Sources */,
 				C2A461412C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift in Sources */,
+				C2F3DB912C5431D8007E8D51 /* WebBrowserView.swift in Sources */,
 				C2DC3B3C2C4053B500222179 /* WebSocketServer.swift in Sources */,
 				C28F251C2C50298C00DF9C99 /* WidgetKitView.swift in Sources */,
 				C2A461502C4CBA13007DAC00 /* YOLOv3.mlmodel in Sources */,
@@ -2092,7 +2155,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 215D717F7BFBEFD64562B4FF /* Pods-FulliOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -2132,7 +2195,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0FF3D4F873FC510351C1FDED /* Pods-FulliOS.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

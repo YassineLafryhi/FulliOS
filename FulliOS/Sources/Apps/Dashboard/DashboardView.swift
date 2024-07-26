@@ -174,7 +174,22 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.employee.name,
             title: "Manage Employees (CoreData)",
-            destinationView: AnyView(ManageEmployeesView()))
+            destinationView: AnyView(ManageEmployeesView())),
+
+        DashboardMenuItem(
+            iconName: R.image.web.name,
+            title: "Web Browser (WebKit)",
+            destinationView: AnyView(WebBrowserView())),
+
+        DashboardMenuItem(
+            iconName: R.image.tensorflow.name,
+            title: "Image Classification (TensorFlowLite)",
+            destinationView: AnyView(ImageClassificationView())),
+
+        DashboardMenuItem(
+            iconName: R.image.editing.name,
+            title: "Audio/Video Editor (FFmpegKit)",
+            destinationView: AnyView(AudioVideoEditorView()))
     ]
 
     var body: some View {
