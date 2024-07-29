@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DevQuizView: View {
+internal struct DevQuizView: View {
     @State private var selectedLevel = 0
     let levels = ["Beginner", "Intermediate", "Advanced"]
 

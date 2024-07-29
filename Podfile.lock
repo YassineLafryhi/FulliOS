@@ -38,6 +38,7 @@ PODS:
   - GTMSessionFetcher/Core (3.5.0)
   - IBLinter (0.5.0)
   - Kingfisher (7.12.0)
+  - lottie-ios (4.5.0)
   - MLKitCommon (11.0.0):
     - GoogleDataTransport (< 10.0, >= 9.4.1)
     - GoogleToolboxForMac/Logger (< 5.0, >= 4.2.1)
@@ -106,6 +107,7 @@ DEPENDENCIES:
   - GoogleMLKit/Translate
   - IBLinter
   - Kingfisher
+  - lottie-ios
   - OpenCV
   - Periphery
   - R.swift
@@ -137,6 +139,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - IBLinter
     - Kingfisher
+    - lottie-ios
     - MLKitCommon
     - MLKitLanguageID
     - MLKitNaturalLanguage
@@ -178,6 +181,7 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   IBLinter: 7d28cbb7b579ca80690b56f6c8d22092a672967c
   Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
+  lottie-ios: a881093fab623c467d3bce374367755c272bdd59
   MLKitCommon: afec63980417d29ffbb4790529a1b0a2291699e1
   MLKitLanguageID: a897902aa4e58f7bf0943b07a1f9b58d762273aa
   MLKitNaturalLanguage: 7cd66a1ec3fbee2ff22890e1d42dda5c928e811b
@@ -206,6 +210,6 @@ SPEC CHECKSUMS:
   TensorFlowLiteSwift: f706b143b69d7bf433aba7b08049bdd11c321a10
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 6568b1ee5883ea2f38b3054818932a70a8e9531b
+PODFILE CHECKSUM: 990ffdc7b78971d47102a6fa0cfc64fb3c14a292
 
 COCOAPODS: 1.15.2

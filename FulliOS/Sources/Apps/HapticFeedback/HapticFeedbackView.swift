@@ -8,7 +8,7 @@
 import CoreHaptics
 import SwiftUI
 
-struct HapticFeedbackView: View {
+internal struct HapticFeedbackView: View {
     @State private var engine: CHHapticEngine?
 
     var body: some View {

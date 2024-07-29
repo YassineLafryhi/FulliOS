@@ -9,7 +9,7 @@ import CoreMotion
 import SceneKit
 import SwiftUI
 
-class MainScene: ObservableObject {
+internal class MainScene: ObservableObject {
     var scene: SCNScene
     private var cubeNode: SCNNode?
     private var motionManager = CMMotionManager()

@@ -15,9 +15,9 @@ internal class FlutterDependencies: ObservableObject {
     let flutterEngine = FlutterEngine(name: "MyFlutterEngine")
 
     init() {
+        CrashHandler.shared.setupCrashHandler()
         flutterEngine.run()
         // GeneratedPluginRegistrant.register(with: flutterEngine)
-
         let server = WebSocketServer()
         server.start()
     }

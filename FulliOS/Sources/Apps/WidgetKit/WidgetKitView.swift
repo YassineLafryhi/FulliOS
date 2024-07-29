@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-struct WidgetKitView: View {
+internal struct WidgetKitView: View {
     var body: some View {
         VStack {
             Text("Quote of the Day Widget")

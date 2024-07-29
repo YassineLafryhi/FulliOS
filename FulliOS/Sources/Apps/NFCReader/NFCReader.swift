@@ -7,7 +7,7 @@
 
 import CoreNFC
 
-class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
+internal class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
     @Published var scannedMessage = ""
     private var nfcSession: NFCNDEFReaderSession?
 

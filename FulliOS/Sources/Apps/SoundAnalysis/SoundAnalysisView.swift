@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SoundAnalysisView: View {
+internal struct SoundAnalysisView: View {
     @StateObject private var audioAnalyzer = AudioAnalyzer()
 
     var body: some View {

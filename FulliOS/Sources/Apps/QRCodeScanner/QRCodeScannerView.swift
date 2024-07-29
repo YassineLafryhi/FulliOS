@@ -9,7 +9,7 @@ import AVFoundation
 import SwiftUI
 import Toaster
 
-struct QRCodeScannerView: UIViewControllerRepresentable {
+internal struct QRCodeScannerView: UIViewControllerRepresentable {
     class Coordinator: NSObject, AVCaptureMetadataOutputObjectsDelegate {
         var parent: QRCodeScannerView
         var isQRCodeFound = false

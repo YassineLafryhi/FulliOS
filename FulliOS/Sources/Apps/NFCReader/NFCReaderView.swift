@@ -8,7 +8,7 @@
 import CoreNFC
 import SwiftUI
 
-struct NFCReaderView: View {
+internal struct NFCReaderView: View {
     @StateObject private var nfcReader = NFCReader()
     @State private var showAlert = false
 

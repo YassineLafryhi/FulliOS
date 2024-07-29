@@ -31,6 +31,7 @@ target 'FulliOS' do
   pod 'ExytePopupView'
   pod 'ResearchKit'
   pod 'TensorFlowLiteSwift'
+  pod 'lottie-ios'
 
   target 'FulliOSTests' do
     inherit! :search_paths

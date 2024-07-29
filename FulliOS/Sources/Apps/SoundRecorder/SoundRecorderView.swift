@@ -8,7 +8,7 @@
 import AVFoundation
 import SwiftUI
 
-struct SoundRecorderView: View {
+internal struct SoundRecorderView: View {
     @StateObject private var audioRecorder = AudioRecorder()
 
     var body: some View {
@@ -58,7 +58,7 @@ struct SoundRecorderView: View {
     }
 }
 
-class AudioRecorder: NSObject, ObservableObject {
+internal class AudioRecorder: NSObject, ObservableObject {
     @Published var recordings: [Recording] = []
     @Published var isRecording = false
 
@@ -143,7 +143,7 @@ extension AudioRecorder: AVAudioRecorderDelegate {
     }
 }
 
-struct Recording {
+internal struct Recording {
     let fileURL: URL
     var createdAt: Date {
         do {

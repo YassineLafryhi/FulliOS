@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>We need access to save photos to your library</string>
 	<key>NSCameraUsageDescription</key>
@@ -26,5 +30,11 @@
 	<string>We need access to your microphone to record audio</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
     <string>This app uses speech recognition to convert your speech to text.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This app uses Bluetooth to connect to nearby devices for enhanced functionality.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We need to update your health data.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>We need to access your health data to provide personalized insights.</string>
 </dict>
 </plist>

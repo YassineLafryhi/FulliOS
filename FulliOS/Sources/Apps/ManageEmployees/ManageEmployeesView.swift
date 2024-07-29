@@ -29,7 +29,7 @@ extension Employee {
     }
 }
 
-struct ManageEmployeesView: View {
+internal struct ManageEmployeesView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Employee.name, ascending: true)],
@@ -79,7 +79,7 @@ struct ManageEmployeesView: View {
     }
 }
 
-struct EmployeeRowView: View {
+internal struct EmployeeRowView: View {
     let employee: Employee
 
     var body: some View {
@@ -109,7 +109,7 @@ struct EmployeeRowView: View {
     }
 }
 
-struct AddEmployeeView: View {
+internal struct AddEmployeeView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
 
@@ -177,7 +177,7 @@ struct AddEmployeeView: View {
     }
 }
 
-struct EmployeeDetailView: View {
+internal struct EmployeeDetailView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
 
@@ -263,7 +263,7 @@ struct EmployeeDetailView: View {
     }
 }
 
-struct EmployeeImagePicker: UIViewControllerRepresentable {
+internal struct EmployeeImagePicker: UIViewControllerRepresentable {
     @Binding var image: UIImage?
     let sourceType: UIImagePickerController.SourceType
 

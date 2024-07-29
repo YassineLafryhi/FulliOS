@@ -30,6 +30,29 @@
 		C261E4A92C4AD73800116D8E /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4A82C4AD73800116D8E /* QRCodeScannerView.swift */; };
 		C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4AB2C4ADD9000116D8E /* MapsView.swift */; };
 		C261E4AF2C4ADF6000116D8E /* SoundRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */; };
+		C26A40F52C581D08004C4142 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = C26A40ED2C581D08004C4142 /* error.json */; };
+		C26A40F62C581D08004C4142 /* happy.json in Resources */ = {isa = PBXBuildFile; fileRef = C26A40EE2C581D08004C4142 /* happy.json */; };
+		C26A40F72C581D08004C4142 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = C26A40EF2C581D08004C4142 /* loader.json */; };
+		C26A40F82C581D08004C4142 /* sad.json in Resources */ = {isa = PBXBuildFile; fileRef = C26A40F02C581D08004C4142 /* sad.json */; };
+		C26A40F92C581D08004C4142 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = C26A40F12C581D08004C4142 /* success.json */; };
+		C26A40FA2C581D08004C4142 /* warning.json in Resources */ = {isa = PBXBuildFile; fileRef = C26A40F22C581D08004C4142 /* warning.json */; };
+		C26A40FB2C581D08004C4142 /* working.json in Resources */ = {isa = PBXBuildFile; fileRef = C26A40F32C581D08004C4142 /* working.json */; };
+		C26A40FF2C581D70004C4142 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A40FC2C581D70004C4142 /* NFCReader.swift */; };
+		C26A41002C581D70004C4142 /* NFCReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A40FD2C581D70004C4142 /* NFCReaderView.swift */; };
+		C26A41042C581D82004C4142 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41012C581D82004C4142 /* HealthKitManager.swift */; };
+		C26A41052C581D82004C4142 /* HealthKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41022C581D82004C4142 /* HealthKitView.swift */; };
+		C26A410A2C581D95004C4142 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41062C581D95004C4142 /* BluetoothManager.swift */; };
+		C26A410B2C581D95004C4142 /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41072C581D95004C4142 /* BluetoothView.swift */; };
+		C26A410C2C581D95004C4142 /* PeripheralDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41082C581D95004C4142 /* PeripheralDetailView.swift */; };
+		C26A41102C581DA2004C4142 /* DocumentScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A410D2C581DA2004C4142 /* DocumentScannerView.swift */; };
+		C26A41112C581DA2004C4142 /* DSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A410E2C581DA2004C4142 /* DSView.swift */; };
+		C26A41162C581DAD004C4142 /* WebsiteReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41122C581DAD004C4142 /* WebsiteReader.swift */; };
+		C26A41172C581DAD004C4142 /* WebsiteReaderArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41132C581DAD004C4142 /* WebsiteReaderArticle.swift */; };
+		C26A41182C581DAD004C4142 /* WebsiteReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41142C581DAD004C4142 /* WebsiteReaderView.swift */; };
+		C26A411B2C581DB6004C4142 /* LottieAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41192C581DB6004C4142 /* LottieAnimationsView.swift */; };
+		C26A411E2C581DBF004C4142 /* AccelerateShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A411C2C581DBF004C4142 /* AccelerateShowcaseView.swift */; };
+		C26A41202C582066004C4142 /* CrashHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A411F2C582066004C4142 /* CrashHandler.swift */; };
+		C26A41232C582789004C4142 /* SimulatedCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41222C582789004C4142 /* SimulatedCameraView.swift */; };
 		C28F16E92C4EF87500DF9C99 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E32C4EF87500DF9C99 /* NFCReader.swift */; };
 		C28F16EA2C4EF87500DF9C99 /* NFCReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */; };
 		C28F16EB2C4EF87500DF9C99 /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */; };
@@ -227,6 +250,30 @@
 		C261E4A82C4AD73800116D8E /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
 		C261E4AB2C4ADD9000116D8E /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 		C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundRecorderView.swift; sourceTree = "<group>"; };
+		C26A40ED2C581D08004C4142 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		C26A40EE2C581D08004C4142 /* happy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = happy.json; sourceTree = "<group>"; };
+		C26A40EF2C581D08004C4142 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		C26A40F02C581D08004C4142 /* sad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sad.json; sourceTree = "<group>"; };
+		C26A40F12C581D08004C4142 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		C26A40F22C581D08004C4142 /* warning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = warning.json; sourceTree = "<group>"; };
+		C26A40F32C581D08004C4142 /* working.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = working.json; sourceTree = "<group>"; };
+		C26A40FC2C581D70004C4142 /* NFCReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
+		C26A40FD2C581D70004C4142 /* NFCReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReaderView.swift; sourceTree = "<group>"; };
+		C26A41012C581D82004C4142 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		C26A41022C581D82004C4142 /* HealthKitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitView.swift; sourceTree = "<group>"; };
+		C26A41062C581D95004C4142 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		C26A41072C581D95004C4142 /* BluetoothView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
+		C26A41082C581D95004C4142 /* PeripheralDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralDetailView.swift; sourceTree = "<group>"; };
+		C26A410D2C581DA2004C4142 /* DocumentScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentScannerView.swift; sourceTree = "<group>"; };
+		C26A410E2C581DA2004C4142 /* DSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSView.swift; sourceTree = "<group>"; };
+		C26A41122C581DAD004C4142 /* WebsiteReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteReader.swift; sourceTree = "<group>"; };
+		C26A41132C581DAD004C4142 /* WebsiteReaderArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteReaderArticle.swift; sourceTree = "<group>"; };
+		C26A41142C581DAD004C4142 /* WebsiteReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteReaderView.swift; sourceTree = "<group>"; };
+		C26A41192C581DB6004C4142 /* LottieAnimationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieAnimationsView.swift; sourceTree = "<group>"; };
+		C26A411C2C581DBF004C4142 /* AccelerateShowcaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerateShowcaseView.swift; sourceTree = "<group>"; };
+		C26A411F2C582066004C4142 /* CrashHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashHandler.swift; sourceTree = "<group>"; };
+		C26A41212C5826D2004C4142 /* FulliOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FulliOS.entitlements; sourceTree = "<group>"; };
+		C26A41222C582789004C4142 /* SimulatedCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatedCameraView.swift; sourceTree = "<group>"; };
 		C28F16E32C4EF87500DF9C99 /* NFCReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReaderView.swift; sourceTree = "<group>"; };
 		C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
@@ -539,6 +586,7 @@
 			children = (
 				C26160172C0A3F0500EBD073 /* Resources */,
 				C26160182C0A3F0A00EBD073 /* Sources */,
+				C26A41212C5826D2004C4142 /* FulliOS.entitlements */,
 				C2B820B42C0A5BA90049F937 /* Info.plist */,
 			);
 			path = FulliOS;
@@ -564,6 +612,7 @@
 		C26160172C0A3F0500EBD073 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C26A40F42C581D08004C4142 /* Animations */,
 				C2B8205C2C0A497E0049F937 /* Assets */,
 				C2B8205D2C0A49970049F937 /* Fonts */,
 				C2C66F932C0FA2D800C8C4C5 /* Images */,
@@ -620,6 +669,83 @@
 				C261E4AE2C4ADF6000116D8E /* SoundRecorderView.swift */,
 			);
 			path = SoundRecorder;
+			sourceTree = "<group>";
+		};
+		C26A40F42C581D08004C4142 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				C26A40ED2C581D08004C4142 /* error.json */,
+				C26A40EE2C581D08004C4142 /* happy.json */,
+				C26A40EF2C581D08004C4142 /* loader.json */,
+				C26A40F02C581D08004C4142 /* sad.json */,
+				C26A40F12C581D08004C4142 /* success.json */,
+				C26A40F22C581D08004C4142 /* warning.json */,
+				C26A40F32C581D08004C4142 /* working.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		C26A40FE2C581D70004C4142 /* NFCReader */ = {
+			isa = PBXGroup;
+			children = (
+				C26A40FC2C581D70004C4142 /* NFCReader.swift */,
+				C26A40FD2C581D70004C4142 /* NFCReaderView.swift */,
+			);
+			path = NFCReader;
+			sourceTree = "<group>";
+		};
+		C26A41032C581D82004C4142 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				C26A41012C581D82004C4142 /* HealthKitManager.swift */,
+				C26A41022C581D82004C4142 /* HealthKitView.swift */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		C26A41092C581D95004C4142 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				C26A41062C581D95004C4142 /* BluetoothManager.swift */,
+				C26A41072C581D95004C4142 /* BluetoothView.swift */,
+				C26A41082C581D95004C4142 /* PeripheralDetailView.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		C26A410F2C581DA2004C4142 /* DocumentScanner */ = {
+			isa = PBXGroup;
+			children = (
+				C26A410D2C581DA2004C4142 /* DocumentScannerView.swift */,
+				C26A410E2C581DA2004C4142 /* DSView.swift */,
+			);
+			path = DocumentScanner;
+			sourceTree = "<group>";
+		};
+		C26A41152C581DAD004C4142 /* WebsiteReader */ = {
+			isa = PBXGroup;
+			children = (
+				C26A41122C581DAD004C4142 /* WebsiteReader.swift */,
+				C26A41132C581DAD004C4142 /* WebsiteReaderArticle.swift */,
+				C26A41142C581DAD004C4142 /* WebsiteReaderView.swift */,
+			);
+			path = WebsiteReader;
+			sourceTree = "<group>";
+		};
+		C26A411A2C581DB6004C4142 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				C26A41192C581DB6004C4142 /* LottieAnimationsView.swift */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		C26A411D2C581DBF004C4142 /* AccelerateShowcase */ = {
+			isa = PBXGroup;
+			children = (
+				C26A411C2C581DBF004C4142 /* AccelerateShowcaseView.swift */,
+			);
+			path = AccelerateShowcase;
 			sourceTree = "<group>";
 		};
 		C28F16E52C4EF87500DF9C99 /* NFCReader */ = {
@@ -988,6 +1114,7 @@
 				C2AFB5FB2C14CC990076F636 /* CameraView.swift */,
 				C2AFB5FF2C14D5D10076F636 /* CameraViewModel.swift */,
 				C2AFB6012C14D5FA0076F636 /* PhotoCaptureProcessor.swift */,
+				C26A41222C582789004C4142 /* SimulatedCameraView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1103,24 +1230,30 @@
 		C2B8207B2C0A54260049F937 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				C26A411D2C581DBF004C4142 /* AccelerateShowcase */,
 				C2F3DB992C543D8B007E8D51 /* AudioVideoEditor */,
+				C26A41092C581D95004C4142 /* Bluetooth */,
 				C2AFB5FA2C14CC580076F636 /* Camera */,
 				C2B820AA2C0A581B0049F937 /* Dashboard */,
 				C2A4612E2C4C7247007DAC00 /* DeviceInfo */,
 				C28F25202C502EF200DF9C99 /* DevQuiz */,
+				C26A410F2C581DA2004C4142 /* DocumentScanner */,
 				C2390A032C404E2900F98116 /* Drawing */,
 				C2C66F8E2C0FA26900C8C4C5 /* FaceDetector */,
 				C28F24FB2C5022BC00DF9C99 /* FileManager */,
 				C22209282C124A7A00780A7B /* Flutter */,
 				C2A4612B2C4C7078007DAC00 /* HandwritingRecognition */,
 				C28F251D2C502AE000DF9C99 /* HapticFeedback */,
+				C26A41032C581D82004C4142 /* HealthKit */,
 				C2A461172C4C6983007DAC00 /* HttpRequestBuilder */,
 				C2F3DB942C54368A007E8D51 /* ImageClassification */,
 				C2993CFB2C0D14CE005B97D4 /* KotlinMultiplatform */,
 				C28F24F82C5020E900DF9C99 /* LocalNotifications */,
+				C26A411A2C581DB6004C4142 /* LottieAnimations */,
 				C28F25252C50314E00DF9C99 /* ManageEmployees */,
 				C261E4AA2C4ADD8300116D8E /* MapKit */,
 				C2A4611F2C4C6983007DAC00 /* News */,
+				C26A40FE2C581D70004C4142 /* NFCReader */,
 				C28F16E52C4EF87500DF9C99 /* NFCReader */,
 				C2A4613E2C4CACE2007DAC00 /* ObjectRecognition */,
 				C2C66F862C0F72DF00C8C4C5 /* OCR */,
@@ -1140,6 +1273,7 @@
 				C2AFB5F72C14BF620076F636 /* TextTranslator */,
 				C28F16E82C4EF87500DF9C99 /* UnityGame */,
 				C2F3DB8F2C5431C3007E8D51 /* WebBrowser */,
+				C26A41152C581DAD004C4142 /* WebsiteReader */,
 				C28F251A2C50298000DF9C99 /* WidgetKit */,
 			);
 			path = Apps;
@@ -1199,6 +1333,7 @@
 				C2DC3B3A2C40539100222179 /* Network */,
 				C2C66F892C0F732100C8C4C5 /* Vision */,
 				C2B820B52C0A5DD70049F937 /* AlertManager.swift */,
+				C26A411F2C582066004C4142 /* CrashHandler.swift */,
 				C2A461312C4C8D9E007DAC00 /* DeinitLogger.swift */,
 				C2B820AE2C0A5A1B0049F937 /* Logger.swift */,
 			);
@@ -1525,11 +1660,18 @@
 				C2B820B32C0A5B5D0049F937 /* charlatan.otf in Resources */,
 				C2BC71EF2C42E60D00ACE11C /* CosmonautSuit.reality in Resources */,
 				C2B820B22C0A5B5D0049F937 /* din.ttf in Resources */,
+				C26A40F52C581D08004C4142 /* error.json in Resources */,
+				C26A40F62C581D08004C4142 /* happy.json in Resources */,
+				C26A40F72C581D08004C4142 /* loader.json in Resources */,
 				C2B8205F2C0A49BB0049F937 /* Localizable.xcstrings in Resources */,
 				C2BC71EE2C42E60D00ACE11C /* LunarRover.reality in Resources */,
 				C2F3DB982C543B78007E8D51 /* mobilenet_v1_1.0_224.tflite in Resources */,
 				C2C66F952C0FA30A00C8C4C5 /* person.jpg in Resources */,
 				C2BC71ED2C42E60D00ACE11C /* RobotWalk.usdz in Resources */,
+				C26A40F82C581D08004C4142 /* sad.json in Resources */,
+				C26A40F92C581D08004C4142 /* success.json in Resources */,
+				C26A40FA2C581D08004C4142 /* warning.json in Resources */,
+				C26A40FB2C581D08004C4142 /* working.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1889,12 +2031,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26A411E2C581DBF004C4142 /* AccelerateShowcaseView.swift in Sources */,
 				C2B820B62C0A5DD70049F937 /* AlertManager.swift in Sources */,
 				C2A461382C4CA2EF007DAC00 /* APIKeys.swift in Sources */,
 				C2B820BA2C0A5FB70049F937 /* Array+Extentions.swift in Sources */,
 				C2B820CD2C0A80490049F937 /* Assets.swift in Sources */,
 				C2A4613B2C4CA85D007DAC00 /* AudioAnalyzer.swift in Sources */,
 				C2F3DB9B2C543D94007E8D51 /* AudioVideoEditorView.swift in Sources */,
+				C26A410A2C581D95004C4142 /* BluetoothManager.swift in Sources */,
+				C26A410B2C581D95004C4142 /* BluetoothView.swift in Sources */,
 				C2F3DB932C54321D007E8D51 /* BookmarkManager.swift in Sources */,
 				C2AFB6042C14D6210076F636 /* CameraFilterView.swift in Sources */,
 				C2AFB5FE2C14D5AD0076F636 /* CameraPreview.swift in Sources */,
@@ -1905,15 +2050,18 @@
 				C2993D092C0D21D8005B97D4 /* ContactItem.swift in Sources */,
 				C2B1094B2C1635B7002622C3 /* ContactRow.swift in Sources */,
 				C28F25292C50338900DF9C99 /* CoreDataStack.swift in Sources */,
+				C26A41202C582066004C4142 /* CrashHandler.swift in Sources */,
 				C2B820B82C0A5F5F0049F937 /* DashboardMenuItem.swift in Sources */,
 				C2B8207D2C0A543D0049F937 /* DashboardView.swift in Sources */,
 				C2A4612A2C4C6B56007DAC00 /* Date+Extensions.swift in Sources */,
 				C2A461322C4C8DB2007DAC00 /* DeinitLogger.swift in Sources */,
 				C2A461302C4C7251007DAC00 /* DeviceInfoView.swift in Sources */,
 				C28F25222C502F0E00DF9C99 /* DevQuizView.swift in Sources */,
+				C26A41102C581DA2004C4142 /* DocumentScannerView.swift in Sources */,
 				C2390A042C404E2900F98116 /* DrawingArea.swift in Sources */,
 				C2390A052C404E2900F98116 /* DrawingData.swift in Sources */,
 				C2390A062C404E2900F98116 /* DrawingView.swift in Sources */,
+				C26A41112C581DA2004C4142 /* DSView.swift in Sources */,
 				C2A461222C4C6983007DAC00 /* Entity.swift in Sources */,
 				C2C66F902C0FA27F00C8C4C5 /* FaceDetector.swift in Sources */,
 				C2C66F922C0FA2B200C8C4C5 /* FaceManager.swift in Sources */,
@@ -1929,6 +2077,8 @@
 				C2AFB5F62C14BE230076F636 /* GoogleTranslationManager.swift in Sources */,
 				C2A4612D2C4C7086007DAC00 /* HandwritingRecognitionView.swift in Sources */,
 				C28F251F2C502AED00DF9C99 /* HapticFeedbackView.swift in Sources */,
+				C26A41042C581D82004C4142 /* HealthKitManager.swift in Sources */,
+				C26A41052C581D82004C4142 /* HealthKitView.swift in Sources */,
 				C2A461262C4C6983007DAC00 /* HttpRequestBuilderView.swift in Sources */,
 				C2A461272C4C6983007DAC00 /* HttpRequestViewModel.swift in Sources */,
 				C2F3DB962C54371D007E8D51 /* ImageClassificationView.swift in Sources */,
@@ -1936,6 +2086,7 @@
 				C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */,
 				C28F24FA2C5020FD00DF9C99 /* LocalNotificationsView.swift in Sources */,
 				C2B820AF2C0A5A1B0049F937 /* Logger.swift in Sources */,
+				C26A411B2C581DB6004C4142 /* LottieAnimationsView.swift in Sources */,
 				C28F25272C50316100DF9C99 /* ManageEmployeesView.swift in Sources */,
 				C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */,
 				C2A1D05B2C12376000170662 /* MP3Streamer.swift in Sources */,
@@ -1945,7 +2096,9 @@
 				C2A461242C4C6983007DAC00 /* NewsView.swift in Sources */,
 				C2A461232C4C6983007DAC00 /* NewsViewController.swift in Sources */,
 				C28F16E92C4EF87500DF9C99 /* NFCReader.swift in Sources */,
+				C26A40FF2C581D70004C4142 /* NFCReader.swift in Sources */,
 				C28F16EA2C4EF87500DF9C99 /* NFCReaderView.swift in Sources */,
+				C26A41002C581D70004C4142 /* NFCReaderView.swift in Sources */,
 				C2A461492C4CAFAD007DAC00 /* ObjectRecognitionView.swift in Sources */,
 				C2C66F8B2C0F733200C8C4C5 /* OCRManager.swift in Sources */,
 				C2C66F882C0F72F100C8C4C5 /* OcrView.swift in Sources */,
@@ -1955,6 +2108,7 @@
 				C23034E92C138F8300267143 /* PDFCreator.swift in Sources */,
 				C23034EB2C1390E100267143 /* PDFKitView.swift in Sources */,
 				C23034E72C138EAC00267143 /* PDFViewer.swift in Sources */,
+				C26A410C2C581D95004C4142 /* PeripheralDetailView.swift in Sources */,
 				C2AFB6022C14D5FA0076F636 /* PhotoCaptureProcessor.swift in Sources */,
 				C2A461252C4C6983007DAC00 /* Protocols.swift in Sources */,
 				C261E4A92C4AD73800116D8E /* QRCodeScannerView.swift in Sources */,
@@ -1964,6 +2118,7 @@
 				C2BC71E72C42E47900ACE11C /* RealityKitView.swift in Sources */,
 				C2DC3B432C406AF300222179 /* SceneKitView.swift in Sources */,
 				C2993D072C0D21D8005B97D4 /* SharedModelContainer.swift in Sources */,
+				C26A41232C582789004C4142 /* SimulatedCameraView.swift in Sources */,
 				C2A4613D2C4CA881007DAC00 /* SoundAnalysisView.swift in Sources */,
 				C261E4AF2C4ADF6000116D8E /* SoundRecorderView.swift in Sources */,
 				C28F24F72C501EC900DF9C99 /* SpeechRecognitionView.swift in Sources */,
@@ -1979,6 +2134,9 @@
 				C2A461422C4CACF0007DAC00 /* ViewController.swift in Sources */,
 				C2A461412C4CACF0007DAC00 /* VisionObjectRecognitionViewController.swift in Sources */,
 				C2F3DB912C5431D8007E8D51 /* WebBrowserView.swift in Sources */,
+				C26A41162C581DAD004C4142 /* WebsiteReader.swift in Sources */,
+				C26A41172C581DAD004C4142 /* WebsiteReaderArticle.swift in Sources */,
+				C26A41182C581DAD004C4142 /* WebsiteReaderView.swift in Sources */,
 				C2DC3B3C2C4053B500222179 /* WebSocketServer.swift in Sources */,
 				C28F251C2C50298C00DF9C99 /* WidgetKitView.swift in Sources */,
 				C2A461502C4CBA13007DAC00 /* YOLOv3.mlmodel in Sources */,
@@ -2158,6 +2316,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FulliOS/FulliOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -2198,6 +2357,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FulliOS/FulliOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";

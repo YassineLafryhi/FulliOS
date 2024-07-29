@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct IdentifiableURL: Identifiable {
+internal struct IdentifiableURL: Identifiable {
     let id = UUID()
     let url: URL
 }
 
-struct FileManagerView: View {
+internal struct FileManagerView: View {
     @State private var currentPath: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     @State private var contents: [URL] = []
     @State private var selectedItems: Set<URL> = []
@@ -207,7 +207,7 @@ struct FileManagerView: View {
     }
 }
 
-struct FileRowView: View {
+internal struct FileRowView: View {
     let url: URL
     let isSelected: Bool
 
@@ -229,7 +229,7 @@ struct FileRowView: View {
     }
 }
 
-struct CreateNewItemView: View {
+internal struct CreateNewItemView: View {
     @Binding var isPresented: Bool
     @Binding var isFolder: Bool
     @Binding var itemName: String
@@ -252,7 +252,7 @@ struct CreateNewItemView: View {
     }
 }
 
-struct RenameItemView: View {
+internal struct RenameItemView: View {
     let item: IdentifiableURL
     @Binding var newName: String
     let onRename: () -> Void

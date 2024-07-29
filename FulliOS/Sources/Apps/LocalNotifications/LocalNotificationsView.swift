@@ -8,7 +8,7 @@
 import SwiftUI
 import UserNotifications
 
-struct LocalNotificationsView: View {
+internal struct LocalNotificationsView: View {
     @State private var titleText = ""
     @State private var bodyText = ""
     @State private var triggerDate = Date()

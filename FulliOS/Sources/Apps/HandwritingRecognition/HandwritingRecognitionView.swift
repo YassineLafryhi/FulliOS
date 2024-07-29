@@ -9,7 +9,7 @@ import PencilKit
 import SwiftUI
 import Vision
 
-struct HandwritingRecognitionView: View {
+internal struct HandwritingRecognitionView: View {
     @State private var canvasView = PKCanvasView()
     @State private var recognizedText = "Write something using Apple Pencil or your finger, then tap 'Recognize Text'."
 
@@ -72,7 +72,7 @@ struct HandwritingRecognitionView: View {
     }
 }
 
-struct CanvasView: UIViewRepresentable {
+internal struct CanvasView: UIViewRepresentable {
     @Binding var canvasView: PKCanvasView
 
     func makeUIView(context _: Context) -> PKCanvasView {

@@ -189,7 +189,42 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.editing.name,
             title: "Audio/Video Editor (FFmpegKit)",
-            destinationView: AnyView(AudioVideoEditorView()))
+            destinationView: AnyView(AudioVideoEditorView())),
+
+        DashboardMenuItem(
+            iconName: R.image.bluetooth.name,
+            title: "Bluetooth Manager (CoreBluetooth)",
+            destinationView: AnyView(BluetoothView())),
+
+        DashboardMenuItem(
+            iconName: R.image.scan.name,
+            title: "Document Scanner (PDFKit, VisionKit)",
+            destinationView: AnyView(DocumentScanner())),
+
+        DashboardMenuItem(
+            iconName: R.image.website.name,
+            title: "Website Reader (SwiftSoup, Kingfisher)",
+            destinationView: AnyView(WebsiteReaderView())),
+
+        DashboardMenuItem(
+            iconName: R.image.health.name,
+            title: "Health (HealthKit)",
+            destinationView: AnyView(HealthKitView())),
+
+        DashboardMenuItem(
+            iconName: R.image.react.name,
+            title: "React Native (React Native)",
+            destinationView: AnyView(EmptyView())),
+
+        DashboardMenuItem(
+            iconName: R.image.animations.name,
+            title: "Lottie Animations (Lottie)",
+            destinationView: AnyView(LottieAnimationsView())),
+
+        DashboardMenuItem(
+            iconName: R.image.accelerate.name,
+            title: "Accelerate Showcase (Accelerate)",
+            destinationView: AnyView(AccelerateShowcaseView()))
     ]
 
     var body: some View {

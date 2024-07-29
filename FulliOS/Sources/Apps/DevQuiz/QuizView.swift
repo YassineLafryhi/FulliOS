@@ -8,7 +8,7 @@
 import ResearchKit
 import SwiftUI
 
-struct QuizView: View {
+internal struct QuizView: View {
     let level: String
     @State private var isPresenting = false
     @State private var result: ORKTaskResult?
@@ -33,7 +33,7 @@ struct QuizView: View {
     }
 }
 
-struct ResearchKitView: UIViewControllerRepresentable {
+internal struct ResearchKitView: UIViewControllerRepresentable {
     @Binding var result: ORKTaskResult?
     let level: String
 

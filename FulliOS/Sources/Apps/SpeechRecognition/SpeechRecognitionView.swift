@@ -9,7 +9,7 @@ import AVFoundation
 import Speech
 import SwiftUI
 
-struct SpeechRecognitionView: View {
+internal struct SpeechRecognitionView: View {
     @State private var recognizedText = ""
     @State private var isRecording = false
     @State private var errorMessage: String?

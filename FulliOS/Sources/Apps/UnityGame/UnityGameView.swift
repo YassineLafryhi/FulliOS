@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UnityGameView: View {
+internal struct UnityGameView: View {
     var body: some View {
         VStack {
             FButton("Open Unity Game") {
