@@ -224,7 +224,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.accelerate.name,
             title: "Accelerate Showcase (Accelerate)",
-            destinationView: AnyView(AccelerateShowcaseView()))
+            destinationView: AnyView(AccelerateShowcaseView())),
+
+        DashboardMenuItem(
+            iconName: R.image.analyzer.name,
+            title: "Text Analyzer (Rust Lib)",
+            destinationView: AnyView(TextAnalyzerView())),
+
+        DashboardMenuItem(
+            iconName: R.image.server.name,
+            title: "Web Server (GCDWebServer)",
+            destinationView: AnyView(WebServerView()))
     ]
 
     var body: some View {

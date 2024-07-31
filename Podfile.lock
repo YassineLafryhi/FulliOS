@@ -4,6 +4,9 @@ PODS:
   - ExytePopupView (3.0.4):
     - SwiftUIIntrospect
   - Fakery (5.1.0)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
   - GoogleDataTransport (9.4.1):
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30911.0, >= 2.30908.0)
@@ -103,6 +106,7 @@ DEPENDENCIES:
   - DeviceKit
   - ExytePopupView
   - Fakery
+  - GCDWebServer
   - GoogleMLKit/LanguageID
   - GoogleMLKit/Translate
   - IBLinter
@@ -131,6 +135,7 @@ SPEC REPOS:
     - DeviceKit
     - ExytePopupView
     - Fakery
+    - GCDWebServer
     - GoogleDataTransport
     - GoogleMLKit
     - GoogleToolboxForMac
@@ -173,6 +178,7 @@ SPEC CHECKSUMS:
   DeviceKit: bd34bb1766d926c3cc5a5f6e3e9a6dd10148b805
   ExytePopupView: 357298b6f4ff95be11bf3d0e28e4c8404075b051
   Fakery: a90caff00ca5cacde6c161c3eafc72314a03d34d
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
   GoogleMLKit: 97ac7af399057e99182ee8edfa8249e3226a4065
   GoogleToolboxForMac: d1a2cbf009c453f4d6ded37c105e2f67a32206d8
@@ -210,6 +216,6 @@ SPEC CHECKSUMS:
   TensorFlowLiteSwift: f706b143b69d7bf433aba7b08049bdd11c321a10
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 990ffdc7b78971d47102a6fa0cfc64fb3c14a292
+PODFILE CHECKSUM: 01dea989b8eb0b8b1d9bc5b1f7bfa78cfd9181ca
 
 COCOAPODS: 1.15.2
