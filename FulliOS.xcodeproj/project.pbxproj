@@ -154,10 +154,17 @@
 		C2F3DB9B2C543D94007E8D51 /* AudioVideoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3DB9A2C543D90007E8D51 /* AudioVideoEditorView.swift */; };
 		C2FDF3F12C5AAC5C00E2538F /* RustBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF3F02C5AAC5C00E2538F /* RustBridge.swift */; };
 		C2FDF3F32C5AAC7B00E2538F /* TextAnalyzerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF3F22C5AAC7B00E2538F /* TextAnalyzerView.swift */; };
-		C2FDF3F92C5AAF4800E2538F /* libtextanalyzer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FDF3F82C5AAF4800E2538F /* libtextanalyzer.a */; };
 		C2FDF3FE2C5AB19200E2538F /* WebServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF3FB2C5AB19200E2538F /* WebServerManager.swift */; };
 		C2FDF3FF2C5AB19200E2538F /* WebServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF3FC2C5AB19200E2538F /* WebServerView.swift */; };
 		C2FDF4022C5AB2BE00E2538F /* FText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF4012C5AB2BE00E2538F /* FText.swift */; };
+		C2FDF4082C5BFA8F00E2538F /* FourierTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF4072C5BFA8F00E2538F /* FourierTransformView.swift */; };
+		C2FDF40B2C5BFB2C00E2538F /* libc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FDF4092C5BFB2C00E2538F /* libc.a */; };
+		C2FDF40C2C5BFB2C00E2538F /* librust.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FDF40A2C5BFB2C00E2538F /* librust.a */; };
+		C2FDF4122C5C288000E2538F /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF4112C5C288000E2538F /* ApolloClient.swift */; };
+		C2FDF4142C5C289A00E2538F /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF4132C5C289A00E2538F /* LaunchesViewModel.swift */; };
+		C2FDF4162C5C28AE00E2538F /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF4152C5C28AE00E2538F /* LaunchesView.swift */; };
+		C2FDF41C2C5C2B0100E2538F /* PostgresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF41B2C5C2B0100E2538F /* PostgresManager.swift */; };
+		C2FDF41E2C5C2B2000E2538F /* PostgresClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDF41D2C5C2B2000E2538F /* PostgresClientView.swift */; };
 		EB83FC6DBB76E4573D1BACF6 /* Pods_FulliOS_FulliOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */; };
 		EC13E37343012244FCF7A534 /* Pods_FulliOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212FE58FC3184FCB5D7DA91B /* Pods_FulliOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -411,10 +418,21 @@
 		C2FDF3F42C5AACEF00E2538F /* lib.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
 		C2FDF3F62C5AACEF00E2538F /* Cargo.toml */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cargo.toml; sourceTree = "<group>"; };
 		C2FDF3F82C5AAF4800E2538F /* libtextanalyzer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtextanalyzer.a; path = StaticLibs/libtextanalyzer.a; sourceTree = "<group>"; };
-		C2FDF3FA2C5AAFA800E2538F /* RustLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RustLib.h; sourceTree = "<group>"; };
+		C2FDF3FA2C5AAFA800E2538F /* RustLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RustLibrary.h; sourceTree = "<group>"; };
 		C2FDF3FB2C5AB19200E2538F /* WebServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServerManager.swift; sourceTree = "<group>"; };
 		C2FDF3FC2C5AB19200E2538F /* WebServerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServerView.swift; sourceTree = "<group>"; };
 		C2FDF4012C5AB2BE00E2538F /* FText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FText.swift; sourceTree = "<group>"; };
+		C2FDF4042C5BF9A200E2538F /* fourier.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fourier.c; sourceTree = "<group>"; };
+		C2FDF4052C5BFA1100E2538F /* CLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLibrary.h; sourceTree = "<group>"; };
+		C2FDF4072C5BFA8F00E2538F /* FourierTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourierTransformView.swift; sourceTree = "<group>"; };
+		C2FDF4092C5BFB2C00E2538F /* libc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libc.a; path = StaticLibs/libc.a; sourceTree = "<group>"; };
+		C2FDF40A2C5BFB2C00E2538F /* librust.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust.a; path = StaticLibs/librust.a; sourceTree = "<group>"; };
+		C2FDF4112C5C288000E2538F /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
+		C2FDF4132C5C289A00E2538F /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		C2FDF4152C5C28AE00E2538F /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
+		C2FDF4192C5C29C700E2538F /* LaunchesQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchesQuery.graphql; sourceTree = "<group>"; };
+		C2FDF41B2C5C2B0100E2538F /* PostgresManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostgresManager.swift; sourceTree = "<group>"; };
+		C2FDF41D2C5C2B2000E2538F /* PostgresClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostgresClientView.swift; sourceTree = "<group>"; };
 		CA19519703F2E0162FAC7D53 /* Pods-FulliOS-FulliOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FulliOS-FulliOSUITests.release.xcconfig"; path = "Target Support Files/Pods-FulliOS-FulliOSUITests/Pods-FulliOS-FulliOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FulliOS_FulliOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -426,7 +444,8 @@
 			files = (
 				C222092C2C124DF000780A7B /* App.xcframework in Frameworks */,
 				C222092E2C124DFC00780A7B /* Flutter.xcframework in Frameworks */,
-				C2FDF3F92C5AAF4800E2538F /* libtextanalyzer.a in Frameworks */,
+				C2FDF40B2C5BFB2C00E2538F /* libc.a in Frameworks */,
+				C2FDF40C2C5BFB2C00E2538F /* librust.a in Frameworks */,
 				5AD97A28CB9DEAEB3CB8D302 /* Pods_FulliOS.framework in Frameworks */,
 				C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */,
 				C28F24E42C4EFFD800DF9C99 /* UnityFramework.framework in Frameworks */,
@@ -563,7 +582,8 @@
 		C2615FDA2C0A36F800EBD073 = {
 			isa = PBXGroup;
 			children = (
-				C2FDF3F72C5AACEF00E2538F /* TextAnalyzer */,
+				C2FDF4032C5BF97F00E2538F /* CLibrary */,
+				C2FDF3F72C5AACEF00E2538F /* RustLibrary */,
 				C28F1E8C2C4EF89D00DF9C99 /* UnityGame */,
 				C261E49F2C4ACB3E00116D8E /* VaporServer */,
 				C22209222C1249FD00780A7B /* FlutterModule */,
@@ -1259,6 +1279,8 @@
 				C2C66F8E2C0FA26900C8C4C5 /* FaceDetector */,
 				C28F24FB2C5022BC00DF9C99 /* FileManager */,
 				C22209282C124A7A00780A7B /* Flutter */,
+				C2FDF4062C5BFA7E00E2538F /* FourierTransform */,
+				C2FDF4102C5C286F00E2538F /* GraphQL */,
 				C2A4612B2C4C7078007DAC00 /* HandwritingRecognition */,
 				C28F251D2C502AE000DF9C99 /* HapticFeedback */,
 				C26A41032C581D82004C4142 /* HealthKit */,
@@ -1277,6 +1299,7 @@
 				C2E97A7A2C133E860004BE45 /* OpenCV */,
 				C21523982C3084DA0086D103 /* PasswordsManager */,
 				C23034E52C138E9800267143 /* PDFKit */,
+				C2FDF41A2C5C2AF200E2538F /* PostgresClient */,
 				C261E4A72C4AD72800116D8E /* QRCodeScanner */,
 				C2A1D0572C12371000170662 /* QuranPlayer */,
 				C2BC71E52C42E46600ACE11C /* RealityView */,
@@ -1516,7 +1539,7 @@
 			isa = PBXGroup;
 			children = (
 				C2FDF3F02C5AAC5C00E2538F /* RustBridge.swift */,
-				C2FDF3FA2C5AAFA800E2538F /* RustLib.h */,
+				C2FDF3FA2C5AAFA800E2538F /* RustLibrary.h */,
 				C2FDF3F22C5AAC7B00E2538F /* TextAnalyzerView.swift */,
 			);
 			path = TextAnalyzer;
@@ -1530,13 +1553,13 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		C2FDF3F72C5AACEF00E2538F /* TextAnalyzer */ = {
+		C2FDF3F72C5AACEF00E2538F /* RustLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				C2FDF3F52C5AACEF00E2538F /* src */,
 				C2FDF3F62C5AACEF00E2538F /* Cargo.toml */,
 			);
-			path = TextAnalyzer;
+			path = RustLibrary;
 			sourceTree = "<group>";
 		};
 		C2FDF3FD2C5AB19200E2538F /* WebServer */ = {
@@ -1556,11 +1579,50 @@
 			path = FText;
 			sourceTree = "<group>";
 		};
+		C2FDF4032C5BF97F00E2538F /* CLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C2FDF4052C5BFA1100E2538F /* CLibrary.h */,
+				C2FDF4042C5BF9A200E2538F /* fourier.c */,
+			);
+			path = CLibrary;
+			sourceTree = "<group>";
+		};
+		C2FDF4062C5BFA7E00E2538F /* FourierTransform */ = {
+			isa = PBXGroup;
+			children = (
+				C2FDF4072C5BFA8F00E2538F /* FourierTransformView.swift */,
+			);
+			path = FourierTransform;
+			sourceTree = "<group>";
+		};
+		C2FDF4102C5C286F00E2538F /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				C2FDF4112C5C288000E2538F /* ApolloClient.swift */,
+				C2FDF4192C5C29C700E2538F /* LaunchesQuery.graphql */,
+				C2FDF4152C5C28AE00E2538F /* LaunchesView.swift */,
+				C2FDF4132C5C289A00E2538F /* LaunchesViewModel.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		C2FDF41A2C5C2AF200E2538F /* PostgresClient */ = {
+			isa = PBXGroup;
+			children = (
+				C2FDF41D2C5C2B2000E2538F /* PostgresClientView.swift */,
+				C2FDF41B2C5C2B0100E2538F /* PostgresManager.swift */,
+			);
+			path = PostgresClient;
+			sourceTree = "<group>";
+		};
 		F60F58D075A0B19C31734CFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C222092B2C124DEF00780A7B /* App.xcframework */,
 				C222092D2C124DFC00780A7B /* Flutter.xcframework */,
+				C2FDF4092C5BFB2C00E2538F /* libc.a */,
+				C2FDF40A2C5BFB2C00E2538F /* librust.a */,
 				C2FDF3F82C5AAF4800E2538F /* libtextanalyzer.a */,
 				778E090DFDF4547B1776F5CE /* Pods_FulliOS.framework */,
 				F17B075C50F109FB79641EEB /* Pods_FulliOS_FulliOSUITests.framework */,
@@ -1954,7 +2016,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftySpell/swiftyspell\" \"${SRCROOT}\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftySpell/swiftyspell\" check \"${SRCROOT}\"\n";
 		};
 		C26160162C0A3E3F00EBD073 /* Identify Unused Code With Periphery */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2099,6 +2161,7 @@
 				C26A411E2C581DBF004C4142 /* AccelerateShowcaseView.swift in Sources */,
 				C2B820B62C0A5DD70049F937 /* AlertManager.swift in Sources */,
 				C2A461382C4CA2EF007DAC00 /* APIKeys.swift in Sources */,
+				C2FDF4122C5C288000E2538F /* ApolloClient.swift in Sources */,
 				C2B820BA2C0A5FB70049F937 /* Array+Extentions.swift in Sources */,
 				C2B820CD2C0A80490049F937 /* Assets.swift in Sources */,
 				C2A4613B2C4CA85D007DAC00 /* AudioAnalyzer.swift in Sources */,
@@ -2137,6 +2200,7 @@
 				C222092A2C124A8B00780A7B /* FlutterView.swift in Sources */,
 				C2B820832C0A55860049F937 /* FMenu.swift in Sources */,
 				C2B820CE2C0A80490049F937 /* Fonts.swift in Sources */,
+				C2FDF4082C5BFA8F00E2538F /* FourierTransformView.swift in Sources */,
 				C2329C342C13A57300BC632C /* FPicker.swift in Sources */,
 				C2FDF4022C5AB2BE00E2538F /* FText.swift in Sources */,
 				C21FAB1E2C1234B5001CFAA5 /* FulliOSApp.swift in Sources */,
@@ -2150,6 +2214,8 @@
 				C2F3DB962C54371D007E8D51 /* ImageClassificationView.swift in Sources */,
 				C2C66F8D2C0F747400C8C4C5 /* ImagePicker.swift in Sources */,
 				C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */,
+				C2FDF4162C5C28AE00E2538F /* LaunchesView.swift in Sources */,
+				C2FDF4142C5C289A00E2538F /* LaunchesViewModel.swift in Sources */,
 				C28F24FA2C5020FD00DF9C99 /* LocalNotificationsView.swift in Sources */,
 				C2B820AF2C0A5A1B0049F937 /* Logger.swift in Sources */,
 				C26A411B2C581DB6004C4142 /* LottieAnimationsView.swift in Sources */,
@@ -2176,6 +2242,8 @@
 				C23034E72C138EAC00267143 /* PDFViewer.swift in Sources */,
 				C26A410C2C581D95004C4142 /* PeripheralDetailView.swift in Sources */,
 				C2AFB6022C14D5FA0076F636 /* PhotoCaptureProcessor.swift in Sources */,
+				C2FDF41E2C5C2B2000E2538F /* PostgresClientView.swift in Sources */,
+				C2FDF41C2C5C2B0100E2538F /* PostgresManager.swift in Sources */,
 				C2A461252C4C6983007DAC00 /* Protocols.swift in Sources */,
 				C261E4A92C4AD73800116D8E /* QRCodeScannerView.swift in Sources */,
 				C28F25242C502F2E00DF9C99 /* QuizView.swift in Sources */,
@@ -2554,6 +2622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 55DHYS5FJZ;
@@ -2571,6 +2640,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.yassinelafryhi.FulliOS.QuoteWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2583,6 +2653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 55DHYS5FJZ;
@@ -2600,6 +2671,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.yassinelafryhi.FulliOS.QuoteWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

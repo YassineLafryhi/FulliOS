@@ -11,7 +11,7 @@ import AVKit
 import Photos
 import SwiftUI
 
-struct AudioVideoEditorView: View {
+internal struct AudioVideoEditorView: View {
     @State private var selectedURL: URL?
     @State private var trimStart: Double = 0
     @State private var trimEnd: Double = 0

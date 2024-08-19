@@ -1,3 +1,18 @@
+languages:
+  - en
+
+excludePatterns:
+  - \b[0-9a-fA-F]{6}\b
+  - \bhttps?:\/\/[^\s]+\b
+  - ^[a-z]+(\.[a-z]+)+$
+
+excludeFiles:
+  - Constants.swift
+
+excludeDirectories:
+  - Pods
+  - FulliOS/Sources/Generated
+  
 ignoreList:
   - FulliOS
   - Fulli
@@ -16,15 +31,3 @@ ignoreList:
   - ci
   - Alamofire
   - deinit
-
-excludePatterns:
-  - \b[0-9a-fA-F]{6}\b
-  - \bhttps?:\/\/[^\s]+\b
-  - ^[a-z]+(\.[a-z]+)+$
-
-excludeFiles:
-  - Constants.swift
-
-excludeDirectories:
-  - Pods
-  - FulliOS/Sources/Generated

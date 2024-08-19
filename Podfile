@@ -33,6 +33,8 @@ target 'FulliOS' do
   pod 'TensorFlowLiteSwift'
   pod 'lottie-ios'
   pod 'GCDWebServer'
+  pod 'Apollo'
+  pod 'PostgresClientKit'
 
   target 'FulliOSTests' do
     inherit! :search_paths

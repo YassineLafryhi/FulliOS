@@ -1,5 +1,11 @@
 PODS:
   - Alamofire (5.9.1)
+  - Apollo (1.15.0):
+    - Apollo/Core (= 1.15.0)
+  - Apollo/Core (1.15.0)
+  - BlueSocket (1.0.52)
+  - BlueSSLService (1.0.52):
+    - BlueSocket (~> 1.0.52)
   - DeviceKit (5.4.0)
   - ExytePopupView (3.0.4):
     - SwiftUIIntrospect
@@ -67,13 +73,16 @@ PODS:
   - nanopb/encode (2.30910.0)
   - OpenCV (4.3.0)
   - Periphery (2.21.0)
+  - PostgresClientKit (1.5.0):
+    - BlueSocket (~> 1.0)
+    - BlueSSLService (~> 1.0)
   - PromisesObjC (2.4.0)
   - R.swift (7.3.2)
-  - Realm (10.52.2):
-    - Realm/Headers (= 10.52.2)
-  - Realm/Headers (10.52.2)
-  - RealmSwift (10.52.2):
-    - Realm (= 10.52.2)
+  - Realm (10.52.3):
+    - Realm/Headers (= 10.52.3)
+  - Realm/Headers (10.52.3)
+  - RealmSwift (10.52.3):
+    - Realm (= 10.52.3)
   - ResearchKit (2.2.16)
   - RxCocoa (6.7.1):
     - RxRelay (= 6.7.1)
@@ -86,23 +95,26 @@ PODS:
   - Sourcery/CLI-Only (2.2.5)
   - SSZipArchive (2.5.5)
   - Starscream (4.0.8)
-  - SwiftFormat/CLI (0.54.1)
+  - SwiftFormat/CLI (0.54.3)
   - SwiftGen (6.6.3)
-  - SwiftLint (0.55.1)
-  - SwiftSoup (2.7.2)
+  - SwiftLint (0.56.1)
+  - SwiftSoup (2.7.3)
   - SwiftUIIntrospect (1.3.0)
-  - SwiftySpell (0.9.2)
-  - TensorFlowLiteC (2.14.0):
-    - TensorFlowLiteC/Core (= 2.14.0)
-  - TensorFlowLiteC/Core (2.14.0)
-  - TensorFlowLiteSwift (2.14.0):
-    - TensorFlowLiteSwift/Core (= 2.14.0)
-  - TensorFlowLiteSwift/Core (2.14.0):
-    - TensorFlowLiteC (= 2.14.0)
+  - SwiftySpell (0.9.6)
+  - TensorFlowLiteC (2.17.0):
+    - TensorFlowLiteC/Core (= 2.17.0)
+  - TensorFlowLiteC/Core (2.17.0)
+  - TensorFlowLiteSwift (2.17.0):
+    - TensorFlowLiteSwift/Core (= 2.17.0)
+  - TensorFlowLiteSwift/Core (2.17.0):
+    - TensorFlowLiteC (= 2.17.0)
+    - TensorFlowLiteSwift/Privacy (= 2.17.0)
+  - TensorFlowLiteSwift/Privacy (2.17.0)
   - Toaster (2.3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Apollo
   - DeviceKit
   - ExytePopupView
   - Fakery
@@ -114,6 +126,7 @@ DEPENDENCIES:
   - lottie-ios
   - OpenCV
   - Periphery
+  - PostgresClientKit
   - R.swift
   - RealmSwift
   - ResearchKit
@@ -132,6 +145,9 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Apollo
+    - BlueSocket
+    - BlueSSLService
     - DeviceKit
     - ExytePopupView
     - Fakery
@@ -152,6 +168,7 @@ SPEC REPOS:
     - nanopb
     - OpenCV
     - Periphery
+    - PostgresClientKit
     - PromisesObjC
     - R.swift
     - Realm
@@ -175,6 +192,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Apollo: ee0a36746206d941bf24a932b88778b6e4677d23
+  BlueSocket: 1acd943acb07b55905291d608649fcfbf8cbd57d
+  BlueSSLService: b791a3db95b841973c44870f59bbf94628845b58
   DeviceKit: bd34bb1766d926c3cc5a5f6e3e9a6dd10148b805
   ExytePopupView: 357298b6f4ff95be11bf3d0e28e4c8404075b051
   Fakery: a90caff00ca5cacde6c161c3eafc72314a03d34d
@@ -195,10 +215,11 @@ SPEC CHECKSUMS:
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   OpenCV: 681e0451c1e54c5930a8922277f817ed5d5ab459
   Periphery: ee5accaac4ff9694d2bf60d52462fb1675c67c9d
+  PostgresClientKit: 46759d7926389529314fb23f2be44e0246808de8
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
-  Realm: e44eb7d20fe469fe1179894fd356727b8fbe61c2
-  RealmSwift: 7aacbd3101158f7d54c930bcfcfaafadbd376ffc
+  Realm: f9d340f510309e52a393d65c56103ef524d88a43
+  RealmSwift: 673454b09bc096853ee530e824847f38cdc21243
   ResearchKit: 4ce3751136fc82a02ac83f873b09b01b6974a761
   RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
   RxRelay: 4151ba01152436b08271e08410135e099880eae5
@@ -206,16 +227,16 @@ SPEC CHECKSUMS:
   Sourcery: 088e2f5a70844da8bc439f9eb9d88f35fc702f93
   SSZipArchive: c69881e8ac5521f0e622291387add5f60f30f3c4
   Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
-  SwiftFormat: f8933f9e97e80bb06d66129ee9c037e21ac44fd8
+  SwiftFormat: 0e575b1d412d27cd5906c59fab64a806ba8f2b8e
   SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
-  SwiftLint: 3fe909719babe5537c552ee8181c0031392be933
-  SwiftSoup: 4164c6bd8af69acd119c23fb36906975a60d71bb
+  SwiftLint: c5fa0b7eece474d43d2178b581a1242a16267347
+  SwiftSoup: e3849c3293b1efee9cf892f91f6ae5c22bfeb5f7
   SwiftUIIntrospect: fee9aa07293ee280373a591e1824e8ddc869ba5d
-  SwiftySpell: c61e7b5af1c8c08eeb79ac7ad8019d5ee171e80e
-  TensorFlowLiteC: a836de9b6e6018665ccc349538bdd2c3b80dd7a5
-  TensorFlowLiteSwift: f706b143b69d7bf433aba7b08049bdd11c321a10
+  SwiftySpell: 9297a2c2feedb3fc7e15b68f4f8f96d9ec52b25f
+  TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
+  TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 01dea989b8eb0b8b1d9bc5b1f7bfa78cfd9181ca
+PODFILE CHECKSUM: a6a5e59238d557f8e5786dd3a51a9871ea512688
 
 COCOAPODS: 1.15.2

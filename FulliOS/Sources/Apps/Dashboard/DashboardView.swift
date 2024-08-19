@@ -234,7 +234,22 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.server.name,
             title: "Web Server (GCDWebServer)",
-            destinationView: AnyView(WebServerView()))
+            destinationView: AnyView(WebServerView())),
+
+        DashboardMenuItem(
+            iconName: R.image.fourier.name,
+            title: "Fourier Transform (C Lib)",
+            destinationView: AnyView(FourierTransformView())),
+
+        DashboardMenuItem(
+            iconName: R.image.graphql.name,
+            title: "GraphQL Client (Apollo)",
+            destinationView: AnyView(LaunchesView())),
+
+        DashboardMenuItem(
+            iconName: R.image.postgres.name,
+            title: "Postgres Client (PostgresClientKit)",
+            destinationView: AnyView(PostgresClientView()))
     ]
 
     var body: some View {

@@ -9,7 +9,7 @@ import SwiftUI
 import TensorFlowLite
 import UIKit
 
-struct ImageClassificationView: View {
+internal struct ImageClassificationView: View {
     @State private var selectedImage: UIImage?
     @State private var classificationResult = ""
     @State private var isShowingImagePicker = false

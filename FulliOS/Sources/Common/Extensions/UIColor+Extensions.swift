@@ -1,5 +1,5 @@
 //
-//  UIColor+Extension..swift
+//  UIColor+Extensions.swift
 //  FulliOS
 //
 //  Created by Yassine Lafryhi on 19/7/2024.

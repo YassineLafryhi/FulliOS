@@ -1,5 +1,5 @@
 //
-//  Color+Extension.swift
+//  Color+Extensions.swift
 //  FulliOS
 //
 //  Created by Yassine Lafryhi on 31/5/2024.

@@ -9,7 +9,8 @@
 #define FulliOS_Bridging_Header_h
 
 #import "OpenCVProcessor.h"
-#import "RustLib.h"
+#import "RustLibrary.h"
+#import "CLibrary.h"
 
 /*#import <React/RCTBridgeModule.h>
 #import <React/RCTViewManager.h>
