@@ -6,6 +6,7 @@
 //
 
 import AVFoundation
+import UIKit
 
 internal class PhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
     private let completion: (UIImage?) -> Void
