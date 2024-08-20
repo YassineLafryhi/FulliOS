@@ -35,6 +35,8 @@ target 'FulliOS' do
   pod 'GCDWebServer'
   pod 'Apollo'
   pod 'PostgresClientKit'
+  pod 'Moya'
+  pod 'Embassy'
 
   target 'FulliOSTests' do
     inherit! :search_paths

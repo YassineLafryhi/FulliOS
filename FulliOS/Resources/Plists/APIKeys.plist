@@ -4,5 +4,7 @@
 <dict>
 	<key>NEWS_API_KEY</key>
 	<string>PUT_NEWS_API_KEY_HERE</string>
+	<key>GEMINI_API_KEY</key>
+	<string>PUT_GEMINI_API_KEY_HERE</string>
 </dict>
 </plist>

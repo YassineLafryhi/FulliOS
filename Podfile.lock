@@ -7,6 +7,7 @@ PODS:
   - BlueSSLService (1.0.52):
     - BlueSocket (~> 1.0.52)
   - DeviceKit (5.4.0)
+  - Embassy (4.1.4)
   - ExytePopupView (3.0.4):
     - SwiftUIIntrospect
   - Fakery (5.1.0)
@@ -66,6 +67,10 @@ PODS:
   - MLKitTranslate (5.0.0):
     - MLKitNaturalLanguage (~> 7.0)
     - SSZipArchive (< 3.0, >= 2.5.5)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - nanopb (2.30910.0):
     - nanopb/decode (= 2.30910.0)
     - nanopb/encode (= 2.30910.0)
@@ -116,6 +121,7 @@ DEPENDENCIES:
   - Alamofire
   - Apollo
   - DeviceKit
+  - Embassy
   - ExytePopupView
   - Fakery
   - GCDWebServer
@@ -124,6 +130,7 @@ DEPENDENCIES:
   - IBLinter
   - Kingfisher
   - lottie-ios
+  - Moya
   - OpenCV
   - Periphery
   - PostgresClientKit
@@ -149,6 +156,7 @@ SPEC REPOS:
     - BlueSocket
     - BlueSSLService
     - DeviceKit
+    - Embassy
     - ExytePopupView
     - Fakery
     - GCDWebServer
@@ -165,6 +173,7 @@ SPEC REPOS:
     - MLKitLanguageID
     - MLKitNaturalLanguage
     - MLKitTranslate
+    - Moya
     - nanopb
     - OpenCV
     - Periphery
@@ -196,6 +205,7 @@ SPEC CHECKSUMS:
   BlueSocket: 1acd943acb07b55905291d608649fcfbf8cbd57d
   BlueSSLService: b791a3db95b841973c44870f59bbf94628845b58
   DeviceKit: bd34bb1766d926c3cc5a5f6e3e9a6dd10148b805
+  Embassy: d752c8de4795d6d7ec0e533cd69b9275917a5211
   ExytePopupView: 357298b6f4ff95be11bf3d0e28e4c8404075b051
   Fakery: a90caff00ca5cacde6c161c3eafc72314a03d34d
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
@@ -212,6 +222,7 @@ SPEC CHECKSUMS:
   MLKitLanguageID: a897902aa4e58f7bf0943b07a1f9b58d762273aa
   MLKitNaturalLanguage: 7cd66a1ec3fbee2ff22890e1d42dda5c928e811b
   MLKitTranslate: a404df6fba19d2ddcbebf4f1fc51d9f5edd24ee5
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   OpenCV: 681e0451c1e54c5930a8922277f817ed5d5ab459
   Periphery: ee5accaac4ff9694d2bf60d52462fb1675c67c9d
@@ -237,6 +248,6 @@ SPEC CHECKSUMS:
   TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: a6a5e59238d557f8e5786dd3a51a9871ea512688
+PODFILE CHECKSUM: aad7c4e3d0d5fa29b3a16fda407bbc61f8024c73
 
 COCOAPODS: 1.15.2

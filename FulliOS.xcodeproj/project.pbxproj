@@ -74,6 +74,24 @@
 		C28F25242C502F2E00DF9C99 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F25232C502F2E00DF9C99 /* QuizView.swift */; };
 		C28F25272C50316100DF9C99 /* ManageEmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F25262C50316100DF9C99 /* ManageEmployeesView.swift */; };
 		C28F25292C50338900DF9C99 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F25282C50338900DF9C99 /* CoreDataStack.swift */; };
+		C29811A72C73B48A00AF3E4D /* AlbumsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811A12C73B48A00AF3E4D /* AlbumsListProtocols.swift */; };
+		C29811A82C73B48A00AF3E4D /* AlbumsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811A22C73B48A00AF3E4D /* AlbumsListView.swift */; };
+		C29811A92C73B48A00AF3E4D /* AlbumsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811A32C73B48A00AF3E4D /* AlbumsListPresenter.swift */; };
+		C29811AA2C73B48A00AF3E4D /* AlbumsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811A42C73B48A00AF3E4D /* AlbumsListRouter.swift */; };
+		C29811AB2C73B48A00AF3E4D /* AlbumsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811A52C73B48A00AF3E4D /* AlbumsListInteractor.swift */; };
+		C29811AC2C73B48A00AF3E4D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811A62C73B48A00AF3E4D /* Album.swift */; };
+		C29811B02C73B4CB00AF3E4D /* GeminiChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811AE2C73B4CB00AF3E4D /* GeminiChatViewModel.swift */; };
+		C29811B12C73B4CB00AF3E4D /* GeminiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811AF2C73B4CB00AF3E4D /* GeminiModel.swift */; };
+		C29811BC2C73B52300AF3E4D /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811B32C73B52200AF3E4D /* MealDetailViewModel.swift */; };
+		C29811BD2C73B52300AF3E4D /* MealsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811B42C73B52200AF3E4D /* MealsCoordinator.swift */; };
+		C29811BE2C73B52300AF3E4D /* MealsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811B52C73B52200AF3E4D /* MealsSearchView.swift */; };
+		C29811BF2C73B52300AF3E4D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811B62C73B52200AF3E4D /* Meal.swift */; };
+		C29811C02C73B52300AF3E4D /* MealsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811B72C73B52200AF3E4D /* MealsAPI.swift */; };
+		C29811C12C73B52300AF3E4D /* MealsSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811B82C73B52300AF3E4D /* MealsSearchViewModel.swift */; };
+		C29811C22C73B52300AF3E4D /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811B92C73B52300AF3E4D /* MealDetailView.swift */; };
+		C29811C32C73B52300AF3E4D /* MealsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811BA2C73B52300AF3E4D /* MealsAPIService.swift */; };
+		C29811C42C73B52300AF3E4D /* MealSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811BB2C73B52300AF3E4D /* MealSearchView.swift */; };
+		C29811C62C73B67400AF3E4D /* GeminiChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811C52C73B67400AF3E4D /* GeminiChatView.swift */; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -314,6 +332,24 @@
 		C28F25232C502F2E00DF9C99 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		C28F25262C50316100DF9C99 /* ManageEmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageEmployeesView.swift; sourceTree = "<group>"; };
 		C28F25282C50338900DF9C99 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C29811A12C73B48A00AF3E4D /* AlbumsListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListProtocols.swift; sourceTree = "<group>"; };
+		C29811A22C73B48A00AF3E4D /* AlbumsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListView.swift; sourceTree = "<group>"; };
+		C29811A32C73B48A00AF3E4D /* AlbumsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListPresenter.swift; sourceTree = "<group>"; };
+		C29811A42C73B48A00AF3E4D /* AlbumsListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListRouter.swift; sourceTree = "<group>"; };
+		C29811A52C73B48A00AF3E4D /* AlbumsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListInteractor.swift; sourceTree = "<group>"; };
+		C29811A62C73B48A00AF3E4D /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		C29811AE2C73B4CB00AF3E4D /* GeminiChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiChatViewModel.swift; sourceTree = "<group>"; };
+		C29811AF2C73B4CB00AF3E4D /* GeminiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiModel.swift; sourceTree = "<group>"; };
+		C29811B32C73B52200AF3E4D /* MealDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
+		C29811B42C73B52200AF3E4D /* MealsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsCoordinator.swift; sourceTree = "<group>"; };
+		C29811B52C73B52200AF3E4D /* MealsSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsSearchView.swift; sourceTree = "<group>"; };
+		C29811B62C73B52200AF3E4D /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		C29811B72C73B52200AF3E4D /* MealsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsAPI.swift; sourceTree = "<group>"; };
+		C29811B82C73B52300AF3E4D /* MealsSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsSearchViewModel.swift; sourceTree = "<group>"; };
+		C29811B92C73B52300AF3E4D /* MealDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		C29811BA2C73B52300AF3E4D /* MealsAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsAPIService.swift; sourceTree = "<group>"; };
+		C29811BB2C73B52300AF3E4D /* MealSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealSearchView.swift; sourceTree = "<group>"; };
+		C29811C52C73B67400AF3E4D /* GeminiChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiChatView.swift; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -925,6 +961,45 @@
 			path = ManageEmployees;
 			sourceTree = "<group>";
 		};
+		C29811A02C73B47400AF3E4D /* AlbumsList */ = {
+			isa = PBXGroup;
+			children = (
+				C29811A62C73B48A00AF3E4D /* Album.swift */,
+				C29811A52C73B48A00AF3E4D /* AlbumsListInteractor.swift */,
+				C29811A32C73B48A00AF3E4D /* AlbumsListPresenter.swift */,
+				C29811A12C73B48A00AF3E4D /* AlbumsListProtocols.swift */,
+				C29811A42C73B48A00AF3E4D /* AlbumsListRouter.swift */,
+				C29811A22C73B48A00AF3E4D /* AlbumsListView.swift */,
+			);
+			path = AlbumsList;
+			sourceTree = "<group>";
+		};
+		C29811AD2C73B4B500AF3E4D /* GeminiChat */ = {
+			isa = PBXGroup;
+			children = (
+				C29811C52C73B67400AF3E4D /* GeminiChatView.swift */,
+				C29811AE2C73B4CB00AF3E4D /* GeminiChatViewModel.swift */,
+				C29811AF2C73B4CB00AF3E4D /* GeminiModel.swift */,
+			);
+			path = GeminiChat;
+			sourceTree = "<group>";
+		};
+		C29811B22C73B50800AF3E4D /* MealsSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C29811B62C73B52200AF3E4D /* Meal.swift */,
+				C29811B92C73B52300AF3E4D /* MealDetailView.swift */,
+				C29811B32C73B52200AF3E4D /* MealDetailViewModel.swift */,
+				C29811B72C73B52200AF3E4D /* MealsAPI.swift */,
+				C29811BA2C73B52300AF3E4D /* MealsAPIService.swift */,
+				C29811B42C73B52200AF3E4D /* MealsCoordinator.swift */,
+				C29811BB2C73B52300AF3E4D /* MealSearchView.swift */,
+				C29811B52C73B52200AF3E4D /* MealsSearchView.swift */,
+				C29811B82C73B52300AF3E4D /* MealsSearchViewModel.swift */,
+			);
+			path = MealsSearch;
+			sourceTree = "<group>";
+		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
 			isa = PBXGroup;
 			children = (
@@ -1268,6 +1343,7 @@
 			isa = PBXGroup;
 			children = (
 				C26A411D2C581DBF004C4142 /* AccelerateShowcase */,
+				C29811A02C73B47400AF3E4D /* AlbumsList */,
 				C2F3DB992C543D8B007E8D51 /* AudioVideoEditor */,
 				C26A41092C581D95004C4142 /* Bluetooth */,
 				C2AFB5FA2C14CC580076F636 /* Camera */,
@@ -1280,6 +1356,7 @@
 				C28F24FB2C5022BC00DF9C99 /* FileManager */,
 				C22209282C124A7A00780A7B /* Flutter */,
 				C2FDF4062C5BFA7E00E2538F /* FourierTransform */,
+				C29811AD2C73B4B500AF3E4D /* GeminiChat */,
 				C2FDF4102C5C286F00E2538F /* GraphQL */,
 				C2A4612B2C4C7078007DAC00 /* HandwritingRecognition */,
 				C28F251D2C502AE000DF9C99 /* HapticFeedback */,
@@ -1291,6 +1368,7 @@
 				C26A411A2C581DB6004C4142 /* LottieAnimations */,
 				C28F25252C50314E00DF9C99 /* ManageEmployees */,
 				C261E4AA2C4ADD8300116D8E /* MapKit */,
+				C29811B22C73B50800AF3E4D /* MealsSearch */,
 				C2A4611F2C4C6983007DAC00 /* News */,
 				C26A40FE2C581D70004C4142 /* NFCReader */,
 				C28F16E52C4EF87500DF9C99 /* NFCReader */,
@@ -2159,6 +2237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26A411E2C581DBF004C4142 /* AccelerateShowcaseView.swift in Sources */,
+				C29811AC2C73B48A00AF3E4D /* Album.swift in Sources */,
+				C29811AB2C73B48A00AF3E4D /* AlbumsListInteractor.swift in Sources */,
+				C29811A92C73B48A00AF3E4D /* AlbumsListPresenter.swift in Sources */,
+				C29811A72C73B48A00AF3E4D /* AlbumsListProtocols.swift in Sources */,
+				C29811AA2C73B48A00AF3E4D /* AlbumsListRouter.swift in Sources */,
+				C29811A82C73B48A00AF3E4D /* AlbumsListView.swift in Sources */,
 				C2B820B62C0A5DD70049F937 /* AlertManager.swift in Sources */,
 				C2A461382C4CA2EF007DAC00 /* APIKeys.swift in Sources */,
 				C2FDF4122C5C288000E2538F /* ApolloClient.swift in Sources */,
@@ -2204,6 +2288,9 @@
 				C2329C342C13A57300BC632C /* FPicker.swift in Sources */,
 				C2FDF4022C5AB2BE00E2538F /* FText.swift in Sources */,
 				C21FAB1E2C1234B5001CFAA5 /* FulliOSApp.swift in Sources */,
+				C29811C62C73B67400AF3E4D /* GeminiChatView.swift in Sources */,
+				C29811B02C73B4CB00AF3E4D /* GeminiChatViewModel.swift in Sources */,
+				C29811B12C73B4CB00AF3E4D /* GeminiModel.swift in Sources */,
 				C2AFB5F62C14BE230076F636 /* GoogleTranslationManager.swift in Sources */,
 				C2A4612D2C4C7086007DAC00 /* HandwritingRecognitionView.swift in Sources */,
 				C28F251F2C502AED00DF9C99 /* HapticFeedbackView.swift in Sources */,
@@ -2221,6 +2308,15 @@
 				C26A411B2C581DB6004C4142 /* LottieAnimationsView.swift in Sources */,
 				C28F25272C50316100DF9C99 /* ManageEmployeesView.swift in Sources */,
 				C261E4AC2C4ADD9000116D8E /* MapsView.swift in Sources */,
+				C29811BF2C73B52300AF3E4D /* Meal.swift in Sources */,
+				C29811C22C73B52300AF3E4D /* MealDetailView.swift in Sources */,
+				C29811BC2C73B52300AF3E4D /* MealDetailViewModel.swift in Sources */,
+				C29811C02C73B52300AF3E4D /* MealsAPI.swift in Sources */,
+				C29811C32C73B52300AF3E4D /* MealsAPIService.swift in Sources */,
+				C29811BD2C73B52300AF3E4D /* MealsCoordinator.swift in Sources */,
+				C29811C42C73B52300AF3E4D /* MealSearchView.swift in Sources */,
+				C29811BE2C73B52300AF3E4D /* MealsSearchView.swift in Sources */,
+				C29811C12C73B52300AF3E4D /* MealsSearchViewModel.swift in Sources */,
 				C2A1D05B2C12376000170662 /* MP3Streamer.swift in Sources */,
 				C2A461282C4C6983007DAC00 /* NewsInteractor.swift in Sources */,
 				C2A461202C4C6983007DAC00 /* NewsPresenter.swift in Sources */,

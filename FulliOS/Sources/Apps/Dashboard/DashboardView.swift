@@ -249,7 +249,22 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.postgres.name,
             title: "Postgres Client (PostgresClientKit)",
-            destinationView: AnyView(PostgresClientView()))
+            destinationView: AnyView(PostgresClientView())),
+
+        DashboardMenuItem(
+            iconName: R.image.album.name,
+            title: "Albums List (SwiftUI, Alamofire, VIPER)",
+            destinationView: AnyView(AlbumsListView())),
+
+        DashboardMenuItem(
+            iconName: R.image.gemini.name,
+            title: "Gemini Chat (Gemini, URLSession)",
+            destinationView: AnyView(GeminiChatView())),
+
+        DashboardMenuItem(
+            iconName: R.image.meal.name,
+            title: "Meals Search (MVVMC, Moya)",
+            destinationView: AnyView(MealsSearchView()))
     ]
 
     var body: some View {
