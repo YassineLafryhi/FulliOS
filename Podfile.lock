@@ -83,6 +83,9 @@ PODS:
     - BlueSSLService (~> 1.0)
   - PromisesObjC (2.4.0)
   - R.swift (7.3.2)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
   - Realm (10.52.3):
     - Realm/Headers (= 10.52.3)
   - Realm/Headers (10.52.3)
@@ -116,6 +119,7 @@ PODS:
     - TensorFlowLiteSwift/Privacy (= 2.17.0)
   - TensorFlowLiteSwift/Privacy (2.17.0)
   - Toaster (2.3.0)
+  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -135,6 +139,7 @@ DEPENDENCIES:
   - Periphery
   - PostgresClientKit
   - R.swift
+  - ReactorKit
   - RealmSwift
   - ResearchKit
   - RxCocoa
@@ -180,6 +185,7 @@ SPEC REPOS:
     - PostgresClientKit
     - PromisesObjC
     - R.swift
+    - ReactorKit
     - Realm
     - RealmSwift
     - ResearchKit
@@ -198,6 +204,7 @@ SPEC REPOS:
     - TensorFlowLiteC
     - TensorFlowLiteSwift
     - Toaster
+    - WeakMapTable
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
@@ -229,6 +236,7 @@ SPEC CHECKSUMS:
   PostgresClientKit: 46759d7926389529314fb23f2be44e0246808de8
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
   Realm: f9d340f510309e52a393d65c56103ef524d88a43
   RealmSwift: 673454b09bc096853ee530e824847f38cdc21243
   ResearchKit: 4ce3751136fc82a02ac83f873b09b01b6974a761
@@ -247,7 +255,8 @@ SPEC CHECKSUMS:
   TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
   TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: aad7c4e3d0d5fa29b3a16fda407bbc61f8024c73
+PODFILE CHECKSUM: ce04b74f879518ce683858e7bc5cb297dc1b343e
 
 COCOAPODS: 1.15.2

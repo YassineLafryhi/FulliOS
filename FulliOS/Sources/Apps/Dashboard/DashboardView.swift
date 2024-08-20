@@ -264,7 +264,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.meal.name,
             title: "Meals Search (MVVMC, Moya)",
-            destinationView: AnyView(MealsSearchView()))
+            destinationView: AnyView(MealsSearchView())),
+
+        DashboardMenuItem(
+            iconName: R.image.expense.name,
+            title: "Expenses Manager (FLUX, Alamofire)",
+            destinationView: AnyView(ExpensesManagerView())),
+
+        DashboardMenuItem(
+            iconName: R.image.student.name,
+            title: "Students Manager (ReactorKit, RxSwift)",
+            destinationView: AnyView(StudentsManagerView()))
     ]
 
     var body: some View {

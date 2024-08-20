@@ -21,7 +21,6 @@ ignoreList:
   - uid
   - lproj
   - rgb
-  - Interactor
   - img
   - interactor
   - Kotlin
@@ -31,3 +30,5 @@ ignoreList:
   - ci
   - Alamofire
   - deinit
+  - Moya
+  - cancellables

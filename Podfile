@@ -37,6 +37,8 @@ target 'FulliOS' do
   pod 'PostgresClientKit'
   pod 'Moya'
   pod 'Embassy'
+  #pod 'MapboxMaps'
+  pod 'ReactorKit'
 
   target 'FulliOSTests' do
     inherit! :search_paths

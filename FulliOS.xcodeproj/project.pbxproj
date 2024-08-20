@@ -53,8 +53,6 @@
 		C26A411E2C581DBF004C4142 /* AccelerateShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A411C2C581DBF004C4142 /* AccelerateShowcaseView.swift */; };
 		C26A41202C582066004C4142 /* CrashHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A411F2C582066004C4142 /* CrashHandler.swift */; };
 		C26A41232C582789004C4142 /* SimulatedCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A41222C582789004C4142 /* SimulatedCameraView.swift */; };
-		C28F16E92C4EF87500DF9C99 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E32C4EF87500DF9C99 /* NFCReader.swift */; };
-		C28F16EA2C4EF87500DF9C99 /* NFCReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */; };
 		C28F16EB2C4EF87500DF9C99 /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */; };
 		C28F16EC2C4EF87500DF9C99 /* UnityGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28F16E72C4EF87500DF9C99 /* UnityGameView.swift */; };
 		C28F24E42C4EFFD800DF9C99 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F24E32C4EFFD800DF9C99 /* UnityFramework.framework */; };
@@ -92,6 +90,19 @@
 		C29811C32C73B52300AF3E4D /* MealsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811BA2C73B52300AF3E4D /* MealsAPIService.swift */; };
 		C29811C42C73B52300AF3E4D /* MealSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811BB2C73B52300AF3E4D /* MealSearchView.swift */; };
 		C29811C62C73B67400AF3E4D /* GeminiChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811C52C73B67400AF3E4D /* GeminiChatView.swift */; };
+		C29811CC2C74F29000AF3E4D /* ExpensesManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811CB2C74F29000AF3E4D /* ExpensesManagerView.swift */; };
+		C29811CE2C74F2A200AF3E4D /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811CD2C74F2A200AF3E4D /* Expense.swift */; };
+		C29811D02C74F2D100AF3E4D /* ExpenseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811CF2C74F2D100AF3E4D /* ExpenseAction.swift */; };
+		C29811D22C74F2E700AF3E4D /* ExpenseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811D12C74F2E700AF3E4D /* ExpenseStore.swift */; };
+		C29811D42C74F30A00AF3E4D /* ExpenseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811D32C74F30A00AF3E4D /* ExpenseDetailView.swift */; };
+		C29811D62C74F32200AF3E4D /* ExpenseStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811D52C74F32200AF3E4D /* ExpenseStatisticsView.swift */; };
+		C29811DB2C7500B700AF3E4D /* GenericJsonServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811DA2C7500B700AF3E4D /* GenericJsonServer.swift */; };
+		C29811DD2C75022C00AF3E4D /* ExpensesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811DC2C75022C00AF3E4D /* ExpensesAPI.swift */; };
+		C29811DF2C7502B800AF3E4D /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811DE2C7502B800AF3E4D /* Data+Extensions.swift */; };
+		C29811E12C750CC800AF3E4D /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811E02C750CC800AF3E4D /* AddExpenseView.swift */; };
+		C29811E32C75110100AF3E4D /* GenericJsonServerWithEmbassy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811E22C75110100AF3E4D /* GenericJsonServerWithEmbassy.swift */; };
+		C29811E62C75251600AF3E4D /* StudentReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811E52C75251600AF3E4D /* StudentReactor.swift */; };
+		C29811E82C75254500AF3E4D /* StudentsManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29811E72C75254500AF3E4D /* StudentsManagerView.swift */; };
 		C2993CFC2C0D14CE005B97D4 /* KotlinMultiplatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2993CFA2C0D14CE005B97D4 /* KotlinMultiplatformView.swift */; };
 		C2993D002C0D1991005B97D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; };
 		C2993D012C0D1992005B97D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2993CFF2C0D1991005B97D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -305,8 +316,6 @@
 		C26A411F2C582066004C4142 /* CrashHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashHandler.swift; sourceTree = "<group>"; };
 		C26A41212C5826D2004C4142 /* FulliOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FulliOS.entitlements; sourceTree = "<group>"; };
 		C26A41222C582789004C4142 /* SimulatedCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatedCameraView.swift; sourceTree = "<group>"; };
-		C28F16E32C4EF87500DF9C99 /* NFCReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
-		C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCReaderView.swift; sourceTree = "<group>"; };
 		C28F16E62C4EF87500DF9C99 /* UnityBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
 		C28F16E72C4EF87500DF9C99 /* UnityGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityGameView.swift; sourceTree = "<group>"; };
 		C28F1E6D2C4EF89D00DF9C99 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
@@ -350,6 +359,19 @@
 		C29811BA2C73B52300AF3E4D /* MealsAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsAPIService.swift; sourceTree = "<group>"; };
 		C29811BB2C73B52300AF3E4D /* MealSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealSearchView.swift; sourceTree = "<group>"; };
 		C29811C52C73B67400AF3E4D /* GeminiChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiChatView.swift; sourceTree = "<group>"; };
+		C29811CB2C74F29000AF3E4D /* ExpensesManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesManagerView.swift; sourceTree = "<group>"; };
+		C29811CD2C74F2A200AF3E4D /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		C29811CF2C74F2D100AF3E4D /* ExpenseAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseAction.swift; sourceTree = "<group>"; };
+		C29811D12C74F2E700AF3E4D /* ExpenseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStore.swift; sourceTree = "<group>"; };
+		C29811D32C74F30A00AF3E4D /* ExpenseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailView.swift; sourceTree = "<group>"; };
+		C29811D52C74F32200AF3E4D /* ExpenseStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStatisticsView.swift; sourceTree = "<group>"; };
+		C29811DA2C7500B700AF3E4D /* GenericJsonServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericJsonServer.swift; sourceTree = "<group>"; };
+		C29811DC2C75022C00AF3E4D /* ExpensesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesAPI.swift; sourceTree = "<group>"; };
+		C29811DE2C7502B800AF3E4D /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		C29811E02C750CC800AF3E4D /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		C29811E22C75110100AF3E4D /* GenericJsonServerWithEmbassy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericJsonServerWithEmbassy.swift; sourceTree = "<group>"; };
+		C29811E52C75251600AF3E4D /* StudentReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentReactor.swift; sourceTree = "<group>"; };
+		C29811E72C75254500AF3E4D /* StudentsManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsManagerView.swift; sourceTree = "<group>"; };
 		C2993CE22C0D1444005B97D4 /* KMMPost.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KMMPost.kt; sourceTree = "<group>"; };
 		C2993CE32C0D1444005B97D4 /* PostService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostService.kt; sourceTree = "<group>"; };
 		C2993CE92C0D1444005B97D4 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
@@ -821,15 +843,6 @@
 			path = AccelerateShowcase;
 			sourceTree = "<group>";
 		};
-		C28F16E52C4EF87500DF9C99 /* NFCReader */ = {
-			isa = PBXGroup;
-			children = (
-				C28F16E32C4EF87500DF9C99 /* NFCReader.swift */,
-				C28F16E42C4EF87500DF9C99 /* NFCReaderView.swift */,
-			);
-			path = NFCReader;
-			sourceTree = "<group>";
-		};
 		C28F16E82C4EF87500DF9C99 /* UnityGame */ = {
 			isa = PBXGroup;
 			children = (
@@ -1000,6 +1013,38 @@
 			path = MealsSearch;
 			sourceTree = "<group>";
 		};
+		C29811CA2C74F1EA00AF3E4D /* ExpensesManager */ = {
+			isa = PBXGroup;
+			children = (
+				C29811E02C750CC800AF3E4D /* AddExpenseView.swift */,
+				C29811CD2C74F2A200AF3E4D /* Expense.swift */,
+				C29811CF2C74F2D100AF3E4D /* ExpenseAction.swift */,
+				C29811D32C74F30A00AF3E4D /* ExpenseDetailView.swift */,
+				C29811DC2C75022C00AF3E4D /* ExpensesAPI.swift */,
+				C29811CB2C74F29000AF3E4D /* ExpensesManagerView.swift */,
+				C29811D52C74F32200AF3E4D /* ExpenseStatisticsView.swift */,
+				C29811D12C74F2E700AF3E4D /* ExpenseStore.swift */,
+			);
+			path = ExpensesManager;
+			sourceTree = "<group>";
+		};
+		C29811D72C74F4D300AF3E4D /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				C2993D032C0D21D8005B97D4 /* SharedModelContainer.swift */,
+			);
+			path = SwiftData;
+			sourceTree = "<group>";
+		};
+		C29811E42C75250300AF3E4D /* StudentsManager */ = {
+			isa = PBXGroup;
+			children = (
+				C29811E52C75251600AF3E4D /* StudentReactor.swift */,
+				C29811E72C75254500AF3E4D /* StudentsManagerView.swift */,
+			);
+			path = StudentsManager;
+			sourceTree = "<group>";
+		};
 		C2993CE42C0D1444005B97D4 /* module */ = {
 			isa = PBXGroup;
 			children = (
@@ -1104,7 +1149,6 @@
 			children = (
 				C2993D052C0D21D8005B97D4 /* ContactItem.swift */,
 				C2B1094A2C1635B7002622C3 /* ContactRow.swift */,
-				C2993D032C0D21D8005B97D4 /* SharedModelContainer.swift */,
 				C2993D042C0D21D8005B97D4 /* SwiftDataContactsView.swift */,
 			);
 			path = SwiftData;
@@ -1326,6 +1370,7 @@
 				C2B820AB2C0A596C0049F937 /* Helpers */,
 				C2B820C02C0A7C260049F937 /* Managers */,
 				C2E97A7F2C133F340004BE45 /* PrefixHeader */,
+				C29811D72C74F4D300AF3E4D /* SwiftData */,
 				C2E97A812C133F6B0004BE45 /* Wrappers */,
 			);
 			path = Common;
@@ -1352,6 +1397,7 @@
 				C28F25202C502EF200DF9C99 /* DevQuiz */,
 				C26A410F2C581DA2004C4142 /* DocumentScanner */,
 				C2390A032C404E2900F98116 /* Drawing */,
+				C29811CA2C74F1EA00AF3E4D /* ExpensesManager */,
 				C2C66F8E2C0FA26900C8C4C5 /* FaceDetector */,
 				C28F24FB2C5022BC00DF9C99 /* FileManager */,
 				C22209282C124A7A00780A7B /* Flutter */,
@@ -1371,7 +1417,6 @@
 				C29811B22C73B50800AF3E4D /* MealsSearch */,
 				C2A4611F2C4C6983007DAC00 /* News */,
 				C26A40FE2C581D70004C4142 /* NFCReader */,
-				C28F16E52C4EF87500DF9C99 /* NFCReader */,
 				C2A4613E2C4CACE2007DAC00 /* ObjectRecognition */,
 				C2C66F862C0F72DF00C8C4C5 /* OCR */,
 				C2E97A7A2C133E860004BE45 /* OpenCV */,
@@ -1386,6 +1431,7 @@
 				C261E4AD2C4ADF5000116D8E /* SoundRecorder */,
 				C28F24F52C501EB900DF9C99 /* SpeechRecognition */,
 				C2B820A72C0A57360049F937 /* SplashScreen */,
+				C29811E42C75250300AF3E4D /* StudentsManager */,
 				C2993D062C0D21D8005B97D4 /* SwiftData */,
 				C2DC3B3D2C40548600222179 /* TemperatureChart */,
 				C2FDF3EF2C5AAC4B00E2538F /* TextAnalyzer */,
@@ -1404,6 +1450,7 @@
 			children = (
 				C2B820B92C0A5FB70049F937 /* Array+Extentions.swift */,
 				C2B8207F2C0A54E60049F937 /* Color+Extensions.swift */,
+				C29811DE2C7502B800AF3E4D /* Data+Extensions.swift */,
 				C2A461292C4C6B56007DAC00 /* Date+Extensions.swift */,
 				C261E4A02C4AD0FD00116D8E /* UIColor+Extensions.swift */,
 			);
@@ -1456,6 +1503,8 @@
 				C2B820B52C0A5DD70049F937 /* AlertManager.swift */,
 				C26A411F2C582066004C4142 /* CrashHandler.swift */,
 				C2A461312C4C8D9E007DAC00 /* DeinitLogger.swift */,
+				C29811DA2C7500B700AF3E4D /* GenericJsonServer.swift */,
+				C29811E22C75110100AF3E4D /* GenericJsonServerWithEmbassy.swift */,
 				C2B820AE2C0A5A1B0049F937 /* Logger.swift */,
 			);
 			path = Managers;
@@ -2237,6 +2286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26A411E2C581DBF004C4142 /* AccelerateShowcaseView.swift in Sources */,
+				C29811E12C750CC800AF3E4D /* AddExpenseView.swift in Sources */,
 				C29811AC2C73B48A00AF3E4D /* Album.swift in Sources */,
 				C29811AB2C73B48A00AF3E4D /* AlbumsListInteractor.swift in Sources */,
 				C29811A92C73B48A00AF3E4D /* AlbumsListPresenter.swift in Sources */,
@@ -2265,6 +2315,7 @@
 				C26A41202C582066004C4142 /* CrashHandler.swift in Sources */,
 				C2B820B82C0A5F5F0049F937 /* DashboardMenuItem.swift in Sources */,
 				C2B8207D2C0A543D0049F937 /* DashboardView.swift in Sources */,
+				C29811DF2C7502B800AF3E4D /* Data+Extensions.swift in Sources */,
 				C2A4612A2C4C6B56007DAC00 /* Date+Extensions.swift in Sources */,
 				C2A461322C4C8DB2007DAC00 /* DeinitLogger.swift in Sources */,
 				C2A461302C4C7251007DAC00 /* DeviceInfoView.swift in Sources */,
@@ -2275,6 +2326,13 @@
 				C2390A062C404E2900F98116 /* DrawingView.swift in Sources */,
 				C26A41112C581DA2004C4142 /* DSView.swift in Sources */,
 				C2A461222C4C6983007DAC00 /* Entity.swift in Sources */,
+				C29811CE2C74F2A200AF3E4D /* Expense.swift in Sources */,
+				C29811D02C74F2D100AF3E4D /* ExpenseAction.swift in Sources */,
+				C29811D42C74F30A00AF3E4D /* ExpenseDetailView.swift in Sources */,
+				C29811DD2C75022C00AF3E4D /* ExpensesAPI.swift in Sources */,
+				C29811CC2C74F29000AF3E4D /* ExpensesManagerView.swift in Sources */,
+				C29811D62C74F32200AF3E4D /* ExpenseStatisticsView.swift in Sources */,
+				C29811D22C74F2E700AF3E4D /* ExpenseStore.swift in Sources */,
 				C2C66F902C0FA27F00C8C4C5 /* FaceDetector.swift in Sources */,
 				C2C66F922C0FA2B200C8C4C5 /* FaceManager.swift in Sources */,
 				C2C66F972C0FA3F900C8C4C5 /* FaceOverlayView.swift in Sources */,
@@ -2291,6 +2349,8 @@
 				C29811C62C73B67400AF3E4D /* GeminiChatView.swift in Sources */,
 				C29811B02C73B4CB00AF3E4D /* GeminiChatViewModel.swift in Sources */,
 				C29811B12C73B4CB00AF3E4D /* GeminiModel.swift in Sources */,
+				C29811DB2C7500B700AF3E4D /* GenericJsonServer.swift in Sources */,
+				C29811E32C75110100AF3E4D /* GenericJsonServerWithEmbassy.swift in Sources */,
 				C2AFB5F62C14BE230076F636 /* GoogleTranslationManager.swift in Sources */,
 				C2A4612D2C4C7086007DAC00 /* HandwritingRecognitionView.swift in Sources */,
 				C28F251F2C502AED00DF9C99 /* HapticFeedbackView.swift in Sources */,
@@ -2323,9 +2383,7 @@
 				C2A461212C4C6983007DAC00 /* NewsRouter.swift in Sources */,
 				C2A461242C4C6983007DAC00 /* NewsView.swift in Sources */,
 				C2A461232C4C6983007DAC00 /* NewsViewController.swift in Sources */,
-				C28F16E92C4EF87500DF9C99 /* NFCReader.swift in Sources */,
 				C26A40FF2C581D70004C4142 /* NFCReader.swift in Sources */,
-				C28F16EA2C4EF87500DF9C99 /* NFCReaderView.swift in Sources */,
 				C26A41002C581D70004C4142 /* NFCReaderView.swift in Sources */,
 				C2A461492C4CAFAD007DAC00 /* ObjectRecognitionView.swift in Sources */,
 				C2C66F8B2C0F733200C8C4C5 /* OCRManager.swift in Sources */,
@@ -2355,6 +2413,8 @@
 				C28F24F72C501EC900DF9C99 /* SpeechRecognitionView.swift in Sources */,
 				C2B820A92C0A57550049F937 /* SplashScreenView.swift in Sources */,
 				C2B820D02C0A80490049F937 /* Strings.swift in Sources */,
+				C29811E62C75251600AF3E4D /* StudentReactor.swift in Sources */,
+				C29811E82C75254500AF3E4D /* StudentsManagerView.swift in Sources */,
 				C2993D082C0D21D8005B97D4 /* SwiftDataContactsView.swift in Sources */,
 				C2DC3B3F2C40549F00222179 /* TemperatureChartView.swift in Sources */,
 				C261E4A42C4AD15500116D8E /* TemperatureViewModel.swift in Sources */,
