@@ -1,9 +1,5 @@
 #!/bin/sh
 
-perl ./Scripts/sort-xcode-project.pl ./FulliOS.xcodeproj/project.pbxproj
-git add ./FulliOS.xcodeproj/project.pbxproj
-
-
 PLIST_FILE="./FulliOS/Resources/Plists/APIKeys.plist"
 
 awk '
@@ -26,4 +22,3 @@ if [ $? -ne 0 ]; then
     echo "Commit blocked: API key validation failed."
     exit 1
 fi
-
