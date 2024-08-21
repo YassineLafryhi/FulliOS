@@ -86,11 +86,11 @@ PODS:
   - ReactorKit (3.2.0):
     - RxSwift (~> 6.0)
     - WeakMapTable (~> 1.1)
-  - Realm (10.52.3):
-    - Realm/Headers (= 10.52.3)
-  - Realm/Headers (10.52.3)
-  - RealmSwift (10.52.3):
-    - Realm (= 10.52.3)
+  - Realm (10.53.0):
+    - Realm/Headers (= 10.53.0)
+  - Realm/Headers (10.53.0)
+  - RealmSwift (10.53.0):
+    - Realm (= 10.53.0)
   - ResearchKit (2.2.16)
   - RxCocoa (6.7.1):
     - RxRelay (= 6.7.1)
@@ -237,8 +237,8 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
-  Realm: f9d340f510309e52a393d65c56103ef524d88a43
-  RealmSwift: 673454b09bc096853ee530e824847f38cdc21243
+  Realm: e3d9f52df62d7479cf921e5d70294da4fdd2081f
+  RealmSwift: 03b060aea36701f8f4bef9fd1d4f4788ae867505
   ResearchKit: 4ce3751136fc82a02ac83f873b09b01b6974a761
   RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
   RxRelay: 4151ba01152436b08271e08410135e099880eae5

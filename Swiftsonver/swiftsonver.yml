@@ -1,0 +1,7 @@
+hostname: "0.0.0.0"
+port: 7070
+apiVersion: "v1"
+jsonDatabaseName: "database.json"
+requiresAuthorization: false
+resources:
+  - name: "candidates"

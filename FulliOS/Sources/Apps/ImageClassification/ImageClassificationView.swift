@@ -54,7 +54,7 @@ internal struct ImageClassificationView: View {
     }
 }
 
-struct PhotoPicker: UIViewControllerRepresentable {
+internal struct PhotoPicker: UIViewControllerRepresentable {
     @Binding var image: UIImage?
     @Environment(\.presentationMode) private var presentationMode
 
@@ -88,7 +88,7 @@ struct PhotoPicker: UIViewControllerRepresentable {
     }
 }
 
-class ImageClassifier {
+internal class ImageClassifier {
     private var interpreter: Interpreter?
     private let modelPath = Bundle.main.path(forResource: "mobilenet_v1_1.0_224", ofType: "tflite")
     private let labelPath = Bundle.main.path(forResource: "labels", ofType: "txt")

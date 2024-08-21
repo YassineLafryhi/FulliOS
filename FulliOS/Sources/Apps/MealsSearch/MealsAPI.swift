@@ -7,7 +7,7 @@
 
 import Moya
 
-enum MealsAPI {
+internal enum MealsAPI {
     case searchMeals(query: String)
 }
 

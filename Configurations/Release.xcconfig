@@ -1,2 +1,1 @@
 OS_ACTIVITY_MODE = disable
-OTHER_SWIFT_FLAGS = -Xfrontend -disable-implicit-objc-interop

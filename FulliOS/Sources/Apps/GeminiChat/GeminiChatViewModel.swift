@@ -35,9 +35,6 @@ internal class GeminiChatViewModel: ObservableObject {
                 self?.isLoading = false
                 switch result {
                 case let .success(data):
-                    if let string = String(data: data, encoding: .utf8) {
-                        print(string)
-                    }
                     if
                         let response = try? JSONDecoder().decode(GeminiResponse.self, from: data),
                         let geminiText = response.candidates.first?.content.parts.first?.text {

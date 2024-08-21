@@ -11,9 +11,9 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
 
 disabled_rules:
   - explicit_type_interface
+  - explicit_enum_raw_value
 
 opt_in_rules:
-  - explicit_enum_raw_value
   - array_init
   - nimble_operator
   - no_grouping_extension
@@ -119,14 +119,6 @@ opt_in_rules:
   - xctfail_message
 
 custom_rules:
-  custom_todo:
-    included: ".*.swift"
-    name: "TODO Violation"
-    regex: "(TODO).(?!.*(https&)).(?!.*issues)"
-    match_kinds: comment
-    message: "TODOs must include a link to the github issue."
-    severity: warning
-
   no_fatal_errors:
     included: ".*.swift"
     name: "Crash"
