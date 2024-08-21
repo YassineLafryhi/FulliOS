@@ -1,8 +1,31 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
+    ".." : {
 
+    },
+    "%.2f - %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$.2f - %2$@"
+          }
+        }
+      }
+    },
+    "%@" : {
+
+    },
+    "• %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "• %1$@ %2$@"
+          }
+        }
+      }
     },
     "add" : {
       "extractionState" : "manual",
@@ -26,43 +49,206 @@
         }
       }
     },
-    "Chrome" : {
+    "Area: %@" : {
+
+    },
+    "Authorize HealthKit" : {
+
+    },
+    "BMI:" : {
+
+    },
+    "Category: %@" : {
+
+    },
+    "Character count: %@" : {
+
+    },
+    "Characteristics" : {
+
+    },
+    "Classification Result:" : {
+
+    },
+    "Employee Information" : {
 
     },
     "Enter text to translate:" : {
 
     },
+    "Enter the account details." : {
+
+    },
     "Error" : {
 
     },
-    "Noir" : {
+    "Expense Details" : {
+
+    },
+    "HealthKit Data" : {
+
+    },
+    "Heart Rate:" : {
+
+    },
+    "ID: %@" : {
+
+    },
+    "Image Processing" : {
+
+    },
+    "Ingredients:" : {
+
+    },
+    "Input Signal" : {
+
+    },
+    "Instructions:" : {
+
+    },
+    "iOS Development Quiz" : {
+
+    },
+    "Launch Date: %@" : {
+
+    },
+    "Level: %@" : {
+
+    },
+    "Matrix A:" : {
+
+    },
+    "Matrix B:" : {
+
+    },
+    "Matrix Operations" : {
+
+    },
+    "NFC Reader" : {
+
+    },
+    "No Document Scanned" : {
+
+    },
+    "No image selected" : {
+
+    },
+    "Not supported yet on Simulator !" : {
+
+    },
+    "Notification" : {
 
     },
     "OK" : {
 
     },
+    "Output Signal (FFT)" : {
+
+    },
+    "Page %@ of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Page %1$@ of %2$@"
+          }
+        }
+      }
+    },
     "PDF file not found." : {
 
     },
-    "Save to Photos" : {
+    "PDF saved to Files" : {
 
     },
-    "Select Chapter" : {
+    "Pending Notifications" : {
 
     },
-    "Select Reciter" : {
+    "Photo" : {
 
     },
-    "Select target language" : {
+    "Quote of the Day Widget" : {
 
     },
-    "Sepia" : {
+    "Read" : {
+
+    },
+    "Result Matrix:" : {
+
+    },
+    "Rocket: %@" : {
+
+    },
+    "Save as PDF" : {
+
+    },
+    "Scan Document" : {
+
+    },
+    "Scan NFC Tag" : {
+
+    },
+    "Scanned Message:" : {
+
+    },
+    "Scanning Not Supported" : {
+
+    },
+    "Schedule Notification" : {
+
+    },
+    "Scheduled for: %@" : {
+
+    },
+    "Send Request" : {
+
+    },
+    "Sentiment score: %@" : {
+
+    },
+    "Services" : {
+
+    },
+    "Signal Processing" : {
+
+    },
+    "Speech Recognition" : {
+
+    },
+    "Start Quiz" : {
+
+    },
+    "Start Recording" : {
+
+    },
+    "Step Count:" : {
+
+    },
+    "Stop Recording" : {
+
+    },
+    "Success" : {
+
+    },
+    "This device doesn't support NFC scanning." : {
+
+    },
+    "Total Expenses: %.2f" : {
 
     },
     "Translate" : {
 
     },
     "Translated text:" : {
+
+    },
+    "Unknown" : {
+
+    },
+    "Word count: %@" : {
+
+    },
+    "Write" : {
 
     }
   },

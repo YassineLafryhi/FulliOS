@@ -5,6 +5,9 @@
 //  Created by Yassine Lafryhi on 24/6/2024.
 //
 
+import Foundation
+import UIKit
+
 internal struct Line {
     var points: [Point]
 

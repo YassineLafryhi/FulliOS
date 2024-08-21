@@ -6,6 +6,7 @@
 //
 
 import AVFoundation
+// import UIKit
 
 internal class CameraViewModel: NSObject, ObservableObject {
     public let session = AVCaptureSession()
@@ -39,11 +40,12 @@ internal class CameraViewModel: NSObject, ObservableObject {
         }
     }
 
-    func capturePhoto(completion: @escaping (UIImage?) -> Void) {
-        let settings = AVCapturePhotoSettings()
-        settings.flashMode = isFlashOn ? .on : .off
-        output.capturePhoto(with: settings, delegate: PhotoCaptureProcessor(completion: completion))
-    }
+    // TODO: Fix this
+    /* func capturePhoto(completion: @escaping (UIImage?) -> Void) {
+         let settings = AVCapturePhotoSettings()
+         settings.flashMode = isFlashOn ? .on : .off
+         output.capturePhoto(with: settings, delegate: PhotoCaptureProcessor(completion: completion))
+     } */
 
     func switchCamera() {
         guard let currentInput = session.inputs.first as? AVCaptureDeviceInput else { return }

@@ -38,10 +38,10 @@ internal struct CameraView: View {
 
                 Spacer()
                 Button(action: {
-                    camera.capturePhoto { image in
-                        capturedImage = image
-                        showingFilters.toggle()
-                    }
+                    /* camera.capturePhoto { image in
+                         capturedImage = image
+                         showingFilters.toggle()
+                     } */
                 }) {
                     Image(systemName: "camera.circle.fill")
                         .font(.system(size: 70))
