@@ -11,7 +11,7 @@ import SwiftData
 internal class SharedModelContainer {
     public static var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            ContactItem.self
+            // ContactItem.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

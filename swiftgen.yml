@@ -1,27 +1,27 @@
 xcassets:
   inputs:
-    - FulliOS/Resources/Assets/Assets.xcassets
+    - FulliOS/Resources/Common/Assets/Assets.xcassets
   outputs:
     - templateName: swift5
       output: FulliOS/Sources/Generated/Assets.swift
 
 strings:
   inputs:
-    - FulliOS/Resources/Localizable.xcstrings
+    - FulliOS/Resources/Common/Localizable.xcstrings
   outputs:
     - templateName: structured-swift5
       output: FulliOS/Sources/Generated/Strings.swift
 
 fonts:
   inputs:
-    - FulliOS/Resources/Fonts
+    - FulliOS/Resources/Common/Fonts
   outputs:
     - templateName: swift5
       output: FulliOS/Sources/Generated/Fonts.swift
 
 plist:
   inputs:
-    - FulliOS/Resources/Plists/APIKeys.plist
+    - FulliOS/Resources/Common/Plists/APIKeys.plist
   outputs:
     - templateName: inline-swift4
       output: FulliOS/Sources/Generated/APIKeys.swift

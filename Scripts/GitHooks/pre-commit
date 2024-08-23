@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PLIST_FILE="./FulliOS/Resources/Plists/APIKeys.plist"
+PLIST_FILE="./FulliOS/Resources/Common/Plists/APIKeys.plist"
 
 awk '
 /<key>/ {

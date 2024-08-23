@@ -5,19 +5,12 @@
 //  Created by Yassine Lafryhi on 31/5/2024.
 //
 
-import Flutter
-// import FlutterPluginRegistrant
 import SwiftData
 import SwiftUI
-import UnityFramework
 
-internal class FlutterDependencies: ObservableObject {
-    let flutterEngine = FlutterEngine(name: "MyFlutterEngine")
-
+internal class AppDependencies: ObservableObject {
     init() {
         CrashHandler.shared.setupCrashHandler()
-        flutterEngine.run()
-        // GeneratedPluginRegistrant.register(with: flutterEngine)
         let server = WebSocketServer()
         server.start()
     }
@@ -25,15 +18,13 @@ internal class FlutterDependencies: ObservableObject {
 
 @main
 internal struct FulliOS: App {
-    @StateObject var flutterDependencies = FlutterDependencies()
+    @StateObject var appDependencies = AppDependencies()
 
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
-                .environmentObject(flutterDependencies)
-                .onAppear {
-                    UnityBridge.shared.initializeUnity()
-                }
+                .environmentObject(appDependencies)
+                .onAppear {}
         }.modelContainer(SharedModelContainer.sharedModelContainer)
     }
 }

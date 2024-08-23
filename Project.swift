@@ -20,21 +20,6 @@ let runRswift = TargetScript.pre(
     name: "Run R.swift",
     basedOnDependencyAnalysis: false)
 
-let buildUnityFramework = TargetScript.pre(
-    script: readFromFile(.relativeToRoot("Scripts/BuildPhases/build-unity-framework.sh")),
-    name: "Build Unity Framework",
-    basedOnDependencyAnalysis: false)
-
-let buildKMPFramework = TargetScript.pre(
-    script: readFromFile(.relativeToRoot("Scripts/BuildPhases/build-kmp-framework.sh")),
-    name: "Build KMP Framework",
-    basedOnDependencyAnalysis: false)
-
-let buildFlutterFrameworks = TargetScript.pre(
-    script: readFromFile(.relativeToRoot("Scripts/BuildPhases/build-flutter-frameworks.sh")),
-    name: "Build Flutter Frameworks",
-    basedOnDependencyAnalysis: false)
-
 let runSwiftFormat = TargetScript.pre(
     script: readFromFile(.relativeToRoot("Scripts/BuildPhases/run-swiftformat.sh")),
     name: "Format Code With SwiftFormat",
@@ -117,29 +102,14 @@ let project = Project(
             entitlements: .file(path: .relativeToRoot("\(name)/\(name).entitlements")),
             scripts: [
                 setupGitHooks,
-                runSwiftGen,
+                // runSwiftGen, // Disabled for now, Tuist generated code will be used instead
                 runRswift,
-                buildUnityFramework,
-                buildKMPFramework,
-                buildFlutterFrameworks,
                 runSwiftFormat,
                 runSwiftLint,
                 runSwiftySpell,
                 runPeriphery
             ],
             dependencies: [
-                .xcframework(path: .relativeToRoot("Frameworks/App.xcframework")),
-                .xcframework(path: .relativeToRoot("Frameworks/Flutter.xcframework")),
-                .framework(path: .relativeToRoot("Frameworks/shared.framework")),
-                .framework(path: .relativeToRoot("Frameworks/UnityFramework.framework")),
-                .library(
-                    path: .relativeToRoot("StaticLibs/librust.a"),
-                    publicHeaders: .relativeToRoot("RustLibrary"),
-                    swiftModuleMap: nil),
-                .library(
-                    path: .relativeToRoot("StaticLibs/libc.a"),
-                    publicHeaders: .relativeToRoot("CLibrary"),
-                    swiftModuleMap: nil)
             ]),
         .target(
             name: "\(name)Tests",

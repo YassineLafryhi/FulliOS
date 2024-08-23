@@ -6,6 +6,8 @@ target 'FulliOS' do
   use_frameworks!
 
   # Pods for FulliOS
+
+  # Pods needed for development
   pod 'SwiftLint'
   pod 'SwiftFormat/CLI'
   pod 'R.swift'
@@ -15,34 +17,42 @@ target 'FulliOS' do
   pod 'IBLinter'
   pod 'Sourcery'
 
+  # Core libraries
   pod 'Kingfisher'
+  pod 'SDWebImage'
   pod 'Alamofire'
+  pod 'Moya'
   pod 'SwiftSoup'
   pod 'OpenCV'
-  pod 'GoogleMLKit/LanguageID'
-  pod 'GoogleMLKit/Translate'
   pod 'Fakery'
-  pod 'RealmSwift'
-  pod 'Starscream'
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'Toaster'
-  pod 'DeviceKit'
-  pod 'ExytePopupView'
-  pod 'ResearchKit'
-  pod 'TensorFlowLiteSwift'
-  pod 'lottie-ios'
+  pod 'PromiseKit'
+  pod 'RealmSwift'
+  pod 'Starscream'
+  pod 'TrustKit'
+  pod 'IOSSecuritySuite'
+  pod 'Swinject'
   pod 'GCDWebServer'
-  pod 'Apollo'
-  pod 'PostgresClientKit'
-  pod 'Moya'
   pod 'Embassy'
-  #pod 'MapboxMaps'
-  pod 'ReactorKit'
+  pod 'GoogleMLKit/LanguageID'
+  pod 'GoogleMLKit/Translate'
+
+  # Pods needed for debugging
+  pod 'FLEX', :configurations => ['Debug']
+  pod 'CrashEye'
+
 
   target 'FulliOSTests' do
     inherit! :search_paths
-    # Pods for testing
+    # Pods needed for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'KIF', :configurations => ['Debug']
+
+
   end
 
   target 'FulliOSUITests' do
