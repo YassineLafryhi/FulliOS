@@ -28,6 +28,7 @@ internal struct AppsDashboard: View {
                 .padding()
             }
             .background(Color(hex: "#F8F8F8"))
+            .accessibilityLabel("AppsDashboard")
             .onAppear {}
         }
     }

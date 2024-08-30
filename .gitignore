@@ -161,5 +161,10 @@ fastlane/test_output
 iOSInjectionProject/
 Pods/
 Frameworks/
+FlutterModule/
+UnityGame/
+KotlinMultiPlatformModule/
+CLibrary/
+RustLibrary/
 /FulliOS/Sources/Generated
 /FulliOS/Resources/Models
