@@ -1,6 +1,6 @@
 # FulliOS
 
-> An iOS app with many examples (SwiftUI, UIKit, SwiftData, KMM, VisionKit, Vision)
+> An iOS app with many examples (SwiftUI, UIKit, SwiftData, RealmSwift, CoreData, KMM, Flutter, VisionKit, Vision, OpenCV, AVFoundation, PDFKit, MLKit, Combine, RxSwift, CoreML, CryptoKit, HealthKit, and more).
 
 ![](https://img.shields.io/badge/license-MIT-brown)
 ![](https://img.shields.io/badge/version-1.0.0-orange)
@@ -12,6 +12,7 @@
 - CocoaPods 1.15.2
 - JDK 17
 - Flutter 3.22.2
+- Tuist 4.22.0
 
 ## Examples
 
@@ -54,18 +55,17 @@
 
 ### Quran Player (SwiftUI, AVFoundation)
 
-| Main Page                          | 
-|------------------------------------| 
+| Main Page                          |
+|------------------------------------|
 | ![](Screenshots/QuranPlayer/1.png) |
 
 ## Setup
 
-### Clone the repository and install the Pods
-
 ```shell
 git clone https://github.com/YassineLafryhi/FulliOS.git
 cd FulliOS
-pod install
+chmod +x setup.sh
+./setup.sh
 xed FulliOS.xcworkspace
 # Then build and run
 ```

@@ -1,39 +1,24 @@
 languages:
   - en
 
-excludePatterns:
-  - \b[0-9a-fA-F]{6}\b
-  - \bhttps?:\/\/[^\s]+\b
-  - ^[a-z]+(\.[a-z]+)+$
-
-excludeFiles:
-  - Constants.swift
-
-excludeDirectories:
-  - Tuist/.build
+exclude:
   - Derived
   - Pods
-  - FulliOS/Sources/Generated
+  - Generated
+  - Constants.swift
 
-ignoreList:
-  - FulliOS
-  - Fulli
-  - tuist
-  - lhs
-  - rhs
-  - uid
-  - lproj
-  - rgb
-  - img
-  - interactor
-  - Kotlin
-  - Ocr
-  - ar
-  - sm
-  - ci
-  - Alamofire
-  - deinit
-  - Moya
-  - cancellables
-  - ws
-  - nfc
+rules:
+  - support_flat_case
+  - support_one_line_comment
+  - support_multi_line_comment
+  - support_british_words
+  - ignore_capitalization
+  - ignore_swift_keywords
+  - ignore_commonly_used_words
+  - ignore_shortened_words
+  - ignore_lorem_ipsum
+  - ignore_html_tags
+  - ignore_urls
+
+ignore:
+  - fulli

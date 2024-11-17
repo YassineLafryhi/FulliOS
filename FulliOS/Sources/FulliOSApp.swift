@@ -12,10 +12,12 @@ import SwiftUI
 import UnityFramework
 
 internal class FlutterDependencies: ObservableObject {
+    private let networkManager = NetworkManager.shared
     let flutterEngine = FlutterEngine(name: "MyFlutterEngine")
 
     init() {
         CrashHandler.shared.setupCrashHandler()
+        _ = networkManager
         flutterEngine.run()
         // GeneratedPluginRegistrant.register(with: flutterEngine)
         let server = WebSocketServer()

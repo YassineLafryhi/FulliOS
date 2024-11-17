@@ -30,6 +30,7 @@ internal struct FMenu: View {
             .background(Color.white)
             .cornerRadius(28)
             .shadow(radius: 4)
+            .accessibilityLabel(menuItem.testTag)
         }
     }
 }

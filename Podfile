@@ -6,6 +6,8 @@ target 'FulliOS' do
   use_frameworks!
 
   # Pods for FulliOS
+  
+  # Pods needed for development
   pod 'SwiftLint'
   pod 'SwiftFormat/CLI'
   pod 'R.swift'
@@ -15,8 +17,11 @@ target 'FulliOS' do
   pod 'IBLinter'
   pod 'Sourcery'
 
+  # Core libraries
   pod 'Kingfisher'
+  pod 'SDWebImage'
   pod 'Alamofire'
+  pod 'ReachabilitySwift'
   pod 'SwiftSoup'
   pod 'OpenCV'
   pod 'GoogleMLKit/LanguageID'
@@ -39,13 +44,28 @@ target 'FulliOS' do
   pod 'Embassy'
   #pod 'MapboxMaps'
   pod 'ReactorKit'
+  pod 'AudioKit'
+  pod 'TrustKit'
+  pod 'IOSSecuritySuite'
+  pod 'Swinject'
+  pod 'ExytePopupView'
+  
+  # Pods needed for debugging
+  pod 'FLEX', :configurations => ['Debug']
+  pod 'CrashEye'
 
   target 'FulliOSTests' do
     inherit! :search_paths
-    # Pods for testing
+    # Pods needed for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'KIF', :configurations => ['Debug']
   end
 
   target 'FulliOSUITests' do
+    inherit! :search_paths
     # Pods for testing
   end
 

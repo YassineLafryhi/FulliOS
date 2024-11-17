@@ -13,7 +13,8 @@ internal struct AppsDashboard: View {
     let menuItems: [DashboardMenuItem] = [
         DashboardMenuItem(
             iconName: R.image.swiftdata.name,
-            title: "Contacts List (SwiftData)",
+            title: "Contacts Manager (SwiftData)",
+            testTag: "ContactsManager",
             destinationView: AnyView(SwiftDataContactsView())),
 
         DashboardMenuItem(
@@ -279,7 +280,17 @@ internal struct AppsDashboard: View {
         DashboardMenuItem(
             iconName: R.image.election.name,
             title: "Manage Election Candidates (TCA, Moya)",
-            destinationView: AnyView(ElectionCandidatesView()))
+            destinationView: AnyView(ElectionCandidatesView())),
+
+        DashboardMenuItem(
+            iconName: R.image.applepay.name,
+            title: "Product Shop (PassKit)",
+            destinationView: AnyView(ProductShopView())),
+
+        DashboardMenuItem(
+            iconName: R.image.country.name,
+            title: "Country Anthem (AudioKit)",
+            destinationView: AnyView(CountryAnthemView()))
     ]
 
     var body: some View {

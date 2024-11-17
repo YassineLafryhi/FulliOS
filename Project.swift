@@ -95,7 +95,9 @@ let project = Project(
             "SWIFT_OBJC_BRIDGING_HEADER": "\(name)/Sources/Common/BridgingHeader/FulliOS-Bridging-Header.h",
             "GCC_PREFIX_HEADER": "\(name)/Sources/Common/PrefixHeader/FulliOS-Prefix-Header.pch",
             "GCC_PRECOMPILE_PREFIX_HEADER": "YES",
-            "HEADER_SEARCH_PATHS": "$(SRCROOT)/\(name)/Sources/Common/Wrappers/OpenCVWrapper"
+            "HEADER_SEARCH_PATHS": "$(SRCROOT)/\(name)/Sources/Common/Wrappers/OpenCVWrapper",
+            "LOCALIZED_STRING_SWIFTUI_SUPPORT": "NO",
+            "SWIFT_EMIT_LOC_STRINGS": "NO"
         ],
         configurations: [
             .debug(
@@ -149,7 +151,17 @@ let project = Project(
             infoPlist: .default,
             sources: ["\(name)/Tests/**"],
             resources: [],
-            dependencies: [.target(name: name)]),
+            dependencies: [
+                .target(name: name),
+                .library(
+                    path: .relativeToRoot("StaticLibs/librust.a"),
+                    publicHeaders: .relativeToRoot("RustLibrary"),
+                    swiftModuleMap: nil),
+                .library(
+                    path: .relativeToRoot("StaticLibs/libc.a"),
+                    publicHeaders: .relativeToRoot("CLibrary"),
+                    swiftModuleMap: nil)
+            ]),
         .target(
             name: "\(name)UITests",
             destinations: .iOS,
@@ -158,7 +170,31 @@ let project = Project(
             infoPlist: .default,
             sources: ["\(name)/UITests/**"],
             resources: [],
-            dependencies: [.target(name: name)])
+            dependencies: [
+                .target(name: name),
+                .library(
+                    path: .relativeToRoot("StaticLibs/librust.a"),
+                    publicHeaders: .relativeToRoot("RustLibrary"),
+                    swiftModuleMap: nil),
+                .library(
+                    path: .relativeToRoot("StaticLibs/libc.a"),
+                    publicHeaders: .relativeToRoot("CLibrary"),
+                    swiftModuleMap: nil)
+            ])
+    ],
+    schemes: [
+        .scheme(
+            name: name,
+            shared: true,
+            buildAction: .buildAction(targets: [.target(name)])),
+        .scheme(
+            name: "\(name)Tests",
+            shared: true,
+            buildAction: .buildAction(targets: [.target("\(name)Tests")])),
+        .scheme(
+            name: "\(name)UITests",
+            shared: true,
+            buildAction: .buildAction(targets: [.target("\(name)UITests")]))
     ])
 
 func readFromFile(_ path: ProjectDescription.Path) -> String {

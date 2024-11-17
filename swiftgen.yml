@@ -24,7 +24,7 @@ plist:
     - FulliOS/Resources/Plists/APIKeys.plist
   outputs:
     - templateName: inline-swift4
-      output: FulliOS/Sources/Generated/APIKeys.swift
+      output: FulliOS/Sources/Generated/SecretKeys.swift
       params:
-        enumName: APIKeys
+        enumName: SecretKeys
         publicAccess: true

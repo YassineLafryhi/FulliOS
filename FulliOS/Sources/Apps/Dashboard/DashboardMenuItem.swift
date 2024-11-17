@@ -11,7 +11,15 @@ import SwiftUI
 internal struct DashboardMenuItem: Hashable {
     let iconName: String
     let title: String
+    let testTag: String
     let destinationView: AnyView
+
+    init(iconName: String, title: String, testTag: String = "TAG", destinationView: AnyView) {
+        self.iconName = iconName
+        self.title = title
+        self.testTag = testTag
+        self.destinationView = destinationView
+    }
 
     static func == (lhs: DashboardMenuItem, rhs: DashboardMenuItem) -> Bool {
         lhs.title == rhs.title

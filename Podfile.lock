@@ -1,31 +1,57 @@
 PODS:
-  - Alamofire (5.9.1)
-  - Apollo (1.15.0):
-    - Apollo/Core (= 1.15.0)
-  - Apollo/Core (1.15.0)
+  - Alamofire (5.10.1)
+  - Apollo (1.15.3):
+    - Apollo/Core (= 1.15.3)
+  - Apollo/Core (1.15.3)
+  - AudioKit (5.1.0):
+    - AudioKit/C (= 5.1.0)
+    - AudioKit/Core (= 5.1.0)
+    - AudioKit/Soundpipe (= 5.1.0)
+    - AudioKit/Sporth (= 5.1.0)
+    - AudioKit/STK (= 5.1.0)
+  - AudioKit/C (5.1.0):
+    - AudioKit/Soundpipe
+    - AudioKit/Sporth
+    - AudioKit/STK
+  - AudioKit/Core (5.1.0):
+    - AudioKit/C
+  - AudioKit/Soundpipe (5.1.0)
+  - AudioKit/Sporth (5.1.0):
+    - AudioKit/Soundpipe
+  - AudioKit/STK (5.1.0)
   - BlueSocket (1.0.52)
   - BlueSSLService (1.0.52):
     - BlueSocket (~> 1.0.52)
-  - DeviceKit (5.4.0)
+  - CrashEye (1.2.0)
+  - CwlCatchException (2.2.1):
+    - CwlCatchExceptionSupport (~> 2.2.1)
+  - CwlCatchExceptionSupport (2.2.1)
+  - CwlMachBadInstructionHandler (2.2.2)
+  - CwlPosixPreconditionTesting (2.2.2)
+  - CwlPreconditionTesting (2.2.2):
+    - CwlCatchException (~> 2.2.1)
+    - CwlMachBadInstructionHandler (~> 2.2.2)
+    - CwlPosixPreconditionTesting (~> 2.2.2)
+  - DeviceKit (5.5.0)
   - Embassy (4.1.4)
-  - ExytePopupView (3.0.4):
+  - ExytePopupView (3.1.2):
     - SwiftUIIntrospect
   - Fakery (5.1.0)
+  - FLEX (5.22.10)
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
-  - GoogleDataTransport (9.4.1):
-    - GoogleUtilities/Environment (~> 7.7)
-    - nanopb (< 2.30911.0, >= 2.30908.0)
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleMLKit/LanguageID (6.0.0):
+  - GoogleDataTransport (10.1.0):
+    - nanopb (~> 3.30910.0)
+    - PromisesObjC (~> 2.4)
+  - GoogleMLKit/LanguageID (7.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitLanguageID (~> 6.0.0)
-  - GoogleMLKit/MLKitCore (6.0.0):
-    - MLKitCommon (~> 11.0.0)
-  - GoogleMLKit/Translate (6.0.0):
+    - MLKitLanguageID (~> 7.0.0)
+  - GoogleMLKit/MLKitCore (7.0.0):
+    - MLKitCommon (~> 12.0.0)
+  - GoogleMLKit/Translate (7.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitTranslate (~> 5.0.0)
+    - MLKitTranslate (~> 6.0.0)
   - GoogleToolboxForMac/Defines (4.2.1)
   - GoogleToolboxForMac/Logger (4.2.1):
     - GoogleToolboxForMac/Defines (= 4.2.1)
@@ -33,82 +59,95 @@ PODS:
     - GoogleToolboxForMac/Defines (= 4.2.1)
   - GoogleToolboxForMac/StringEncoding (4.2.1):
     - GoogleToolboxForMac/Defines (= 4.2.1)
-  - GoogleUtilities/Environment (7.13.3):
+  - GoogleUtilities/Environment (8.0.2):
     - GoogleUtilities/Privacy
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.13.3):
+  - GoogleUtilities/Logger (8.0.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Privacy (7.13.3)
-  - GoogleUtilities/UserDefaults (7.13.3):
+  - GoogleUtilities/Privacy (8.0.2)
+  - GoogleUtilities/UserDefaults (8.0.2):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GoogleUtilitiesComponents (1.1.0):
-    - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (3.5.0)
   - IBLinter (0.5.0)
-  - Kingfisher (7.12.0)
+  - IOSSecuritySuite (2.1.0)
+  - KIF (3.10.0):
+    - KIF/Core (= 3.10.0)
+  - KIF/Core (3.10.0)
+  - Kingfisher (8.1.0)
   - lottie-ios (4.5.0)
-  - MLKitCommon (11.0.0):
-    - GoogleDataTransport (< 10.0, >= 9.4.1)
+  - MLKitCommon (12.0.0):
+    - GoogleDataTransport (~> 10.0)
     - GoogleToolboxForMac/Logger (< 5.0, >= 4.2.1)
     - "GoogleToolboxForMac/NSData+zlib (< 5.0, >= 4.2.1)"
-    - GoogleUtilities/UserDefaults (< 8.0, >= 7.13.0)
-    - GoogleUtilitiesComponents (~> 1.0)
+    - GoogleUtilities/Logger (~> 8.0)
+    - GoogleUtilities/UserDefaults (~> 8.0)
     - GTMSessionFetcher/Core (< 4.0, >= 3.3.2)
-  - MLKitLanguageID (6.0.0):
-    - MLKitNaturalLanguage (~> 7.0)
-  - MLKitNaturalLanguage (7.0.0):
+  - MLKitLanguageID (7.0.0):
+    - MLKitNaturalLanguage (~> 8.0)
+  - MLKitNaturalLanguage (8.0.0):
     - GoogleToolboxForMac/Logger (< 5.0, >= 4.2.1)
     - "GoogleToolboxForMac/NSData+zlib (< 5.0, >= 4.2.1)"
     - GoogleToolboxForMac/StringEncoding (< 5.0, >= 4.2.1)
     - GTMSessionFetcher/Core (< 4.0, >= 3.3.2)
-    - MLKitCommon (~> 11.0)
-  - MLKitTranslate (5.0.0):
-    - MLKitNaturalLanguage (~> 7.0)
+    - MLKitCommon (~> 12.0)
+  - MLKitTranslate (6.0.0):
+    - MLKitNaturalLanguage (~> 8.0)
     - SSZipArchive (< 3.0, >= 2.5.5)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
-  - nanopb (2.30910.0):
-    - nanopb/decode (= 2.30910.0)
-    - nanopb/encode (= 2.30910.0)
-  - nanopb/decode (2.30910.0)
-  - nanopb/encode (2.30910.0)
+  - nanopb (3.30910.0):
+    - nanopb/decode (= 3.30910.0)
+    - nanopb/encode (= 3.30910.0)
+  - nanopb/decode (3.30910.0)
+  - nanopb/encode (3.30910.0)
+  - Nimble (13.6.2):
+    - CwlPreconditionTesting (~> 2.2.0)
   - OpenCV (4.3.0)
-  - Periphery (2.21.0)
+  - Periphery (2.21.2)
   - PostgresClientKit (1.5.0):
     - BlueSocket (~> 1.0)
     - BlueSSLService (~> 1.0)
   - PromisesObjC (2.4.0)
-  - R.swift (7.3.2)
+  - Quick (7.6.2)
+  - R.swift (7.8.0)
+  - ReachabilitySwift (5.2.4)
   - ReactorKit (3.2.0):
     - RxSwift (~> 6.0)
     - WeakMapTable (~> 1.1)
-  - Realm (10.53.0):
-    - Realm/Headers (= 10.53.0)
-  - Realm/Headers (10.53.0)
-  - RealmSwift (10.53.0):
-    - Realm (= 10.53.0)
+  - Realm (20.0.0):
+    - Realm/Headers (= 20.0.0)
+  - Realm/Headers (20.0.0)
+  - RealmSwift (20.0.0):
+    - Realm (= 20.0.0)
   - ResearchKit (2.2.16)
-  - RxCocoa (6.7.1):
-    - RxRelay (= 6.7.1)
-    - RxSwift (= 6.7.1)
-  - RxRelay (6.7.1):
-    - RxSwift (= 6.7.1)
-  - RxSwift (6.7.1)
+  - RxBlocking (6.8.0):
+    - RxSwift (= 6.8.0)
+  - RxCocoa (6.8.0):
+    - RxRelay (= 6.8.0)
+    - RxSwift (= 6.8.0)
+  - RxRelay (6.8.0):
+    - RxSwift (= 6.8.0)
+  - RxSwift (6.8.0)
+  - RxTest (6.8.0):
+    - RxSwift (= 6.8.0)
+  - SDWebImage (5.20.0):
+    - SDWebImage/Core (= 5.20.0)
+  - SDWebImage/Core (5.20.0)
   - Sourcery (2.2.5):
     - Sourcery/CLI-Only (= 2.2.5)
   - Sourcery/CLI-Only (2.2.5)
-  - SSZipArchive (2.5.5)
+  - SSZipArchive (2.6.0)
   - Starscream (4.0.8)
-  - SwiftFormat/CLI (0.54.3)
+  - SwiftFormat/CLI (0.55.0)
   - SwiftGen (6.6.3)
-  - SwiftLint (0.56.1)
-  - SwiftSoup (2.7.3)
+  - SwiftLint (0.57.0)
+  - SwiftSoup (2.7.6)
   - SwiftUIIntrospect (1.3.0)
-  - SwiftySpell (0.9.6)
+  - SwiftySpell (0.9.7)
+  - Swinject (2.9.1)
   - TensorFlowLiteC (2.17.0):
     - TensorFlowLiteC/Core (= 2.17.0)
   - TensorFlowLiteC/Core (2.17.0)
@@ -119,31 +158,43 @@ PODS:
     - TensorFlowLiteSwift/Privacy (= 2.17.0)
   - TensorFlowLiteSwift/Privacy (2.17.0)
   - Toaster (2.3.0)
+  - TrustKit (3.0.4)
   - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - Apollo
+  - AudioKit
+  - CrashEye
   - DeviceKit
   - Embassy
   - ExytePopupView
   - Fakery
+  - FLEX
   - GCDWebServer
   - GoogleMLKit/LanguageID
   - GoogleMLKit/Translate
   - IBLinter
+  - IOSSecuritySuite
+  - KIF
   - Kingfisher
   - lottie-ios
   - Moya
+  - Nimble
   - OpenCV
   - Periphery
   - PostgresClientKit
+  - Quick
   - R.swift
+  - ReachabilitySwift
   - ReactorKit
   - RealmSwift
   - ResearchKit
+  - RxBlocking
   - RxCocoa
   - RxSwift
+  - RxTest
+  - SDWebImage
   - Sourcery
   - Starscream
   - SwiftFormat/CLI
@@ -151,27 +202,38 @@ DEPENDENCIES:
   - SwiftLint
   - SwiftSoup
   - SwiftySpell
+  - Swinject
   - TensorFlowLiteSwift
   - Toaster
+  - TrustKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Apollo
+    - AudioKit
     - BlueSocket
     - BlueSSLService
+    - CrashEye
+    - CwlCatchException
+    - CwlCatchExceptionSupport
+    - CwlMachBadInstructionHandler
+    - CwlPosixPreconditionTesting
+    - CwlPreconditionTesting
     - DeviceKit
     - Embassy
     - ExytePopupView
     - Fakery
+    - FLEX
     - GCDWebServer
     - GoogleDataTransport
     - GoogleMLKit
     - GoogleToolboxForMac
     - GoogleUtilities
-    - GoogleUtilitiesComponents
     - GTMSessionFetcher
     - IBLinter
+    - IOSSecuritySuite
+    - KIF
     - Kingfisher
     - lottie-ios
     - MLKitCommon
@@ -180,18 +242,24 @@ SPEC REPOS:
     - MLKitTranslate
     - Moya
     - nanopb
+    - Nimble
     - OpenCV
     - Periphery
     - PostgresClientKit
     - PromisesObjC
+    - Quick
     - R.swift
+    - ReachabilitySwift
     - ReactorKit
     - Realm
     - RealmSwift
     - ResearchKit
+    - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
+    - RxTest
+    - SDWebImage
     - Sourcery
     - SSZipArchive
     - Starscream
@@ -201,62 +269,81 @@ SPEC REPOS:
     - SwiftSoup
     - SwiftUIIntrospect
     - SwiftySpell
+    - Swinject
     - TensorFlowLiteC
     - TensorFlowLiteSwift
     - Toaster
+    - TrustKit
     - WeakMapTable
 
 SPEC CHECKSUMS:
-  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
-  Apollo: ee0a36746206d941bf24a932b88778b6e4677d23
+  Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
+  Apollo: a1e120e7ca2c8592056bd39e8032e2e3fed601a6
+  AudioKit: 81246a4ccdd7ca3c6e0076f913070e90987b4369
   BlueSocket: 1acd943acb07b55905291d608649fcfbf8cbd57d
   BlueSSLService: b791a3db95b841973c44870f59bbf94628845b58
-  DeviceKit: bd34bb1766d926c3cc5a5f6e3e9a6dd10148b805
+  CrashEye: 89d1ca174f0ef3ceeb27152f578c0a61667ba799
+  CwlCatchException: 7acc161b299a6de7f0a46a6ed741eae2c8b4d75a
+  CwlCatchExceptionSupport: 54ccab8d8c78907b57f99717fb19d4cc3bce02dc
+  CwlMachBadInstructionHandler: dae4fdd124d45c9910ac240287cc7b898f4502a1
+  CwlPosixPreconditionTesting: ecd095aa2129e740b44301c34571e8d85906fb88
+  CwlPreconditionTesting: 67a0047dd4de4382b93442c0e3f25207f984f35a
+  DeviceKit: d83e38ca196a4ebf0cc5f37d6f0316a24b794d5b
   Embassy: d752c8de4795d6d7ec0e533cd69b9275917a5211
-  ExytePopupView: 357298b6f4ff95be11bf3d0e28e4c8404075b051
+  ExytePopupView: f6405d001821bdeaa0b4cb5dce9a082c53956075
   Fakery: a90caff00ca5cacde6c161c3eafc72314a03d34d
+  FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
-  GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
-  GoogleMLKit: 97ac7af399057e99182ee8edfa8249e3226a4065
+  GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
+  GoogleMLKit: eff9e23ec1d90ea4157a1ee2e32a4f610c5b3318
   GoogleToolboxForMac: d1a2cbf009c453f4d6ded37c105e2f67a32206d8
-  GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
-  GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
+  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   IBLinter: 7d28cbb7b579ca80690b56f6c8d22092a672967c
-  Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
+  IOSSecuritySuite: 45e8531b05ffa72b5661cbdb5b5b5648a8de1a84
+  KIF: e0d42181aac4f5de06aa986ccf514588ab4ffe2f
+  Kingfisher: dfbf20b6249ed4ef6f18d6a96c847bce860bdb95
   lottie-ios: a881093fab623c467d3bce374367755c272bdd59
-  MLKitCommon: afec63980417d29ffbb4790529a1b0a2291699e1
-  MLKitLanguageID: a897902aa4e58f7bf0943b07a1f9b58d762273aa
-  MLKitNaturalLanguage: 7cd66a1ec3fbee2ff22890e1d42dda5c928e811b
-  MLKitTranslate: a404df6fba19d2ddcbebf4f1fc51d9f5edd24ee5
+  MLKitCommon: 07c2c33ae5640e5380beaaa6e4b9c249a205542d
+  MLKitLanguageID: f52e378d875f1a5e67ac0f259ebddaab95faa1c7
+  MLKitNaturalLanguage: 1faece38017b0cf8eb49ac69cff10cb419f68c01
+  MLKitTranslate: 2082cce437292f2f7477bfef02022ef69d8e77aa
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
-  nanopb: 438bc412db1928dac798aa6fd75726007be04262
+  nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
+  Nimble: 8cd9e713948ea6a61980e82d2bec937acec16b91
   OpenCV: 681e0451c1e54c5930a8922277f817ed5d5ab459
-  Periphery: ee5accaac4ff9694d2bf60d52462fb1675c67c9d
+  Periphery: 52ea4e6a456109eb26ea55632f0304708c837d42
   PostgresClientKit: 46759d7926389529314fb23f2be44e0246808de8
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
-  R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
+  Quick: b8bec97cd4b9f21da0472d45580f763b801fc353
+  R.swift: f573269ca45b2ab066c082e363dd4c2b297b0d71
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
   ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
-  Realm: e3d9f52df62d7479cf921e5d70294da4fdd2081f
-  RealmSwift: 03b060aea36701f8f4bef9fd1d4f4788ae867505
+  Realm: a799b5f9145623fb0bfe149fe81422863631dd0f
+  RealmSwift: f8c4354ebd5053343e6ab9f4eda244145308a51e
   ResearchKit: 4ce3751136fc82a02ac83f873b09b01b6974a761
-  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
-  RxRelay: 4151ba01152436b08271e08410135e099880eae5
-  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+  RxBlocking: a8b634fba6850913bc3df40bb73fd08b2dbf0f01
+  RxCocoa: 2d33c1e1e5d66492052ad46b11024ae287572880
+  RxRelay: 335c78b926a2aea8d863a6d25f1ed3b5ad8e8705
+  RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
+  RxTest: d0fa1ec82feb41efa826a59173ec65eafbbe4aaf
+  SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
   Sourcery: 088e2f5a70844da8bc439f9eb9d88f35fc702f93
-  SSZipArchive: c69881e8ac5521f0e622291387add5f60f30f3c4
+  SSZipArchive: 8a6ee5677c8e304bebc109e39cf0da91ccef22ea
   Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
-  SwiftFormat: 0e575b1d412d27cd5906c59fab64a806ba8f2b8e
+  SwiftFormat: 3e150b22884bcd4b0f8c91a84409996a3e7ca8dc
   SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
-  SwiftLint: c5fa0b7eece474d43d2178b581a1242a16267347
-  SwiftSoup: e3849c3293b1efee9cf892f91f6ae5c22bfeb5f7
+  SwiftLint: eb47480d47c982481592c195c221d11013a679cc
+  SwiftSoup: 9ec2526c76ebc3fe5d3157c82b40b45a27eeb82d
   SwiftUIIntrospect: fee9aa07293ee280373a591e1824e8ddc869ba5d
-  SwiftySpell: 9297a2c2feedb3fc7e15b68f4f8f96d9ec52b25f
+  SwiftySpell: d1878518d28df868a8a31243d1216db1144c54e8
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
   TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
   TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  TrustKit: 403e8d2cfbff2abfc37cd41acc558dab8ec78e59
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: ce04b74f879518ce683858e7bc5cb297dc1b343e
+PODFILE CHECKSUM: 715a030936ea4ab56b4355ea2009cae972baecf9
 
 COCOAPODS: 1.15.2
