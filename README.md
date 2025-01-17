@@ -25,44 +25,6 @@ xed FulliOS.xcworkspace
 # Then build and run
 ```
 
-## Apps
-
-### 1- Contacts List (SwiftUI, SwiftData, Fakery)
-+ To run the app separately
-```shell
-./generate.swift ContactsManager
-```shell
-
-### 2- Posts List (KMM)
-+ To run the app separately
-```shell
-./generate.swift KotlinMultiplatform
-```shell
-
-### 3- OCR (SwiftUI, VisionKit)
-+ To run the app separately
-```shell
-./generate.swift OCR
-```shell
-
-### 4- Face Detection (SwiftUI, Vision)
-+ To run the app separately
-```shell
-./generate.swift FaceDetector
-```shell
-
-### 5- Process Image (SwiftUI, OpenCV)
-+ To run the app separately
-```shell
-./generate.swift OpenCV
-```shell
-
-### 6- Quran Player (SwiftUI, AVFoundation)
-+ To run the app separately
-```shell
-./generate.swift QuranPlayer
-```shell
-
 ## Used Tools
 
 | Tool        | Description                                                                                                                                                                                                      |
