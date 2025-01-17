@@ -14,51 +14,6 @@
 - Flutter 3.22.2
 - Tuist 4.22.0
 
-## Examples
-
-### Main App Menu
-
-| Home page (1)               |
-|-----------------------------|
-| ![](Screenshots/Home/2.png) |
-
-
-### Contacts List (SwiftUI, SwiftData, Fakery)
-
-| Contacts List                       |
-|----------------------------------|
-| ![](Screenshots/SwiftData/1.png) |
-
-### Posts List (KMM)
-
-| Posts List                 |
-|----------------------------|
-| ![](Screenshots/KMM/1.png) |
-
-### OCR (SwiftUI, VisionKit)
-
-| Perform OCR on an image    |
-|----------------------------|
-| ![](Screenshots/OCR/1.png) |
-
-### Face Detection (SwiftUI, Vision)
-
-| Face Detection                       |
-|--------------------------------------|
-| ![](Screenshots/FaceDetection/1.png) |
-
-### Process Image (SwiftUI, OpenCV)
-
-| Original Image                   | GrayScale Filter              | Image Flipped Horizontally          | Gaussian Blur      |
-| -------------------------------- | -------------------------------- | -------------------------------- |------------------- |
-| ![](Screenshots/OpenCV/1.png) | ![](Screenshots/OpenCV/2.png) | ![](Screenshots/OpenCV/3.png) | ![](Screenshots/OpenCV/4.png) |
-
-### Quran Player (SwiftUI, AVFoundation)
-
-| Main Page                          |
-|------------------------------------|
-| ![](Screenshots/QuranPlayer/1.png) |
-
 ## Setup
 
 ```shell
@@ -69,6 +24,44 @@ chmod +x setup.sh
 xed FulliOS.xcworkspace
 # Then build and run
 ```
+
+## Apps
+
+### 1- Contacts List (SwiftUI, SwiftData, Fakery)
++ To run the app separately
+```shell
+./generate.swift ContactsManager
+```shell
+
+### 2- Posts List (KMM)
++ To run the app separately
+```shell
+./generate.swift KotlinMultiplatform
+```shell
+
+### 3- OCR (SwiftUI, VisionKit)
++ To run the app separately
+```shell
+./generate.swift OCR
+```shell
+
+### 4- Face Detection (SwiftUI, Vision)
++ To run the app separately
+```shell
+./generate.swift FaceDetector
+```shell
+
+### 5- Process Image (SwiftUI, OpenCV)
++ To run the app separately
+```shell
+./generate.swift OpenCV
+```shell
+
+### 6- Quran Player (SwiftUI, AVFoundation)
++ To run the app separately
+```shell
+./generate.swift QuranPlayer
+```shell
 
 ## Used Tools
 
